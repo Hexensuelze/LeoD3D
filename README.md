@@ -4,6 +4,7 @@
 LeoD's Duke Nukem 3D Stuff
 
  - The autoload Thingy
+ - The no-atomic-con-warnings pack
  - Emacs editing modes for EDuke32/Mapster32/Ion Fury related files
 
 --------------------------------------------------------------------------------
