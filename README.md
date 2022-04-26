@@ -1,10 +1,10 @@
-![](https://forums.duke4.net/uploads/av-1299.gif)
+![](https://avatars.githubusercontent.com/u/65036122?v=4)
 
 # LeoD3D
 LeoD's Duke Nukem 3D Stuff
 
  - The autoload Thingy
- - The no-atomic-con-warnings pack
+ - The no-*-con-warnings packs
  - Emacs editing modes for EDuke32/Mapster32/Ion Fury related files
 
 --------------------------------------------------------------------------------
