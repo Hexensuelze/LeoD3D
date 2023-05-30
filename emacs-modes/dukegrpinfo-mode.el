@@ -5,15 +5,15 @@
 ;; Syntax Highlighting Only
 
 ;; Author: LeoD, by search&replace-editing:
-;; dukecon-mode by Philip Kutin, based on a tutorial by Scott Andrew Borton
+;; dukecon-mode by Philipp Kutin, based on a tutorial by Scott Andrew Borton
 ;; Created: 2021-09-01
 ;; Keywords: Duke3D Eduke32 grpinfo major-mode
-;; Last updated: 2022-04-26 (EDuke32 r9505 - r9913 -> r10033)
+;; Last updated: 2023-05-29 (EDuke32 r9505 - r10185 -> r10285)
 ;; -> .../source/duke3d/src/grpscan.cpp : grpinfotokens[]
 
 
 
-;; Copyright (C) 2021-2022 LeoD
+;; Copyright (C) 2021-2023 LeoD
 ;; Copyright (C) 2007-2012 Philipp Kutin
 ;; Copyright (C) 2000, 2003 Scott Andrew Borton
 
@@ -46,17 +46,17 @@
 
 
 
-(defconst dukegrpinfo-keywords-1 ;; token list
+(defconst dukegrpinfo-keywords-1 ;; grpscan.cpp : grpinfotokens[]
   '(
     name size crc flags dependency scriptname defname rtsname
    ))
 
-(defconst dukegrpinfo-keywords-2 ;; 
+(defconst dukegrpinfo-keywords-2 ;; grpscan.h
   '(
      grpinfo
-     0xFD3DCFF1 ;; Atomic CRC / DUKE15_CRC
      0xBBC9CE44 ;; DUKE13_CRC
      0xAA4F6A40 ;; DUKEKR_CRC
+     0xFD3DCFF1 ;; DUKE15_CRC / Atomic CRC
      0xF514A6AC ;; DUKEPP_CRC
      0x982AFE4A ;; DUKEWT_CRC b386
      0x02F18900 ;; DUKE099_CRC
@@ -68,13 +68,19 @@
      0xA9242158 ;; DUKEDC13_CRC
      0xB79D997F ;; DUKEDCPP_CRC
      0xA8CF80DA ;; DUKEDC_CRC
+     0x39A692BF ;; DUKEDC_REPACK_CRC
      0x4A2DBB62 ;; VACA13_CRC
      0x2F4FCCEE ;; VACAPP_CRC
      0xB62B42FD ;; VACA15_CRC
      0x18F01C5B ;; DUKECB_CRC
+     0x65B5F690 ;; VACA13_REPACK_CRC
      0xF1CAE8E4 ;; DUKENW_CRC
+     0xC7EFBFA9 ;; DUKENW_DEMO_CRC
      0x82C1B47F ;; DZ2_13_CRC
      0x7FB6117C ;; DZ2_PP_CRC
+     0x1E9516F1 ;; DZ2_PP_REPACK_CRC
+     0x7CD82A3B ;; PENTP_CRC
+     0xCF928A58 ;; PENTP_ZOOM_CRC
      0x75C1F07B ;; NAM_CRC
      0x3DE1589A ;; NAPALM_CRC
      0x907B82BF ;; WW2GI_CRC
@@ -96,16 +102,20 @@
      0xD5B0E641 ;; fury_1.02_crc
      0x5F0266E4 ;; fury_1.1_crc
      0x960B3686 ;; fury_2.0_crc
+     0xF3A52423 ;; fury_hotfix_20211009_crc
      PAINTB_CRC   GAMEFLAG_PAINTB
    ))
 
 (defconst dukegrpinfo-keywords-4 ;; grpscan.h
   '(
-     DUKE13_CRC   DUKEKR_CRC DUKE15_CRC DUKEPP_CRC DUKEWT_CRC  DUKE099_CRC
-     DUKE10_CRC   DUKE11_CRC DUKESW_CRC DUKEMD_CRC DUKEMD2_CRC DUKEDC13_CRC
-     DUKEDCPP_CRC DUKEDC_CRC VACA13_CRC VACAPP_CRC VACA15_CRC  DUKECB_CRC
-     DUKENW_CRC   DZ2_13_CRC DZ2_PP_CRC NAM_CRC    NAPALM_CRC  WW2GI_CRC
-     PLATOONL_CRC
+     DUKE13_CRC   DUKEKR_CRC      DUKE15_CRC DUKEWT_CRC DUKEPP_CRC  DUKE099_CRC
+     DUKE10_CRC   DUKE11_CRC      DUKESW_CRC DUKEMD_CRC DUKEMD2_CRC
+     DUKEDC13_CRC DUKEDCPP_CRC    DUKEDC_CRC            DUKEDC_REPACK_CRC
+     VACA13_CRC   VACAPP_CRC      VACA15_CRC DUKECB_CRC VACA_REPACK_CRC
+     DUKENW_CRC   DUKENW_DEMO_CRC 
+     DZ2_13_CRC   DZ2_PP_CRC                            DZ2_PP_REPACK_CRC
+     PENTP_CRC    PENTP_ZOOM_CRC
+     NAM_CRC      NAPALM_CRC      WW2GI_CRC  PLATOONL_CRC
    ))
 
 (defconst dukegrpinfo-keywords-5 ;; common_game.h

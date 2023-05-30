@@ -5,15 +5,15 @@
 ;; Syntax Highlighting Only
 
 ;; Author: LeoD, by search&replace-editing:
-;;  dukecon-mode by Philip Kutin, based on a tutorial by Scott Andrew Borton
+;;  dukecon-mode by Philipp Kutin, based on a tutorial by Scott Andrew Borton
 ;; Created: 2019-05-07
 ;; Keywords: Duke3D Eduke32 Fury log major-mode
-;; Last updated: 2022-04-26      (EDuke32/Mapster32 r9954 -> r10033)
+;; Last updated: 2023-05-29      (EDuke32/Mapster32 r9954 -> r10285)
 
 
 
 
-;; Copyright (C) 2019-2022 LeoD
+;; Copyright (C) 2019-2023 LeoD
 ;; Copyright (C) 2007-2012 Philipp Kutin
 ;; Copyright (C) 2000, 2003 Scott Andrew Borton
 
@@ -41,23 +41,24 @@
 ;;; Code:
 (defvar dukelog-mode-hook nil)
 
-;;(add-to-list 'auto-mode-alist '("\\.log\\'"                  . dukelog-mode))
-(add-to-list 'auto-mode-alist '("eduke32\\(.*\\)\\.log\\'"   . dukelog-mode))
-(add-to-list 'auto-mode-alist '("mapster32\\(.*\\)\\.log\\'" . dukelog-mode))
-(add-to-list 'auto-mode-alist '("fury\\(.*\\)\\.log\\'"      . dukelog-mode))
+;;(add-to-list 'auto-mode-alist '("\\.log\\'"                . dukelog-mode))
+;(add-to-list 'auto-mode-alist '("eduke32\\(.*\\)\\.log\\'"   . dukelog-mode))
+;(add-to-list 'auto-mode-alist '("mapster32\\(.*\\)\\.log\\'" . dukelog-mode))
+;(add-to-list 'auto-mode-alist '("fury\\(.*\\)\\.log\\'"      . dukelog-mode))
 
 (defconst dukelog-keywords-01 ;; do not highlight
   '(
      DO_NOT_HIGHLIGHT
      compiled\ code
      created\ with
+     Disperser\ out\ of\ grenades
      Disperser\ out\ of\ shells
      HOLODUKE\ NOT\ FOUND\ YET
      JETPACK\ NOT\ FOUND\ YET
      ; No\ game\ controllers\ found
-     No\ Spawn
+     No\ Spawn  no\ spawn
      no\ updates\ available
-     show\ map\ on
+     Show\ map\ ON  show\ map\ on
      very\ happy\ ammo\ added
      ;;
      ;; mimalloc
@@ -68,29 +69,55 @@
   '(
      ;; Highlight doesn't work with quotes, "(" , ")" , "|" ,
      ;; leading "\ " or trailing ":"
+     ;;
      ;; Mapster32 Ion Fury 2.0:
      ;Warning:\ Truncating\ name\ \"A_NUKEMUTANT_GDF_DEADHEAD\"
      ;;
      ;; Duke3D Voxel Pack tank warnings
+     ;; old style
      7630:\ warning:\ duplicate\ action\ \`ATANKSPIN\'\ ignored
      7631:\ warning:\ duplicate\ action\ \`ATANKSHOOTING\'\ ignored
      7632:\ warning:\ duplicate\ action\ \`ATANKWAIT\'\ ignored
      7633:\ warning:\ duplicate\ action\ \`ATANKDESTRUCT\'\ ignored
      7634:\ warning:\ duplicate\ action\ \`ATANKDEAD\'\ ignored
+     ;; loguru
+     game.con:7630:\ duplicate\ action\ \'ATANKSPIN\'\ ignored
+     game.con:7631:\ duplicate\ action\ \'ATANKSHOOTING\'\ ignored
+     game.con:7632:\ duplicate\ action\ \'ATANKWAIT\'\ ignored
+     game.con:7633:\ duplicate\ action\ \'ATANKDESTRUCT\'\ ignored
+     game.con:7634:\ duplicate\ action\ \'ATANKDEAD\'\ ignored
+     GAME.CON:7630:\ duplicate\ action\ \'ATANKSPIN\'\ ignored
+     GAME.CON:7631:\ duplicate\ action\ \'ATANKSHOOTING\'\ ignored
+     GAME.CON:7632:\ duplicate\ action\ \'ATANKWAIT\'\ ignored
+     GAME.CON:7633:\ duplicate\ action\ \'ATANKDESTRUCT\'\ ignored
+     GAME.CON:7634:\ duplicate\ action\ \'ATANKDEAD\'\ ignored
      ;;
      ;; LeoD's Ion Fury Mod warnings
-     fury_leod/foobar.con:25:\ warning:\ sound\ 190\ already\ defined
-     fury_leod/foobar.con:30:\ warning:\ sound\ 193\ already\ defined
-     fury_leod/foobar.con:31:\ warning:\ sound\ 194\ already\ defined
-     fury_leod/foobar.con:32:\ warning:\ sound\ 195\ already\ defined
-     fury_leod/foobar.con:33:\ warning:\ sound\ 196\ already\ defined
-     fury_leod/foobar.con:34:\ warning:\ sound\ 197\ already\ defined
-     fury_leod/foobar.con:35:\ warning:\ sound\ 198\ already\ defined
-     fury_leod/foobar.con:36:\ warning:\ sound\ 199\ already\ defined
-     fury_leod/foobar.con:37:\ warning:\ sound\ 230\ already\ defined
-     fury_leod/foobar.con:38:\ warning:\ sound\ 231\ already\ defined
-     fury_leod/foobar.con:39:\ warning:\ sound\ 232\ already\ defined
-     overwriting\ existing\ definition\ for\ sound
+     ;; old style
+     fury_leod/scripts/foobar.con:25:\ warning:\ sound\ 190\ already\ defined
+     fury_leod/scripts/foobar.con:30:\ warning:\ sound\ 193\ already\ defined
+     fury_leod/scripts/foobar.con:31:\ warning:\ sound\ 194\ already\ defined
+     fury_leod/scripts/foobar.con:32:\ warning:\ sound\ 195\ already\ defined
+     fury_leod/scripts/foobar.con:33:\ warning:\ sound\ 196\ already\ defined
+     fury_leod/scripts/foobar.con:34:\ warning:\ sound\ 197\ already\ defined
+     fury_leod/scripts/foobar.con:35:\ warning:\ sound\ 198\ already\ defined
+     fury_leod/scripts/foobar.con:36:\ warning:\ sound\ 199\ already\ defined
+     fury_leod/scripts/foobar.con:37:\ warning:\ sound\ 230\ already\ defined
+     fury_leod/scripts/foobar.con:38:\ warning:\ sound\ 231\ already\ defined
+     fury_leod/scripts/foobar.con:39:\ warning:\ sound\ 232\ already\ defined
+     ;; loguru
+fury_leod/scripts/foobar.con:25:\ overwriting\ existing\ definition\ for\ sound
+fury_leod/scripts/foobar.con:30:\ overwriting\ existing\ definition\ for\ sound
+fury_leod/scripts/foobar.con:31:\ overwriting\ existing\ definition\ for\ sound
+fury_leod/scripts/foobar.con:32:\ overwriting\ existing\ definition\ for\ sound
+fury_leod/scripts/foobar.con:33:\ overwriting\ existing\ definition\ for\ sound
+fury_leod/scripts/foobar.con:34:\ overwriting\ existing\ definition\ for\ sound
+fury_leod/scripts/foobar.con:35:\ overwriting\ existing\ definition\ for\ sound
+fury_leod/scripts/foobar.con:36:\ overwriting\ existing\ definition\ for\ sound
+fury_leod/scripts/foobar.con:37:\ overwriting\ existing\ definition\ for\ sound
+fury_leod/scripts/foobar.con:38:\ overwriting\ existing\ definition\ for\ sound
+fury_leod/scripts/foobar.con:39:\ overwriting\ existing\ definition\ for\ sound
+     ; overwriting\ existing\ definition\ for\ sound
      ;;
      0\ warning 0\ warnings
      0\ error   0\ errors
@@ -103,20 +130,25 @@
      Cache\ time
      Changed\ sectnum
      classic\ software
+     Connecting\ to\ http
      debug:\ This\ level\ is\ missing\ a\ HUBSECTION
      Focus\ change
+     Gamevars\ dumped\ to\ log
      garbage\ data
      High\ Resolution\ Pack
      Jonathon\ Fowler
      Ken\ Silverman
      keyboard\ layout
+     Map\ dumped\ to\ debug\.map
      mimalloc:\ warning
      Monsters\ off
      No\ game\ controllers\ found
      polygonal\ OpenGL
      Polymer\ subsystem
+     ProAsm
      Quick\ Exit
      Rendering\ method\ changed\ to\ great\ justice
+     ;Rendering\ method\ changed\ to
      User\ Map
      151190\ bytes ; Atomic GAME.CON
       35992\ bytes ; Atomic DEFS.CON
@@ -126,12 +158,13 @@
      Debug debug Info info Note note
      Polymer Polymost
      sv_saveandmakesnapshot snapshot workaround
+     ; INFO
    ))
 
 (defconst dukelog-keywords-1 ;; objects
   '(
-     EDuke32 Mapster32
-     GRP grp grpinfo ZIP zip DAT dat
+     EDuke32 Mapster32 NetDuke32
+     GRP grp grpinfo ZIP zip DAT dat PK3 pk3 PK4 pk4 SSI ssi
      CON con DEF def HLP hlp lua m32 MAP map mhk
      BIN bin CFG cfg DMO dmo H   h
      ART art BMP bmp JPG jpg PCX pcx PNG png TGA tga
@@ -141,19 +174,21 @@
      esv SAV sav
      ;PCK pck ;; Modem
      autoload
-     maphack map\ hack\ file clip\ map
+     maphack map\ hack\ file clip\ map module\ CON\ file
+     main\ \.def\ file module\ \.def\ file
      DEFS\.CON defs\.con DUKE3D\.GRP duke3d\.grp DUKE\.RTS duke\.rts
      EDUKE\.CON eduke\.con GAME\.CON game\.con
      NAMES\.H names\.h USER\.CON user\.con
      eduke32\.cfg settings.\cfg mapster32.\cfg m32_settings.\cfg
-     duke3d\.def editor\.def m32help\.hlp
+     m32_autoexec\.cfg netduke32.\cfg netduke32_settings.\cfg
+     DUKE3D\.CFG duke3d\.cfg duke3d\.def editor\.def m32help\.hlp
      texturecache texturecache\.index textures textures\.cache
-
-     ;; JFDuke:
-     JFDuke3D
+     V5\ map V6\ map V7\ map V8\ map
+     ;  V9\ map
 
      ;; KenBuild:
-     EKenBuild EKenBuild\ Editor
+     EKenBuild EKenBuild\ Editor ekenbuild\.cfg ekenbuild\.log
+     ekenbuild-editor\.cfg ekenbuild-editor\.log
 
      ;; Shadow Warrior:
      VoidSW Wangulator SW\.GRP sw\.grp
@@ -162,9 +197,10 @@
 
      ;; Blood:
      NBlood
-     kpf PK3 pk3
+     kpf
      AVI avi DEM dem INI ini ogv RFF rff sf2 SMK smk
      nblood\.cfg nblood_cvars\.cfg
+     NBlood\ top\ def
      ;bloodgdx\.dat
 
      ;; Redneck Rampage:
@@ -175,30 +211,42 @@
      ;; Powerslave/Exhumed:
      Exhumed Exhumed_editor
      MOV mov RMP rmp VCR vcr SETUP.\CFG STUFF\.DAT stuff\.dat
-     pcexhumed\.cfg pcexhumed_cvars\.cfg
+     pcexhumed\.cfg pcexhumed_cvars\.cfg pcexhumed\.log
+     powerslavegdx\.ini powerslavegdx\.log
      ;psgdx\.dat
 
      ;; TekWar:
-     TekWar
-     etekwar\.cfg etekwar_cvars\.cfg
+     TekWar JFTekWar
+     etekwar\.cfg etekwar_cvars\.cfg tekwar\.ini tekwar\.log
 
      ;; Witchaven:
-     Witchaven
+     Witchaven JFWitchaven whaven\.ini whaven\.log
      ewitchaven\.cfg ewitchaven_cvars\.cfg
 
+     ;; Witchaven 2:
+     witchaven2gdx\.ini witchaven2gdx\.log
+
      ;; Ion Fury:
+     fury\.cfg
+     fury\.grp
      Ion\ Fury
      ext
-     fury\.cfg
 
      ;; BuildGDX:
      BUILD BuildGdx
      BloodGDX DukeGDX LSPGDX PowerslaveGDX
-     RedneckGDX TekWarGDX WangGDX WitchavenGDX
+     RedneckGDX TekWarGDX WangGDX WitchavenGDX Witchaven2GDX
      bloodgdx\.dat lspgdx\.dat psgdx\.dat rrgdx\.dat twgdx\.dat whgdx\.dat
 
+     ;; Duke3dw
+     Buildw\.cfg Buildw\.log Duke3dw\.cfg Duke3dw\.grp Duke3dw\.log
+     Buildw Duke3dw LICENSE\.DOC
+
+     ;; JFDuke:
+     JFDuke3D build\.cfg build\.log BUILDLIC\.TXT
+
      ;; Raze:
-     raze\.pk3
+     raze\.pk3 raze\.log
 
      ;; MISC:
      de-DE
@@ -212,12 +260,13 @@
      mdxoff\ used\ after\ md\[pivot\]<y\|z\off\ token
      mdyoff\ used\ after\ md\[pivot\]zoff\ token
      ;
-     already\ defined already\ used
+     already\ defined  already\ filled already\ used
      An\ error\ occurred
      attempted\ to\ save\ state\ in\ invalid\ gamemode
      bad\ handle bad\ voice
      bailed\ out bailing\ out
      Can\'t\ find Can\'t\ open can\'t\ open can\'t\ reach
+     corrupt\ \.wallnum
      corruption\ level
      could\ not\ find\ file
      could\ not\ find\ main\ data\ file
@@ -226,12 +275,15 @@
      doesn\'t\ match
      duplicate\ action duplicate\ definition duplicate\ sound
      empty\ skill\ name
+     endpoints\ are\ inconsistent
      EOF\ in\ comment
      Error\ compiling\ CON\ files
      exceeds\ limit
      Excessive\ script\ errors
      expecting\ symbol
      Failed\ including
+     Failed\ to\ compile
+     Failed\ to\ load
      Fatal\ error
      Fatal\ Signal
      file\ corrupt
@@ -240,11 +292,13 @@
      GL\ DEBUG
      GL\ ERROR GL_INVALID_VALUE
      Incompatible\ savegame Incompatible\ Save
-     invalid\ array invalid\ character invalid\ sector
-     Invalid\ sound invalid\ sound
+     invalid\ array invalid\ character invalid\ parameter invalid\ parameters
+     Invalid\ index invalid\ sector Invalid\ sound invalid\ sound
      is\ read\ only
      HEAVY\ corruption
+  ;? Invalid\ map\ format
      label\ starts\ with\ a\ digit
+     is\ now\ completely\ fucked
      Map\ warning
      menu\ has\ no\ active\ entries
      masks\ keyword
@@ -254,18 +308,23 @@
      no\ recognized\ game\ data
      not\ a\ valid\ command\ or\ cvar
      not\ available not\ defined not\ found not\ loaded not\ supported
+     nothing\ loaded
      Out\ of\ memory out\ of\ memory
      out\ of\ range
      out\ of\ the\ range
      performance\ warning
      player\ killed\ by\ cursectnum
+     Required\ game\ data\ was\ not\ found
      should\ be
      TextureCache\ uninited
+     too\ many\ errors\,\ stopping
+     too\ many\ errors
      too\ many\ labels\ defined
      unable\ to\ configure
      Unable\ to\ create
      Unable\ to\ Load
      Unable\ to\ load
+     Unable\ to\ open
      Unable\ to\ play
      Unexpected\ EOF
      unknown\ data unknown\ token
@@ -286,7 +345,7 @@
      Does\ not does\ not
      Doesn\'t  doesn\'t
      duplicate
-     ERROR Error error errors exceeded exceeds
+     ERROR Error error errors err\ 8 exceeded exceeds
      Expected expected expecting
      FAIL fail FAILED Failed failed Failure failure
      Fatal fatal_exit fatal
@@ -300,21 +359,25 @@
      Truncating truncating Truncated truncated
      Unable unable Undefined undefined Unexpected unexpected unhandled
      Unknown unknown Unrecognized unrecognized Unsupported unsupported
+     Usage
      WARNING Warning warning warnings Wrong wrong
      ;;  ERR WARN INFO GFX CON ASS GL VM 7
+     ERR WARN
      ;; MISC:
-     en-US
+     en-US V9 VX V10
    ))
 
 (defconst dukelog-keywords-3 ;; activity start messages
   '(
-     adding Checking Checksumming Compiling Connecting Detecting
-     Entering Enumerating Executing Generating
+     Adding adding Appending appending
+     Converting\ and\ caching
+     Caching caching Checking Checksumming Compiling Connecting Converting
+     Detecting Entering Enumerating Executing exiting Generating
      Including Initialising Initializing initializing Loading\ module Loading
      Playing Post-processing
      Relocating Removing Resizing resizing Restarting restarting Running
-     Saving Scanning Searching Setting Switching Syncing
-     Trying Uninitialising Uninitializing Using using
+     Saving Scanning Searching Setting Stopping stopping Switching Syncing
+     Trying trying Uninitialising Uninitializing Using using
 ;; including initialising initializing Initialisation Initialization overwriting
      ;; 2nd Level:
      ;Allocating Creating Getting Freeing Releasing Unloading Waiting
@@ -324,6 +387,7 @@
 
 (defconst dukelog-keywords-4 ;; activity end messages
   '(
+     Board\ autosaved 
      Cache\ size\ increased
      created\ successfully
      Initialization\ complete
@@ -336,12 +400,13 @@
      Saved\ screenshot
      Script\ compiled
      ;;
-     Added added complete changed Compiled compiled created
-     Detected detected Enabled enabled Finished finished
+     Added added changed cleared Compiled compiled complete completed created
+     Detected detected Done Enabled enabled
+     Finished finished Generated generated
      Increased increased Initialised Initialized initialised initialized
      Loaded loaded Mapped Opened opened
      Refreshed reloaded Relocated Restored restored
-     Saved saved Started started unloaded written Wrote wrote
+     Saved saved Started started stopped synched unloaded written Wrote wrote
      Found
      ; detected Disabled disabled Found found overwritten
      ; succeeded Successfully successfully
