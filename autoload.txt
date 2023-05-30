@@ -3,16 +3,23 @@
                     |     The EDuke32 autoload Thingy     |
                     |               by LeoD               |
                     =======================================
-                    |      Version: 1.2 (2021-11-09)      |
+                    |      Version: 1.3 (2023-05-30)      |
                     =======================================
 
 
-Copy mods, HRP, or Voxel Pack files into the ${HOME}/.eduke32/autoload folder 
-and they will be loaded automatically without additional parameters. 
+Copy mods, HRP, or Voxel Pack files into the autoload folder and they will be 
+loaded automatically without additional parameters. 
 (Check the according option in the startup window, or add the line 
-"NoAutoLoad = 0" to the [Setup] section of your eduke32.cfg file.)
+"NoAutoLoad = 0" to the [Setup] section of your eduke32.cfg file.) 
 
-Put only the currently required ZIPs into autoload. 
+"autoload" is usually located in your Duke3D/Ion Fury installation directory, 
+alongside the EDuke32/Fury executable and its *.cfg files.
+Other possible locations (not checked):
+ - Windows: %USERPROFILE%\AppData\Roaming\EDuke32\autoload
+ - Linux:   ${HOME}/.eduke32/autoload
+
+Put only the currently required ZIPs into autoload. (Accepted file extensions 
+are: zip, grp, pk3, pk4.)
 
 Packs which build upon other packs only need to have a file name "later" in the
 alphanumerical sort order to override or add to other ZIP contents if necessary.
@@ -37,7 +44,8 @@ Priority from bottom to top:
 
 Many mods, especially the bigger ones like DukePlus, are not meant to be put 
 into autoload in the first place, but some may still be able to use it the 
-other way round. Always consult their accompanying documentation first.
+other way round. You could play a CON-only mod with the HRP for example.
+Always consult their accompanying documentation first.
 
 Because some shitty operating system(s) won't differ between upper/lower case 
 letters, which affects the sort order, it is recommended to use 
@@ -55,7 +63,7 @@ The -noautoload command line option will temporarily override the current
 setting without altering the configuration file. 
 
 In order to turn a game contents folder into an autoload package, zip up what's
-in it, NOT the folder itself.
+inside it, NOT the folder itself.
 
 
 The behaviour of other Duke Nukem 3D ports (BuildGDX, Raze, etc.) and even 
@@ -104,6 +112,11 @@ Advertisement:
 
 CHANGELOG:
 ==========
+
+1.3 (2023-05-30)
+----------------
+  about autoload folder location
+
 
 1.2 (2021-11-09)
 ----------------
