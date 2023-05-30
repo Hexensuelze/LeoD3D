@@ -99,10 +99,13 @@ export LANG=C && grep " LeoD" UserMapHacks.txt | wc -l
 find ./maphacks  -name \*.mhk | wc -l
 1655 = 1732 - 77    #    60 = [3drealms|worldtour|dc]_polymost.mhk (41+4+4+11)
 
+cat                 `find ./maphacks -name \*.def` | wc -l
+16427               # ohne _maphacks-new (1515)
+
 grep "\.mhk\""      `find ./maphacks -name \*.def` | wc -l
 1842 = 1911 - 69    #    69 = [3d|wt|dc]_polymost_mhk.def((41+4+(3*3)+4) + 11)
 
-grep "  mapmd4   " `find ./maphacks -name \*.def` | wc -l
+grep "  mapmd4   "  `find ./maphacks -name \*.def` | wc -l
 2406 = 2501 - 95    #    95 = [3drealms|dc]_polymost_mhk.def (57 + 38)
 
 //grep "not a"        `find ./maphacks -name \*.def` | wc -l
@@ -110,6 +113,7 @@ grep "  mapmd4   " `find ./maphacks -name \*.def` | wc -l
 
 grep " mapmd4   "   `find ./maphacks -name \*.mhk` | wc -l
 2249 = 2305 - 56    #    56 = [3drealms|dc]_polymost.mhk     (41+4 + 11)
+
 
 /*/better mutli line comment ending//
 
