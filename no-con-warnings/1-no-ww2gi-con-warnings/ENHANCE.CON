@@ -1,0 +1,89 @@
+
+// Variable definition Flags
+define GAMEVAR_FLAG_GLOBAL 0 // global variable (default)
+define GAMEVAR_FLAG_PERPLAYER 1 // per-player variable
+define GAMEVAR_FLAG_PERACTOR 2  // per-actor variable
+
+// Weapon Flags
+//     1 Holstering Clears Clip
+//     2 Glows
+//     4 Automatic
+//     8 Fire Every other frame
+//    16 Fire Every third frame
+//    32 Random restart on automatic
+//    64 Use Ammo per burst
+//   128 Is a Bomb trigger
+//   256 Using does NOT cause player to become 'visible'
+//   512 Use 'throws' the 'shoots' item
+//  1024 Check weapon availability at 'reload' time
+//  2048 player should stop jumping
+//     0 Spawn Type 1 (pistol shells)
+//  4096 Spawn Type 2 (Shotgun shells)
+//  8192 Spawn TYpe 3 (CHAINGGUN shells)
+
+
+// TRIPBOMB_CONTROL
+// 1 On Timer.  Trip Bomb works on timer
+// 2 Tripwire.  Trip Bomb works with tripwire.
+
+
+// //////////////////////////////////
+//
+// Game Events
+
+// Make set of actions to be performed when a game event happens
+// SYNTAX:
+//
+// onevent <eventid>
+// {
+//  ... actions
+// }
+// endevent
+
+//
+// Event IDs
+
+define EVENT_INIT 0
+define EVENT_ENTERLEVEL 1
+define EVENT_RESETWEAPONS 2 // for each player
+define EVENT_RESETINVENTORY 3 // for each player
+define EVENT_HOLSTER    4   // for each player
+define EVENT_LOOKLEFT   5   // for each player
+define EVENT_LOOKRIGHT  6   // for each player
+define EVENT_SOARUP 7   // for each player
+define EVENT_SOARDOWN   8   // for each player
+define EVENT_CROUCH 9   // for each player
+define EVENT_JUMP       10  // for each player
+define EVENT_RETURNTOCENTER 11  // for each player
+define EVENT_LOOKUP 12  // for each player
+define EVENT_LOOKDOWN   13  // for each player
+define EVENT_AIMUP  14  // for each player
+//define EVENT_AIMDOWN    14  // for each player
+define EVENT_FIRE   15  // for each player
+define EVENT_CHANGEWEAPON   16  // for each player
+define EVENT_GETSHOTRANGE   17  // for each player
+define EVENT_GETAUTOAIMANGLE    18  // for each player
+define EVENT_GETLOADTILE    19
+define EVENT_CHEATGETSTEROIDS 20
+define EVENT_CHEATGETHEAT 21
+define EVENT_CHEATGETBOOT 22
+define EVENT_CHEATGETSHIELD 23
+define EVENT_CHEATGETSCUBA 24
+define EVENT_CHEATGETHOLODUKE 25
+define EVENT_CHEATGETJETPACK 26
+define EVENT_CHEATGETFIRSTAID 27
+
+
+define EVENT_QUICKKICK 28
+define EVENT_INVENTORY 29
+define EVENT_USENIGHTVISION 30
+define EVENT_USESTEROIDS 31
+define EVENT_INVENTORYLEFT 32
+define EVENT_INVENTORYRIGHT 33
+define EVENT_HOLODUKEON 34
+define EVENT_HOLODUKEOFF 35
+define EVENT_USEMEDKIT 36
+define EVENT_USEJETPACK 37
+define EVENT_TURNAROUND 38
+
+
