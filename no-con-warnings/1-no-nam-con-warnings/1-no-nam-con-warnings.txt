@@ -1,0 +1,24 @@
+
+This pack contains:
+ - patched GAME.CON,      fixing six "empty `*' branch" warnings
+ - patched DEFAULT2.CON,  commenting definitions of missing (D3D) *.voc files
+                          KICKHEAD.VOC -> KICKHIT.VOC
+
+That should prevent unnecessary warnings in eduke32.log.
+
+Putting these into a ZIP for the autoload folder should prevent them from
+unintentionally overriding any other CONs or VOCs that come with Mods, TCs,
+or user maps.
+As long as it is seen first alphanumerically.
+Therefore "1-no-nam-con-warnings.zip"
+
+(See autoload.txt for more detailed information about the autoload system.)
+
+
+CONTACT:
+--------
+  https://forums.duke4.net/index.php?showuser=1299
+
+Advertisement:
+--------------
+  Other stuff by LeoD ........ https://forums.duke4.net/index.php?showtopic=3513
