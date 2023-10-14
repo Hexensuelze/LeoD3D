@@ -2,20 +2,20 @@
 
 ;; This file is NOT part of Emacs.
 
-;; NOTE : The ElDoc part is outdated.
+;; NOTE : The ElDoc section is outdated.
 
 ;; Author: Philipp Kutin, based on a tutorial by Scott Andrew Borton
 
-;; Created: 01 Sep 2007
+;; Created: 2007-09-01
 ;; Keywords: Duke3D EDuke32 con major-mode
-;; Last updated by LeoD: 2023-05-29 (EDuke32 r9750 - r10172 -> r10285)
+;; Last updated by LeoD: 2023-10-14 (EDuke32 r10389 - r10480 -> r10494)
 ;; -> .../duke3d/src/gamedef.cpp (svn6432 - r1????): vm_keywords[],iter_tokens[]
 ;; -> .../duke3d/src/gamedef.h   (svn6460 - svn6483) : vm_keywords []
 ;; -> .../duke3d/src/gamedef.c (- svn6431): altkeyw [] , *keyw[] , iter_tokens[]
 
 ;; Copyright (C) 2016-2023 LeoD
 ;; Copyright (C) 2007-2015 Philipp Kutin
-;; Copyright (C) 2000, 2003 Scott Andrew Borton
+;; Copyright (C) 2000,2003 Scott Andrew Borton
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -79,14 +79,14 @@
 
 ;; block-enclosing keywords
 (defconst dukecon-keywords-block
-  '( actor appendevent defstate enda endevent ends eventloadactor
- onevent state useractor
+  '( actor appendevent appendstate defstate enda endevent ends eventloadactor
+ onevent prependstate state useractor
  include includedefault \#include
  ))
 
 ;; control flow keywords
 (defconst dukecon-keywords-flow
-  '( break case default else endswitch for
+  '( break case continue default else endswitch exit for
  ifaction ifactioncount ifactor ifactorsound ifactornotstayput ifa ifae ifai
  ifand ifb ifbe
  ifangdiffl ifawayfromwall ifboth ifbulletnear ifcansee ifcanseetarget
@@ -100,7 +100,9 @@
  ifvarn ifvaror ifvarvara ifvarvarae ifvarvarand ifvarvarb ifvarvarbe
  ifvarvarboth ifvarvare ifvarvareither ifvarvarg ifvarvarge ifvarvarl
  ifvarvarle ifvarvarn ifvarvaror ifvarvarxor ifvarxor ifwasweapon ifxor
- return switch whilel whilen whilevarl whilevarn whilevarvarl whilevarvarn
+ return switch terminate
+ whilee whilel whilen whilevare whilevarl whilevarn
+ whilevarvare whilevarvarl whilevarvarn
  ;; Redneck Rampage only control flow keywords
  ifactorhealthg ifactorhealthl ifcoop ifhittruck ifonmud
  ifsounddist ifsoundid iftipcow 

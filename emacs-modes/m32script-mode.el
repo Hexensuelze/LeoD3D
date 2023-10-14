@@ -2,20 +2,20 @@
 
 ;; This file is NOT part of Emacs.
 
-;; NOTE : The ElDoc part is outdated.
+;; NOTE : The ElDoc section is outdated.
 
 ;; Author: Philipp Kutin, based on a tutorial by Scott Andrew Borton
 
-;; Created: 01 Sep 2007
+;; Created: 2007-09-01
 ;; Keywords: Duke3D EDuke32 Mapster32 script m32/con major-mode
-;; Last updated by LeoD: 2023-05-29 (Mapster32 r9659 - r10170 -> r10285)
+;; Last updated by LeoD: 2023-10-14 (Mapster32 r10326 - r10326 -> r10494)
 ;; -> .../duke3d/src/m32def.cpp : altkeyw[], *keyw[] , *Labels[] , iter_tokens[]
 
 
 
 ;; Copyright (C) 2016-2023 LeoD
 ;; Copyright (C) 2007-2015 Philipp Kutin
-;; Copyright (C) 2000, 2003 Scott Andrew Borton
+;; Copyright (C) 2000,2003 Scott Andrew Borton
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -98,7 +98,9 @@
  ifeitheralt ifeitherctrl ifeithershift
  ifawayfromwall ifcansee ifonwater ifinwater ifoutside ifnosounds 
  ifaimingsprite ifaimingwall ifaimingsector
- jump return switch whilel whilen whilevarl whilevarn whilevarvarl whilevarvarn
+ jump return switch
+ whilee whilel whilen whilevare whilevarl whilevarn
+ whilevarvare whilevarvarl whilevarvarn
  ))
 
 ;;(defconst m32script-iter-tokens

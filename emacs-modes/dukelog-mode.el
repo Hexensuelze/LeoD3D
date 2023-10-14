@@ -8,14 +8,14 @@
 ;;  dukecon-mode by Philipp Kutin, based on a tutorial by Scott Andrew Borton
 ;; Created: 2019-05-07
 ;; Keywords: Duke3D Eduke32 Fury log major-mode
-;; Last updated: 2023-05-29      (EDuke32/Mapster32 r9954 -> r10285)
+;; Last updated: 2023-10-14 (EDuke32/Mapster32 r10480 -> r10494)
 
 
 
 
 ;; Copyright (C) 2019-2023 LeoD
 ;; Copyright (C) 2007-2012 Philipp Kutin
-;; Copyright (C) 2000, 2003 Scott Andrew Borton
+;; Copyright (C) 2000,2003 Scott Andrew Borton
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -143,6 +143,7 @@ fury_leod/scripts/foobar.con:39:\ overwriting\ existing\ definition\ for\ sound
      mimalloc:\ warning
      Monsters\ off
      No\ game\ controllers\ found
+     Per\-map\ \.art\ file
      polygonal\ OpenGL
      Polymer\ subsystem
      ProAsm
@@ -154,10 +155,11 @@ fury_leod/scripts/foobar.con:39:\ overwriting\ existing\ definition\ for\ sound
       35992\ bytes ; Atomic DEFS.CON
       45482\ bytes ; Atomic USER.CON
      ;;
-     LeoD
+     LeoD LeoD\ Iron\ Fury
      Debug debug Info info Note note
      Polymer Polymost
      sv_saveandmakesnapshot snapshot workaround
+     ; ASS| CON| GFX| GL| INPT| INFO| PR| VM|
      ; INFO
    ))
 
@@ -291,7 +293,8 @@ fury_leod/scripts/foobar.con:39:\ overwriting\ existing\ definition\ for\ sound
      Found\ no\ recognized\ game\ data
      GL\ DEBUG
      GL\ ERROR GL_INVALID_VALUE
-     Incompatible\ savegame Incompatible\ Save
+     GL_INVALID_OPERATION
+     Incompatible\ modifications Incompatible\ savegame Incompatible\ Save
      invalid\ array invalid\ character invalid\ parameter invalid\ parameters
      Invalid\ index invalid\ sector Invalid\ sound invalid\ sound
      is\ read\ only
@@ -345,7 +348,7 @@ fury_leod/scripts/foobar.con:39:\ overwriting\ existing\ definition\ for\ sound
      Does\ not does\ not
      Doesn\'t  doesn\'t
      duplicate
-     ERROR Error error errors err\ 8 exceeded exceeds
+     ERROR Error error ERR| ERROR| errors err\ 8 exceeded exceeds
      Expected expected expecting
      FAIL fail FAILED Failed failed Failure failure
      Fatal fatal_exit fatal
@@ -360,7 +363,7 @@ fury_leod/scripts/foobar.con:39:\ overwriting\ existing\ definition\ for\ sound
      Unable unable Undefined undefined Unexpected unexpected unhandled
      Unknown unknown Unrecognized unrecognized Unsupported unsupported
      Usage
-     WARNING Warning warning warnings Wrong wrong
+     WARNING WARN| Warning warning warnings Wrong wrong
      ;;  ERR WARN INFO GFX CON ASS GL VM 7
      ERR WARN
      ;; MISC:
@@ -399,6 +402,7 @@ fury_leod/scripts/foobar.con:39:\ overwriting\ existing\ definition\ for\ sound
      PR\ \:\ Initialization\ complete
      Saved\ screenshot
      Script\ compiled
+     Successfully\ set
      ;;
      Added added changed cleared Compiled compiled complete completed created
      Detected detected Done Enabled enabled
