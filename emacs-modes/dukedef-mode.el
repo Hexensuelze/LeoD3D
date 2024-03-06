@@ -8,12 +8,12 @@
 ;; dukecon-mode by Philipp Kutin, based on a tutorial by Scott Andrew Borton
 ;; Created: 2012-03-25
 ;; Keywords: Duke3D Eduke32 def major-mode
-;; Last updated: 2023-10-14 (EDuke32 r9959 - r10373 -> r10494)
+;; Last updated: 2024-03-06 (EDuke32 r9959 - r10373 -> r10560)
 ;; -> .../source/build/src/defs.cpp : basetokens[] , mapinfotokens[]
 
 
 
-;; Copyright (C) 2012-2023 LeoD
+;; Copyright (C) 2012-2024 LeoD
 ;; Copyright (C) 2007-2012 Philipp Kutin
 ;; Copyright (C) 2000,2003 Scott Andrew Borton
 

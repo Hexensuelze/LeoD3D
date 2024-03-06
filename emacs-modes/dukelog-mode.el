@@ -8,12 +8,12 @@
 ;;  dukecon-mode by Philipp Kutin, based on a tutorial by Scott Andrew Borton
 ;; Created: 2019-05-07
 ;; Keywords: Duke3D Eduke32 Fury log major-mode
-;; Last updated: 2023-10-14 (EDuke32/Mapster32 r10480 -> r10494)
+;; Last updated: 2024-03-06 (EDuke32/Mapster32 r10528 -> r10560)
 
 
 
 
-;; Copyright (C) 2019-2023 LeoD
+;; Copyright (C) 2019-2024 LeoD
 ;; Copyright (C) 2007-2012 Philipp Kutin
 ;; Copyright (C) 2000,2003 Scott Andrew Borton
 
@@ -354,6 +354,7 @@ fury_leod/scripts/foobar.con:39:\ overwriting\ existing\ definition\ for\ sound
      Fatal fatal_exit fatal
      Ignoring ignored Illegal illegal Incompatible incompatible
      Invalid invalid
+     ;; invalidating
      Malformed malformed mismatch mismatched Missing missing
      No no NOT Not not
      out\ of
@@ -376,8 +377,8 @@ fury_leod/scripts/foobar.con:39:\ overwriting\ existing\ definition\ for\ sound
      Converting\ and\ caching
      Caching caching Checking Checksumming Compiling Connecting Converting
      Detecting Entering Enumerating Executing exiting Generating
-     Including Initialising Initializing initializing Loading\ module Loading
-     Playing Post-processing
+     Including Initialising Initializing initializing invalidating
+     Loading\ module Loading Playing Post-processing
      Relocating Removing Resizing resizing Restarting restarting Running
      Saving Scanning Searching Setting Stopping stopping Switching Syncing
      Trying trying Uninitialising Uninitializing Using using

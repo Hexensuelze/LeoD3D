@@ -8,12 +8,12 @@
 
 ;; Created: 2007-09-01
 ;; Keywords: Duke3D EDuke32 con major-mode
-;; Last updated by LeoD: 2023-10-14 (EDuke32 r10389 - r10480 -> r10494)
+;; Last updated by LeoD: 2024-03-06 (EDuke32 r10389 - r10539 -> r10560)
 ;; -> .../duke3d/src/gamedef.cpp (svn6432 - r1????): vm_keywords[],iter_tokens[]
 ;; -> .../duke3d/src/gamedef.h   (svn6460 - svn6483) : vm_keywords []
 ;; -> .../duke3d/src/gamedef.c (- svn6431): altkeyw [] , *keyw[] , iter_tokens[]
 
-;; Copyright (C) 2016-2023 LeoD
+;; Copyright (C) 2016-2024 LeoD
 ;; Copyright (C) 2007-2015 Philipp Kutin
 ;; Copyright (C) 2000,2003 Scott Andrew Borton
 

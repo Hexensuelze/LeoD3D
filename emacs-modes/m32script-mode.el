@@ -8,12 +8,12 @@
 
 ;; Created: 2007-09-01
 ;; Keywords: Duke3D EDuke32 Mapster32 script m32/con major-mode
-;; Last updated by LeoD: 2023-10-14 (Mapster32 r10326 - r10326 -> r10494)
+;; Last updated by LeoD: 2024-03-06 (Mapster32 r10326 - r10326 -> r10560)
 ;; -> .../duke3d/src/m32def.cpp : altkeyw[], *keyw[] , *Labels[] , iter_tokens[]
 
 
 
-;; Copyright (C) 2016-2023 LeoD
+;; Copyright (C) 2016-2024 LeoD
 ;; Copyright (C) 2007-2015 Philipp Kutin
 ;; Copyright (C) 2000,2003 Scott Andrew Borton
 
