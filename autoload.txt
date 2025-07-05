@@ -1,0 +1,133 @@
+
+                    =======================================
+                    |     The EDuke32 autoload Thingy     |
+                    |               by LeoD               |
+                    =======================================
+                    |      Version: 1.3 (2023-05-30)      |
+                    =======================================
+
+
+Copy mods, HRP, or Voxel Pack files into the autoload folder and they will be 
+loaded automatically without additional parameters. 
+(Check the according option in the startup window, or add the line 
+"NoAutoLoad = 0" to the [Setup] section of your eduke32.cfg file.) 
+
+"autoload" is usually located in your Duke3D/Ion Fury installation directory, 
+alongside the EDuke32/Fury executable and its *.cfg files.
+Other possible locations (not checked):
+ - Windows: %USERPROFILE%\AppData\Roaming\EDuke32\autoload
+ - Linux:   ${HOME}/.eduke32/autoload
+
+Put only the currently required ZIPs into autoload. (Accepted file extensions 
+are: zip, grp, pk3, pk4.)
+
+Packs which build upon other packs only need to have a file name "later" in the
+alphanumerical sort order to override or add to other ZIP contents if necessary.
+
+A common misconception is that the packages are actually "loaded" by EDuke32. 
+Better consider their contents a bunch of sheets laid over each other with, 
+say, zzz-mypack.zip on top. 
+EDuke32 will only 'see' the lower priority files where (all) the layers above 
+have a hole ( = file not present in their ZIP/GRP/folder). 
+
+
+Priority from bottom to top:
+
+ 1. default  GRP (shipped with your game, usually DUKE3D.GRP, fury.grp, etc.)
+ 2. -gamegrp GRP/ZIP
+ 3. autoload GRPs
+ 4. autoload ZIPs
+ 5. -g GRPs/ZIPs   in parameter order
+ 6. -j [dir] files in parameter order
+ 7. files in the current working directory
+
+
+Many mods, especially the bigger ones like DukePlus, are not meant to be put 
+into autoload in the first place, but some may still be able to use it the 
+other way round. You could play a CON-only mod with the HRP for example.
+Always consult their accompanying documentation first.
+
+Because some shitty operating system(s) won't differ between upper/lower case 
+letters, which affects the sort order, it is recommended to use 
+lower case letters only for filenames in autoload.
+
+I recommend to not have plain game files in your autoload folder,
+only ZIP or GRP packages.
+
+Do NOT set autoload as "Custom game content directory" in the startup window,
+that's very bad practice. The same goes for "-j autoload". 
+
+Do NOT name a folder containing game files "DUKE3D.GRP". That's even worse IMO.
+
+The -noautoload command line option will temporarily override the current 
+setting without altering the configuration file. 
+
+In order to turn a game contents folder into an autoload package, zip up what's
+inside it, NOT the folder itself.
+
+
+The behaviour of other Duke Nukem 3D ports (BuildGDX, Raze, etc.) and even 
+other games based on EDuke32 (NBlood, VoidSW, etc.) may differ from EDuke32, 
+concerning either autoload, command line parameters, or both.
+
+
+What I know about DukeGDX (BuildGDX):
+
+ AFAIK BuildGDX doesn't take any command line parameters.
+
+ Phredreeke added:
+  For DukeGDX, ZIP files in the autoload folder are actually loaded separate 
+  and isolated from each other (a DEF file in a ZIP file can not define an 
+  image found in another ZIP file).
+
+ This means that you couldn't use the Z-Pack on top of the HRP, for example.
+ (The current DukeGDX v1.15 (BuildGdx v20.081) can't deal with many of the
+  HRPs DEF parameters anyway.)
+
+ From BuildGDX' 1.15 readme.txt:
+  Autoload folder can be used to load mods at game startup. These can include 
+  custom music packs, voxels, maphacks, HRP etc. 
+     ***You are not supposed to put custom campaigns into autoload folder*** 
+  BGDX will automatically load all zipped files in the autoload folder and 
+  execute the following .def files:
+   - unpacked .def files
+   - .def files inside .zip archives that have the name of the port 
+      (dukegdx.def, bloodgdx.def, swgdx.def, rrgdx.def, psgdx.def, 
+       twgdx.def, lspgdx.def, or whgdx.def)
+
+
+LINKS:
+------
+  Duke4.net ................................... https://duke4.net
+  Duke Nukem 3D High-Resolution Pack .......... https://hrp.duke4.net
+  DukePlus / Attrition ........................ https://fissile.duke4.net
+  EDuke32 port ................................ https://eduke32.com
+  EDukeWiki ................................... https://wiki.eduke32.com
+
+
+Advertisement:
+--------------
+  Other stuff by LeoD ....... https://forums.duke4.net/index.php?showtopic=3513
+
+
+CHANGELOG:
+==========
+
+1.3 (2023-05-30)
+----------------
+  about autoload folder location
+
+
+1.2 (2021-11-09)
+----------------
+  turn game folder into autoload package
+
+
+1.1 (2021-09-13)
+----------------
+  clarifications
+
+
+1.0 (2021-08-23)
+----------------
+  initial release
