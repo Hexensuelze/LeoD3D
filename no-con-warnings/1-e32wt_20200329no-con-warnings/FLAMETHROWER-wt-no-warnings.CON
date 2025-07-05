@@ -1,0 +1,175 @@
+actor FLAMETHROWERAMMO
+    fall
+    ifmove RESPAWN_ACTOR_FLAG {
+        state respawnit
+    }
+    else ifp pshrunk {
+        nullop
+    }
+    else ifp palive ifcount 6 ifpdistl RETRIEVEDISTANCE ifcanseetarget 
+    {
+        addammo FLAMETHROWER_WEAPON FLAMETHROWERAMMOAMOUNT
+        quote 125
+        ifspawnedby FLAMETHROWERAMMO {
+            state getcode
+        }
+        else {
+            state quikget
+        }
+    }
+    
+enda
+
+actor FLAMETHROWERSPRITE
+    fall
+    ifmove RESPAWN_ACTOR_FLAG
+        state respawnit
+    else ifp pshrunk
+        nullop
+    else ifp palive ifpdistl RETRIEVEDISTANCE ifcount 6 ifcanseetarget
+    {
+        ifgotweaponce 0
+            break
+
+        addweapon FLAMETHROWER_WEAPON FLAMETHROWERAMMOAMOUNT
+        quote 126
+        ifspawnedby FLAMETHROWERSPRITE
+            state getweaponcode
+        else
+            state quikweaponget
+    }
+enda
+
+action FLAMETHROWER_FLAME  0   10   1   1   2
+actor FLAMETHROWERFLAME FLAMETHROWER_WEAPON_STRENGTH FLAMETHROWER_FLAME
+  ifcount 26 { nullop
+  }
+  ifcount 1 {
+       cstator 2
+  }
+enda
+
+action ONFIRE_EFFECT    0    10    1    1    2
+actor ONFIRE 1 ONFIRE_EFFECT
+    ifactioncount 10 {
+        killit
+    }
+    ifactioncount 2 {
+        break
+    }
+    ifactioncount 1 {
+        sizeat 24 24
+        spawn SMALLSMOKE
+    }
+enda
+
+action ONFIRESMOKEFRAMES    0    9    1    1    8
+actor ONFIRESMOKE 0 ONFIRESMOKEFRAMES
+    ifactioncount 9
+        killit
+    ifactioncount 1 {
+        sizeat 30 30
+    }
+enda
+
+action BURNEDCORPSETHINK 0 1 1 1 1
+actor BURNEDCORPSE 0
+    fall
+    ifaction 0 {
+        sizeat 20 20
+        cstator 128
+        action BURNEDCORPSETHINK
+    }
+    ifcount 350 {
+        nullop
+    }
+    else {
+        ifrnd 6 {
+            spawn WHISPYSMOKE
+        }
+    }
+enda
+
+action WHISPYSMOKEFRAMES 0 10 1 1 8
+actor WHISPYSMOKE 0 WHISPYSMOKEFRAMES
+	ifcount 2 {
+		nullop
+	}
+    else ifcount 1 {
+        cstator 2
+        ifrnd 30 {
+            sizeat 20 10 
+        }
+        else ifrnd 30 {
+            sizeat 30 20 
+        }
+    }
+    ifactioncount 10 {
+        killit
+	}
+enda
+
+action LAVASPLASHFRAMES 0 5 1 1 8
+actor LAVASPLASH 0 LAVASPLASHFRAMES
+	ifactioncount 5 {
+		killit
+	}
+	sizeat 20 20 
+	cstator 128
+enda
+
+action LAVAPOOLBUBBLEFRAMES 0 7 1 1 4
+actor LAVAPOOLBUBBLE 0 LAVAPOOLBUBBLEFRAMES 
+{
+	ifactioncount 7 {
+		killit
+	}
+	ifcount 2 {
+		nullop
+	}
+	else ifcount 1 {
+		cstator 18432
+        ifrnd 64 {
+            sizeat 10 10 
+        }
+        else ifrnd 64 {
+            sizeat 15 15
+        }
+		else {
+			sizeat 12 12
+		}
+	}
+}
+enda
+
+action LAVAPOOLFRAMES 0 1 1 1 4 
+actor LAVAPOOL 0 LAVAPOOLFRAMES
+{
+	ifcount 2 {
+		nullop
+	}
+	else ifcount 1 {
+		spawn LAVASPLASH
+		sizeat 12 12
+		cstator 32 // draw on the ground (floor aligned)
+		cstator 128 // draw "on the ground" (half submurged)
+		cstator 18432 // ignore lighting and SSAO effects
+	}
+	ifinwater {
+		killit
+	}
+	ifactioncount 160 { 
+		killit
+	}
+	else ifactioncount 128 {
+		sizeto 0 0 
+	}
+	else ifactioncount 1 {
+		hitradius 768 WEAKEST WEAKEST WEAKEST WEAKEST 
+		sizeto 32 32
+		ifrnd 8 {
+			spawn LAVAPOOLBUBBLE
+		}
+	}
+}
+enda

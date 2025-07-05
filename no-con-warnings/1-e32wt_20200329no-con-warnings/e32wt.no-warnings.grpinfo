@@ -1,0 +1,22 @@
+
+grpinfo
+{
+    name "Duke Nukem 3D: 20th Anniversary World Tour [Stopgap (nowarn)]"
+    size        37                      // e32wt.grp
+    crc         0x5BD05463              // e32wt.grp
+    flags       GAMEFLAG_DUKE
+    dependency  0x982AFE4A              // DUKE3D.GRP / World Tour b386
+    scriptname "E32WT-no-warnings.CON"
+    defname    "e32wt.def"
+}
+
+grpinfo
+{
+    name "Duke Nukem 3D: 20th Anniversary World Tour (Old, b351) [Stopgap]"
+    size        44486702                // DUKE3D.GRP / World Tour b351
+    crc         0x89792E05              // DUKE3D.GRP / World Tour b351
+    flags       GAMEFLAG_DUKE
+    dependency  0
+    scriptname "E32WT_OLD.CON"
+    defname    "e32wt.def"
+}

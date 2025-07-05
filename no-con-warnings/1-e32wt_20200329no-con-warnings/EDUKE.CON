@@ -1,0 +1,5 @@
+
+//include GAME-wt-no-warnings.CON
+
+setdefname e32wt.def
+include    E32WT_CODE-no-warnings.CON

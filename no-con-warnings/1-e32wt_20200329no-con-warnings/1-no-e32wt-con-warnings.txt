@@ -1,0 +1,48 @@
+
+No CON Warnings Pack for:
+
+Duke Nukem 3D: 20th Anniv. World Tour - Stopgap Compatibility Layer for EDuke32
+Release 20200329 -> e32wt_20200329.zip
+
+
+This pack contains:
+
+ - 14 dummy VOC files (one second of silence), defined in E32WT_CODE.CON
+   but actually missing in DUKE3D.GRP
+ - 14 dummy OGG files (one second of silence), defined in USER.CON
+   but actually missing in World Tour's sound\ folder
+ - a patched World Tour FLAMETHROWER.CON, fixing one
+   "empty `ifcount' branch" warning
+ - a patched World Tour USER.CON with one redundant sound definition commented
+   out and all OGG file definitions with upper case basename
+ - a patched World Tour GAME.CON, fixing two "`else' with no `if'" warnings
+                         and loading the patched CONs above
+ - a patched E32WT_CODE.CON, loading the patched GAME.CON
+ - a patched E32WT.CON,      loading the patched E32WT_CODE.CON
+ - An EDUKE.CON file to override World Tour's GAME.CON and load the patched
+   CONs instead
+
+
+
+That should prevent unnecessary warnings in eduke32.log.
+
+ Putting these into a ZIP for the autoload folder should prevent them from
+unintentionally overriding any other CONs or OGGs that come with Mods, TCs,
+or user maps. As long as it is seen first alphanumerically.
+Therefore "1-e32wt_20200329no-con-warnings.zip"
+
+Do not extract e32wt_20200329.zip, drop it into autoload,too. Or, you could
+extract both instead of using autoload, but that's ugly.
+
+If you have another EDUKE.CON, your manual intervention will be required.
+
+(See autoload.txt for more detailed information about the autoload system.)
+
+
+CONTACT:
+--------
+  https://forums.duke4.net/index.php?showuser=1299
+
+Advertisement:
+--------------
+  Other stuff by LeoD ........ https://forums.duke4.net/index.php?showtopic=3513
