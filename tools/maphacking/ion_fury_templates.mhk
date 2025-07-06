@@ -1,0 +1,260 @@
+sprite     ? angoff     0          // tile00009 respawn []
+sprite     ? angoff     0          // tile00209 i_baton
+sprite     ? angoff     0          // tile00210 i_loverboy
+sprite     ? angoff     0          // tile00211 i_loverboy_ammo
+sprite     ? angoff     1024       // tile00212 i_medpack
+sprite     ? angoff     1024       // tile00213 i_medicomp
+sprite     ? angoff     0          // tile00214 i_medkit
+sprite     ? angoff     0          // tile00215 i_bulletvest
+sprite     ? angoff     0          // tile00216 i_armorvest
+sprite     ? angoff     0          // tile00217 i_accesscard []
+sprite     ? angoff     0          // tile00218 i_minigun_ammo
+sprite     ? angoff     0          // tile00219 i_plasmacrossbow_ammo
+sprite     ? angoff     0          // tile00220 i_plasmacrossbow
+sprite     ? angoff     0          // tile00221 i_minigun
+sprite     ? angoff     0          // tile00222 i_clusterpuck
+sprite     ? angoff     0          // tile00223 i_techvest
+sprite     ? angoff     0          // tile00224 i_shotgun
+sprite     ? angoff     0          // tile00225 i_shotgun_ammo
+sprite     ? angoff     0          // tile00226 i_grenadelauncher_ammo
+sprite     ? angoff     0          // tile00227 i_smg_ammo
+sprite     ? angoff     0          // tile00228 i_armor_shard
+sprite     ? angoff     0          // tile00229 i_loverboy_ammo2
+sprite     ? angoff     0          // tile00230 i_smg
+sprite     ? angoff     0          // tile00231 i_grenadelauncher
+sprite     ? angoff     0          // tile00232 i_bowlingbomb_pickup
+sprite     ? angoff     0          // tile00233 i_syringe
+sprite     ? angoff     0          // tile00240 i_hazardsuit
+sprite     ? angoff     0          // tile00241 i_bombrush
+sprite     ? angoff     0          // tile00242 i_radar
+sprite     ? angoff     0          // tile00243 i_dkshoes
+sprite     ? angoff     0          // tile00244 i_damagebooster
+sprite     ? angoff     0          // tile00320 i_ammocrate (multiplayer)
+
+sprite     ? mdpivzoff  100000     // tile00621 a_camera
+sprite     ? mdpivzoff  100000     // tile00628 (tile00621 a_camera)
+sprite     ? mdpivzoff  100000     // tile00629 a_camera_2
+sprite     ? mdpivzoff  100000     // tile00637 (tile00629 a_camera_2)
+
+sprite     ? angoff     0          // tile05703 a_rake
+sprite     ? angoff     0          // tile05704 a_shovel
+
+sprite     ? angoff     0          // tile05890 a_particle_spawner []
+sprite     ? angoff     0          // tile05915 a_newrespawn []//ang, not angoff
+sprite     ? angoff     0          // tile05931 a_box_fx [] // inherit by CON
+
+sprite     ? mdpivzoff  100000     // tile06447 (overhead line)
+sprite     ? mdpivzoff  100000     // tile06448 (pole)
+sprite     ? mdposzoff  999999     // tile06465 (railing)
+sprite     ? mdpivxoff  10000      // tile06503 t_plug
+sprite     ? mdpivzoff  200000     // tile06525 (pipes)
+sprite     ? mdpivzoff  200000     // tile06527 (pipes)
+sprite     ? mdposzoff  999999     // tile06532 (railing)
+sprite     ? mdposzoff  999999     // tile06533 (railing plate)
+sprite     ? mdpivzoff  280000     // tile06540 a_fireext
+sprite     ? angoff     0          // tile06543 a_garbage
+sprite     ? angoff     0          // tile06544 a_garbage_dmg_1
+sprite     ? angoff     0          // tile06545 a_garbage_dmg_2
+sprite     ? angoff     0          // tile06546 a_trashcan_dmg_1
+sprite     ? angoff     0          // tile06547 a_trashcan_dmg_2
+sprite     ? angoff     0          // tile06550 a_coffeepot
+sprite     ? mdpivzoff  100000     // tile06551 a_bottle_1
+sprite     ? angoff     0          // tile06552 a_bottle_2
+sprite     ? angoff     0          // tile06553 a_soda_1
+sprite     ? angoff     0          // tile06554 a_teacup_1
+sprite     ? angoff     0          // tile06555 a_coffeemug_1
+sprite     ? angoff     0          // tile06556 a_bucket_1
+sprite     ? angoff     0          // tile06557 a_broom_1
+sprite     ? mdpivzoff  100000     // tile06558 a_waterglass_empty
+sprite     ? mdpivzoff  100000     // tile06559 a_waterglass_full
+sprite     ? mdpivzoff  100000     // tile06561 a_shaker_full_1
+sprite     ? angoff     0          // tile06564 a_papertowel
+sprite     ? mdpivzoff  100000     // tile06563 a_plate_dessert
+sprite     ? angoff     0          // tile06569 a_trashcan
+sprite     ? mdpivzoff  100000     // tile06580 a_plate
+sprite     ? mdpivzoff  100000     // tile06581 a_plate_stack
+sprite     ? mdpivzoff  100000     // tile06582 a_mop_1
+sprite     ? angoff     0          // tile06583 a_glasscleaner
+sprite     ? angoff     0          // tile06584 a_detergent
+sprite     ? angoff     0          // tile06585 a_handsoap (ogay)
+sprite     ? angoff     0          // tile06612 a_toiletpaper
+sprite     ? angoff     0          // tile06613 a_coffeepot_empty
+sprite     ? angoff     0          // tile06620 a_gascan
+
+sprite     ? angoff     0          // tile06770 (brick)
+sprite     ? angoff     0          // tile06777 (tile06770 (brick))
+
+sprite     ? angoff     0          // tile06800 i_bowlingbomb
+
+sprite     ? mdpivzoff  200000     // tile07549 (pipes1)
+sprite     ? mdpivzoff  200000     // tile07550 (pipes2)
+sprite     ? angoff     0          // tile07553 a_hydrant_1
+sprite     ? angoff     0          // tile07791 a_chair_1
+sprite     ? angoff     0          // tile07812 a_chair_2_dmg
+sprite     ? angoff     0          // tile07819 a_barrel_2
+sprite     ? angoff     0          // tile07824 a_barrel_1
+sprite     ? angoff     0          // tile07825 a_barrel_oil
+sprite     ? mdpivzoff  100000     // tile07829 a_canister_1
+sprite     ? angoff     0          // tile07880 (barrel)
+sprite     ? angoff     0          // tile07929 a_jug_1
+sprite     ? angoff     0          // tile07930 a_jug_2
+sprite     ? mdpivzoff  100000     // tile07928 a_beaker_1
+sprite     ? mdpivzoff  100000     // tile07931 a_beaker_3
+sprite     ? mdpivzoff  100000     // tile07933 a_beaker_2
+sprite     ? angoff     0          // tile07934 a_redswingline (stapler)
+sprite     ? mdpivzoff  100000     // tile07935 a_bong
+sprite     ? mdxoff     10000      // tile07996 (alarm_switch)
+
+sprite     ? angoff     0          // tile08204 a_chair_2
+sprite     ? notmd                 // tile08280 t_ladder_1
+sprite     ? notmd                 // tile08282 t_ladder_3
+sprite     ? notmd                 // tile08295 (horizontal lamp on)
+sprite     ? notmd                 // tile08316 t_ladder_4
+sprite     ? notmd                 // tile08318 t_ladder_6
+sprite     ? mdposzoff  999999     // tile08652 (railing)
+sprite     ? mdpivzoff  100000     // tile08739 a_ceiling_lamp_off
+sprite     ? mdpivzoff  100000     // tile08740 a_ceiling_lamp_on
+sprite     ? angoff     0          // tile08741 a_lamp_off
+sprite     ? mdpivzoff  100000     // tile08748 a_lamp
+sprite     ? mdpivzoff  100000     // tile08755 a_lamp_floor_off
+sprite     ? mdpivzoff  100000     // tile08756 a_lamp_floor
+sprite     ? mdpivzoff  100000     // tile08780 a_canister_2
+sprite     ? angoff     0          // tile08826 a_bottle_2_empty
+
+sprite     ? angoff     0          // tile09002 i_soda_stand
+sprite     ? angoff     0          // tile09003 i_soda
+sprite     ? angoff     0          // tile09069 a_sodaside_1
+sprite     ? angoff     0          // tile09080 (tile09069 a_sodaside_1)
+sprite     ? angoff     0          // tile09082 a_bottleside_1
+sprite     ? angoff     0          // tile09093 (tile09082 a_bottleside_1)
+sprite     ? angoff     512        // tile09158 (chain)
+sprite     ? angoff     512        // tile09159 (chain)
+sprite     ? angoff     1024       // tile09164 (roadblock)
+sprite     ? angoff     0          // tile09902 (headless male dummy)
+sprite     ? angoff     0          // tile09903 (headless female dummy)
+sprite     ? angoff     0          // tile09904 (headless duke dummy)
+sprite     ? mdpivzoff  100000     // tile09918 trashbin
+sprite     ? mdpivzoff  100000     // tile09943 a_martiniglass_empty
+sprite     ? mdpivzoff  100000     // tile09944 a_martiniglass_full
+sprite     ? mdpivzoff  100000     // tile09945 a_champagneglass_empty
+sprite     ? mdpivzoff  100000     // tile09946 a_champagneglass_full
+sprite     ? mdpivzoff  100000     // tile09947 a_wineglass_empty
+sprite     ? mdpivzoff  100000     // tile09948 a_wineglass_full
+sprite     ? angoff     0          // tile09949 a_beerglass_empty
+sprite     ? angoff     0          // tile09950 a_beerglass_full
+sprite     ? angoff     0          // tile09972 (faucet knob)
+sprite     ? mdpivzoff  200000     // tile09973 (faucet knob)
+sprite     ? notmd                 // tile09981 a_roach
+sprite     ? notmd                 // tile09982 a_roach_controller
+
+sprite     ? angoff     0          // tile10110 a_serum_hanger
+sprite     ? angoff     0          // tile10422 (wooden railing)
+sprite     ? angoff     0          // tile10426 (wooden railing)
+sprite     ? angoff     0          // tile10430 (wooden railing)
+sprite     ? angoff     0          // tile10440 (wooden railing)
+sprite     ? angoff     0          // tile10448 (wooden railing)
+sprite     ? mdpivzoff  100000     // tile10663 a_potplant_5
+sprite     ? angoff     0          // tile10948 a_stool
+sprite     ? angoff     0          // tile10952 a_bigthermos
+sprite     ? angoff     0          // tile10953 a_togocock
+sprite     ? angoff     0          // tile10954 a_togocoffee
+sprite     ? angoff     0          // tile10955 a_bluesauce
+sprite     ? angoff     0          // tile10957 a_frenchfries
+sprite     ? angoff     0          // tile10962 a_togochinese
+sprite     ? angoff     0          // tile10977 a_meatgib
+sprite     ? angoff     0          // tile10979 a_taco
+
+sprite     ? mdposzoff  999999     // tile11070 (meter back)
+sprite     ? mdpivzoff  100000     // tile11253 (wires)
+sprite     ? angoff     0          // tile11316 a_augmentation_prop_1
+sprite     ? angoff     0          // tile11367 a_gdf_body_1
+sprite     ? angoff     0          // tile11378 a_civ_body_1
+sprite     ? angoff     0          // tile11431 a_civ_body_15
+sprite     ? angoff     0          // tile11512 a_deacon_dead
+sprite     ? angoff     0          // tile11927 a_shotgunner_dead
+
+sprite     ? angoff     0          // tile12032 a_dave
+
+sprite     ? angoff     0          // tile12960 a_brute_top
+sprite     ? angoff     0          // tile13093 (12960 a_brute_top)
+
+// *** Aftershock DLC *** //
+sprite     ? angoff     0          // tile15131 a_newsoap
+sprite     ? angoff     0          // tile15138 a_chainsaw
+sprite     ? angoff     0          // tile15236 a_traffic_cone
+sprite     ? angoff     0          // tile15581 a_drill
+sprite     ? angoff     0          // tile16083 i_banshee
+sprite     ? angoff     0          // tile16702 a_hopsack
+sprite     ? angoff     0          // tile16703 a_hopsack_open
+sprite     ? angoff     0          // tile17200 i_collectible
+sprite     ? angoff     0          // tile17201 i_wrecker
+sprite     ? angoff     0          // tile17202 i_grenadelauncher_gas
+sprite     ? angoff     0          // tile17203 i_shotgun_cluster
+sprite     ? angoff     0          // tile17204 i_gasgrenade_ammo
+sprite     ? angoff     0          // tile17205 i_cluster_ammo
+sprite     ? angoff     0          // tile17206 i_boom_bag
+sprite     ? angoff     0          // tile17207 i_invulnerability
+sprite     ? angoff     0          // tile17208 i_pocket_parasite
+sprite     ? angoff     0          // tile17209 i_agility_surge
+sprite     ? angoff     0          // tile17210 i_golden_gun
+sprite     ? angoff     0          // tile17211 i_wrecker_ammo
+sprite     ? angoff     0          // tile17212 i_wrecker_ammo_sixpack
+sprite     ? angoff     0          // tile17213 i_flametrap
+sprite     ? angoff     0          // tile17214 i_inflatable_chair
+sprite     ? angoff     0          // tile17410 a_inflatable_chair
+sprite     ? angoff     0          // tile18284 a_build_toiletpaper
+sprite     ? angoff     0          // tile18348 a_toytruck
+sprite     ? angoff     0          // tile18349 a_toyrobot
+sprite     ? angoff     0          // tile18350 a_toycar
+sprite     ? angoff     0          // tile18351 a_toybunny
+sprite     ? angoff     0          // tile18352 a_toydoll1
+sprite     ? angoff     0          // tile18353 a_toydoll2
+sprite     ? angoff     0          // tile18354 a_toydoll1r
+sprite     ? angoff     0          // tile18355 a_toydoll2r
+sprite     ? angoff     0          // tile18475 a_beerkeg
+sprite     ? angoff     0          // tile18836 a_gdftroop_dead1
+sprite     ? angoff     0          // tile18848 a_gdftroop_dead2
+sprite     ? angoff     0          // tile18992 a_gdfheavy_dead
+sprite     ? angoff     0          // tile19000 a_shoppintrolley
+sprite     ? angoff     0          // tile19009 a_stufftrolley
+
+
+// Ion Fury Maphacks by LeoD
+
+// Title    : Foo Bar
+// Author   : Bar Foo
+// Filename : foobar.map
+// mapmd4   : 01234567890123456789012345678901 // 2025-06-17
+
+// Curr.IFVP: r0.0.159
+
+
+/*/better mutli line comment ending//
+
+mdposxoff   8 == mdpivzoff 41943 = 1 voxel @ xrepeat 32 / yrepeat 32 (5242,88)
+mdposzoff 128 == mdpivxoff  2650 = 1 voxel @ yrepeat 32 / yrepeat 32 (20.7031)
+
+/*
+Setting the default player start position is simple. In 3D mode, move to the 
+exact position which you want to start at, then switch to 2D mode and press 
+Scroll Lock. 
+Your coordinates, height, and angle will be saved. 
+After setting the start position, move the white arrow over, and you'll see a 
+brown arrow (Note: This arrow has changed colour in Mapster32). 
+This arrow represents the default player start position within both the game 
+and the map editor.
+*/
+
+/*
+GitHub:
+   Direct Commit & Push via TortoiseGit : push permission denied by prj owner
+
+ 1   https://github.com/Hexensuelze : fetch from original into forked project
+ 2   update-git.bat/.sh
+  or GitHub Desktop                 : fetch from forked project into local copy
+ 3   copy changes into local project copy
+ 4   TortoiseGit add + commit & push
+  or GitHub Desktop                 : commit to main
+ 5   https://github.com/Hexensuelze : Contribute->Open Pull Request->Create PR
+*/
+snowb, SPY2, z2a2, z3a1

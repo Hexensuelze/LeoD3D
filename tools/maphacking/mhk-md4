@@ -1,0 +1,2 @@
+#!/usr/bin/sh
+rhash --md4 *.map *.MAP -o md4.log

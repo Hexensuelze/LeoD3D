@@ -1,0 +1,2121 @@
+sprite     ? angoff     ?          // tile0021 firstgunsprite
+sprite     ? angoff     ?          // tile0040 ammo
+sprite     ? angoff     ?          // tile0028 shotgunsprite
+sprite     ? angoff     ?          // tile0049 shotgunammo
+sprite     ? angoff     ?          // tile0022 chaingunsprite
+sprite     ? angoff     ?          // tile0041 batteryammo
+sprite     ? angoff     ?          // tile0023 rpgsprite
+sprite     ? angoff     ?          // tile0044 rpgammo
+sprite     ? angoff     ?          // tile0026 heavyhbomb
+sprite     ? angoff     ?          // tile0047 hbombammo
+sprite     ? angoff     ?          // tile0025 shrinkersprite
+sprite     ? angoff     ?          // tile0046 crystalammo
+sprite     ? angoff     ?          // tile0032 growspriteicon (multiplayer)
+sprite     ? angoff     ?          // tile0045 growammo
+sprite     ? angoff     ?          // tile0029 devistatorsprite
+sprite     ? angoff     ?          // tile0042 devistatorammo
+sprite     ? angoff     ?          // tile0027 tripbombsprite
+sprite     ? angoff     ?          // tile0024 freezesprite
+sprite     ? angoff     ?          // tile0037 freezeammo
+
+sprite     ? angoff     0          // tile0060 accesscard []
+
+sprite     ? angoff     ?          // tile0054 shield
+sprite     ? angoff     ?          // tile0051 cola
+sprite     ? angoff     ?          // tile0052 sixpack
+sprite     ? angoff     ?          // tile0053 firstaid
+sprite     ? angoff     ?          // tile0100 atomichealth
+sprite     ? angoff     ?          // tile0055 steroids
+sprite     ? angoff     ?          // tile0057 jetpack
+sprite     ? angoff     ?          // tile0061 boots
+sprite     ? angoff     ?          // tile1348 holoduke
+sprite     ? angoff     ?          // tile0059 heatsensor
+sprite     ? angoff     ?          // tile0056 airtank
+
+sprite     ? angoff     ?          // tile0556 chair1
+sprite     ? angoff     ?          // tile0557 chair2
+sprite     ? angoff     ?          // tile0680 chair3
+sprite     ? angoff     ?          // tile0681 (tile0680 chair3)
+sprite     ? angoff     512        // tile4370 desklamp
+sprite     ? angoff     512        // tile4454 deskphone
+sprite     ? angoff     ?          // tile0569 toilet
+sprite     ? pitch     -1          // tile0574 (tile0670 (faucet))
+sprite     ? mdzoff     150000     // tile0574 (tile0670 (faucet))
+sprite     ? angoff     ?          // tile0916 fireext
+sprite     ? angoff     ?          // tile0981 hydrent
+sprite     ? pitch      1          // tile0913 maskwall2 (fence)
+sprite     ? mdzoff     300000     // tile0913 maskwall2 (fence)
+sprite     ? angoff     ?          // tile0563 waterfountain
+sprite     ? angoff     ?          // tile4438 coffeemug
+sprite     ? angoff     ?          // tile4496 broom
+sprite     ? angoff     ?          // tile0955 bottle2
+sprite     ? angoff     ?          // tile1157 bottle10
+sprite     ? angoff     ?          // tile1045 donuts
+sprite     ? angoff     ?          // tile1227 nukebarrel
+sprite     ? angoff     ?          // tile1238 explodingbarrel
+sprite     ? angoff     ?          // tile1232 canwithsomething
+sprite     ? angoff     ?          // tile1247 seenine
+sprite     ? notmd                 // tile4386 (power line)
+
+sprite     ? angoff     ?          // tile0753 statue (geisha)
+sprite     ? angoff     ?          // tile1294 podfem1
+sprite     ? angoff     ?          // tile1312 fem1 stripper
+sprite     ? angoff     ?          // tile1317 fem2 pole dancer
+sprite     ? angoff     ?          // tile1321 fem3 hooker
+sprite     ? angoff     ?          // tile1325 fem4 cavedancer
+sprite     ? angoff     ?          // tile1323 fem5 polebabe
+sprite     ? angoff     ?          // tile1334 fem6 padbabe
+sprite     ? angoff     ?          // tile1395 fem7 dancer
+sprite     ? angoff     ?          // tile3450 fem9 cheerleader
+sprite     ? angoff     ?          // tile1353 spacemarine
+
+sprite     ? notmd                 // tile0132 slotdoor
+sprite     ? notmd                 // tile0134 lightswitch
+sprite     ? notmd                 // tile0136 spacedoorswitch
+sprite     ? notmd                 // tile0138 spacelightswitch
+sprite     ? notmd                 // tile0140 frankenstineswitch
+sprite     ? notmd                 // tile0162 dipswitch
+sprite     ? notmd                 // tile0164 dipswitch2
+sprite     ? notmd                 // tile0166 techswitch
+sprite     ? notmd                 // tile0168 dipswitch3
+
+// Maphacks by LeoD for use with the Duke Nukem 3D High Resolution Pack (HRP)
+
+// Title    : FooBar
+// Author   : Bar Foo
+// Filename : foobar.map
+// mapmd4   : 01234567890123456789012345678901 // 2025-06-22
+
+// Curr. HRP: r5.4.729
+
+//    sect     x       y       z    range   r   g   b  rad fade  ang  horiz mins maxs prio tile
+light 0000 -000000 -000000 -000000 -00000  000 000 000   0   0  0000 -00000   0    0    0    -0
+
+// Titles
+export LANG=C && grep " LeoD" UserMapHacks.txt | wc -l
+1034 = 1037 -  3 [-UMH -DC -NWINTER -VACA -WORLDTOUR / 3+10+8+(12)+(8)]
+
+// Maphack files | grep -v "_polymost"
+find ./maphacks  -name \*.mhk | wc -l
+1655 = 1732 - 77    #    60 = [3drealms|worldtour|dc]_polymost.mhk (41+4+4+11)
+
+cat                 `find ./maphacks -name \*.def` | wc -l
+16427               # ohne _maphacks-new (1515)
+
+grep "\.mhk\""      `find ./maphacks -name \*.def` | wc -l
+1842 = 1911 - 69    #    69 = [3d|wt|dc]_polymost_mhk.def((41+4+(3*3)+4) + 11)
+
+grep "  mapmd4   "  `find ./maphacks -name \*.def` | wc -l
+2406 = 2501 - 95    #    95 = [3drealms|dc]_polymost_mhk.def (57 + 38)
+
+//grep "not a"        `find ./maphacks -name \*.def` | wc -l
+//2336 = 2406 - 70
+
+grep " mapmd4   "   `find ./maphacks -name \*.mhk` | wc -l
+2249 = 2305 - 56    #    56 = [3drealms|dc]_polymost.mhk     (41+4 + 11)
+
+
+/*/better mutli line comment ending//
+
+
+// tile0009 respawn
+// tile0021 firstgunsprite
+// tile0022 chaingunsprite
+// tile0023 rpgsprite
+// tile0024 freezesprite
+// tile0025 shrinkersprite
+// tile0026 heavyhbomb
+// tile0027 tripbombsprite
+// tile0028 shotgunsprite
+// tile0029 devistatorsprite
+// tile0032 growspriteicon
+// tile0034 [iittc mega health]
+// tile0037 freezeammo
+// tile0040 ammo
+// tile0041 batteryammo
+// tile0042 devistatorammo
+// tile0044 rpgammo
+// tile0045 growammo
+// tile0046 crystalammo
+// tile0047 hbombammo
+// tile0049 shotgunammo
+// tile0050 [iittc jumpboots]
+// tile0051 cola
+// tile0052 sixpack
+// tile0053 firstaid
+// tile0054 shield
+// tile0055 steroids
+// tile0056 airtank
+// tile0057 jetpack
+// tile0058 (spacesuit)
+// tile0059 heatsensor
+// tile0060 accesscard
+// tile0061 boots
+// tile0062 (red ball)
+// tile0063 (yellow ball)
+// tile0064 (green ball)
+// tile0070 mirrorbroke
+// tile0100 atomichealth
+// tile0101 (tile0100 atomichealth)
+// tile0107 (tile0100 atomichealth)
+// tile0108 [iittc invisibility]
+// tile0109 (tile0100 atomichealth)
+// tile0110 (tile0100 atomichealth)
+// tile0115 (tile0100 atomichealth)
+// tile0117 [nsd thermonuclearhealth]
+// tile0120 techlight2
+// tile0121 techlightbust2
+// tile0122 techlight4
+// tile0123 techlightbust4
+// tile0124 (walllight4)
+// tile0125 walllightbust4
+// tile0126 (walllight)
+// tile0127 (walllight)
+// tile0128 (walllight)
+// tile0130 accessswitch
+// tile0131 (tile0130 accessswitch)
+// tile0132 slotdoor
+// tile0133 slotdoor
+// tile0134 lightswitch
+// tile0135 (tile0134 lightswitch)
+// tile0136 spacedoorswitch
+// tile0138 spacelightswitch
+// tile0140 frankenstineswitch
+// tile0141 (tile0140 frankenstineswitch)
+// tile0142 nukebutton
+// tile0146 multiswitch
+// tile0147 (tile0146 multiswitch)
+// tile0150 doortile5
+// tile0151 doortile6
+// tile0152 doortile1
+// tile0153 doortile2
+// tile0157 doortile8
+// tile0158 doortile9
+// tile0159 doortile10
+// tile0162 dipswitch
+// tile0163 (tile0162 dipswitch)
+// tile0164 dipswitch2
+// tile0165 (tile0164 dipswitch2)
+// tile0166 techswitch
+// tile0167 (tile0166 techswitch)
+// tile0168 dipswitch3
+// tile0169 (tile0168 dipswitch3)
+// tile0170 accessswitch2
+// tile0198 (glass pane)
+// tile0199 (plain square)
+// tile0210 
+// tile0216 (metal panel)
+// tile0218 
+// tile0224 
+// tile0225 
+// tile0228 (metal plate)
+// tile0242 
+// tile0243 
+// tile0245 (door)
+// tile0254 
+// tile0255 maskwall9
+// tile0256 
+// tile0260 w_light
+// tile0263 screenbreak1
+// tile0264 screenbreak2
+// tile0265 screenbreak3
+// tile0266 screenbreak4
+// tile0271 screenbreak9
+// tile0272 screenbreak10
+// tile0273 screenbreak11
+// tile0274 screenbreak12
+// tile0275 screenbreak13
+// tile0277 (edf sign)
+// tile0280 
+// tile0281 (used as accesscard)
+// tile0285 maskwall1 (fence)
+// tile0293 w_techwall1
+// tile0297 w_techwall2
+// tile0299 w_techwall15
+// tile0302 (metal grate)
+// tile0303 
+// tile0304 (techwall)
+// tile0305 w_techwall4
+// tile0306 w_techwall10
+// tile0307 w_techwall16
+// tile0309 (hazardous sign)
+// tile0310 
+// tile0311 (worn metal surface)
+// tile0313 
+// tile0318 (metal grate)
+// tile0326 
+// tile0331 
+// tile0336 watertile2
+// tile0341 bpannel1
+// tile0342 pannel1
+// tile0343 pannel2
+// tile0346 
+// tile0347 
+// tile0353 (slide rail)
+// tile0355 (warning stripes)
+// tile0357 w_screenbreak
+// tile0359 (tile0357 w_screenbreak)
+// tile0370 (wooden panel)
+// tile0373 (edf box plate)
+// tile0377 (stone pane)
+// tile0381 (metal grate)
+// tile0387 maskwall10
+// tile0388 
+// tile0393 (rusty surface)
+// tile0396 (doortile)
+// tile0398 (rusty plate)
+// tile0407 fansprite
+// tile0408 (tile0407 fansprite)
+// tile0409 (tile0407 fansprite)
+// tile0411 fanspritebroke
+// tile0418 (round cover plate)
+// tile0421 (tactical monitor)
+// tile0422 (tactical monito7r)
+// tile0423 (u.s. map monitor)
+// tile0424 (mail boxes)
+// tile0425 
+// tile0427 (telemetric monitor)
+// tile0428 (telemetric monitor)
+// tile0430 
+// tile0441 
+// tile0451 
+// tile0452 
+// tile0457 
+// tile0459 (steel doors)
+// tile0476 (alien monitor)
+// tile0479 (satellite dish)
+// tile0480 (observatory)
+// tile0481 (alien monitor)
+// tile0482 (alien monitor)
+// tile0483 (alien monitor)
+// tile0484 (alien monitor)
+// tile0485 (alien monitor)
+// tile0487 spaceshuttle
+// tile0488 (alien monitor)
+// tile0489 satellite
+// tile0490 (cycloid holo)
+// tile0491 (tile0490 (cycloid holo))
+// tile0494 (tile0490 (cycloid holo))
+// tile0495 (tile0490 (cycloid holo))
+// tile0496 [rcbp space suit]
+// tile0497 (tile0490 (cycloid holo))
+// tile0498 (edf sign)
+// tile0499 viewscreen2
+// tile0500 (polaris outpost sign)
+// tile0501 viewscreenbroke
+// tile0502 viewscreen
+// tile0503 glass
+// tile0510 stainglass1
+// tile0511 (stained glass)
+// tile0513 (catwalk)
+// tile0514 maskwall5 (fence)
+// tile0515 (catwalk corner)
+// tile0516 satelite (dish)
+// tile0520 (alpha)
+// tile0521 (beta)
+// tile0522 (gamma)
+// tile0527 (alien status display)
+// tile0530 (alien status display)
+// tile0533 (alien status display)
+// tile0536 (tube)
+// tile0537 (tile0536 (tube))
+// tile0538 slimepipe
+// tile0539 (tile0538 slimepipe)
+// tile0541 (tile0538 slimepipe)
+// tile0542 (globe)
+// tile0543 (wallspeaker)
+// tile0544 (iron bar)
+// tile0545 (bedding)
+// tile0547 crack2
+// tile0549 crack4
+// tile0551 domelite
+// tile0552 (tile0551 domelite)
+// tile0553 (tile0551 domelite)
+// tile0554 camerapole (tile0551 domelite)
+// tile0555 (pipe handle)
+// tile0556 chair1
+// tile0557 chair2
+// tile0558 (tile0675 egg)
+// tile0559 brokenchair
+// tile0561 (soap)
+// tile0563 waterfountain
+// tile0567 waterfountainbroke
+// tile0568 femmag1
+// tile0569 toilet
+// tile0570 
+// tile0571 stall
+// tile0572 (shower head)
+// tile0573 stallbroke
+// tile0574 (tile0670 (faucet))
+// tile0577 femmag2
+// tile0584 (sensor)
+// tile0585 (display)
+// tile0586 (spreadsheet)
+// tile0587 
+// tile0588 
+// tile0589 (intercom)
+// tile0590 (alien socket)
+// tile0591 (joint box)
+// tile0592 (moonshot)
+// tile0594 (airlock sign)
+// tile0595 grate1
+// tile0596 bgrate1
+// tile0599 (radioactive materials sign)
+// tile0600 (danger flammable sign)
+// tile0601 (warning triangle)
+// tile0602 solarpanel
+// tile0603 naked1 hangbabe
+// tile0606 (dead astronaut)
+// tile0607 antenna
+// tile0608 (tile0607 antenna)
+// tile0609 maskwall12
+// tile0610 (lightswitch pole)
+// tile0611 (hole in wall)
+// tile0612 (restricted area sign)
+// tile0613 (authorized personnel sign)
+// tile0614 (restricted area sign)
+// tile0615 toiletbroke
+// tile0616 pipe2
+// tile0617 pipe1b
+// tile0618 pipe3
+// tile0619 pipe1
+// tile0620 (alternate reactor)
+// tile0621 camera1
+// tile0625 (tile0621 camera1)
+// tile0627 
+// tile0628 
+// tile0632 
+// tile0633 pipe2b
+// tile0638 (map monitor)
+// tile0640 w_numbers (w_number 1)
+// tile0641 (w_number 2)
+// tile0642 (w_number 3)
+// tile0643 (w_number 4)
+// tile0644 (w_number 5)
+// tile0645 (w_number 6)
+// tile0646 (w_number 7)
+// tile0647 (w_number 8)
+// tile0648 (w_number 9)
+// tile0649 (w_number 0)
+// tile0651 (access sign)
+// tile0652 (warning stripes)
+// tile0654 (level sign)
+// tile0657 (danger sign)
+// tile0658 
+// tile0659 (tile0658)
+// tile0662 waterbubblemaker
+// tile0665 (surgical tools)
+// tile0666 (hydro fusion sub station)
+// tile0667 (hydroponics sub station sign)
+// tile0668 (tiberius station sign)
+// tile0669 vacuum
+// tile0670 (faucet)
+// tile0671 (tile0670 (faucet))
+// tile0672 footprints2
+// tile0676 (tile0675 egg)
+// tile0677 (tile0675 egg)
+// tile0678 scale
+// tile0679 (battlelord holo)
+// tile0680 chair3
+// tile0681 (tile0680 chair3)
+// tile0682 (tile0680 chair3)
+// tile0683 (tile0680 chair3)
+// tile0684 (tile0680 chair3)
+// tile0685 cameralight
+// tile0686 moviecamera
+// tile0687 (dressing room sign)
+// tile0688 (clapperboard)
+// tile0689 ivunit
+// tile0690 (manhole, half open)
+// tile0691 (cleaver)
+// tile0692 (knife)
+// tile0693 (knife)
+// tile0694 pot1
+// tile0695 pot2
+// tile0696 (dukai sushi sign)
+// tile0697 pot3
+// tile0699 (chalkboard)
+// tile0700 pipe3b
+// tile0701 walllight3
+// tile0702 walllightbust3
+// tile0705 walllight2
+// tile0707 (wall light)
+// tile0708 (walllight)
+// tile0710 (manhole)
+// tile0711 (steel door)
+// tile0712 lightswitch2
+// tile0713 (tile0712 lightswitch2)
+// tile0716 waittobeseated
+// tile0717 doortile14
+// tile0719 (door)
+// tile0726 
+// tile0728 (federal loan and trust sign)
+// tile0735 (wooden door)
+// tile0740 
+// tile0742 
+// tile0745 (wooden board)
+// tile0746 (panel)
+// tile0750 (brickwork)
+// tile0753 statue (geisha)
+// tile0758 (glass pane)
+// tile0761 
+// tile0762 mike
+// tile0763 (window front)
+// tile0765 vase
+// tile0766 (exotica sign)
+// tile0768 sushiplate1 (head)
+// tile0769 sushiplate2 (hand)
+// tile0773 (dark flagstone)
+// tile0774 sushiplate3 (foot)
+// tile0776 (duke nukem must die sign)
+// tile0777 (hotel sign)
+// tile0779 sushiplate4 (eye)
+// tile0783 (wall)
+// tile0787 (curtains)
+// tile0788 
+// tile0789 (bookshelf)
+// tile0790 (concrete)
+// tile0792 sushiplate5 (hand)
+// tile0794 (dark window)
+// tile0797 
+// tile0799 
+// tile0802 (concrete)
+// tile0814 (concrete)
+// tile0817 (st)
+// tile0818 (op)
+// tile0820 (floor plan)
+// tile0821 
+// tile0822 (graffiti door)
+// tile0826 (lunar apocalypse poster wide)
+// tile0831 (battlelord face)
+// tile0833 (hard hat area sign)
+// tile0836 
+// tile0838 (death row sign)
+// tile0839 (mess hall sign)
+// tile0841 (no admittance sign)
+// tile0842 (no smoking sign)
+// tile0843 (roller shutter)
+// tile0845 (uss dallas sign)
+// tile0846 (255 sign)
+// tile0848 (s. d. c. sign)
+// tile0849 (3d realms demolition sign)
+// tile0850 (circuit board)
+// tile0851 (jib dish)
+// tile0856 (nuclear waste disposal sign)
+// tile0858 (push door)
+// tile0860 powerswitch1
+// tile0862 lockswitch1
+// tile0864 powerswitch2
+// tile0867 atm
+// tile0869 statueflash (geisha)
+// tile0870 (graffiti wall)
+// tile0871 (pinball map)
+// tile0877 
+// tile0879 (cabinet doors)
+// tile0880 (planks)
+// tile0881 
+// tile0882 
+// tile0883 (locker door)
+// tile0884 (wooden panel)
+// tile0889 (falling water)
+// tile0899 (carpet)
+// tile0903 pocket (billard)
+// tile0904 woodenhorse
+// tile0905 (tile0904 woodenhorse)
+// tile0906 (tile0904 woodenhorse)
+// tile0907 (tile0904 woodenhorse)
+// tile0908 tree1
+// tile0909 (treetrunk)
+// tile0910 tree2
+// tile0911 cactus
+// tile0912 (bathroom drain)
+// tile0913 maskwall2 (fence)
+// tile0914 maskwall3 (fence)
+// tile0915 maskwall4 (gate)
+// tile0916 fireext
+// tile0917 (fireswitch)
+// tile0918 (wall fuse)
+// tile0919 (electricmeter)
+// tile0920 (chain)
+// tile0924 (tile0921 toiletwater)
+// tile0925 neon1 (cinema)
+// tile0927 (traffic signal)
+// tile0928 (wrong way sign)
+// tile0931 (xtc graffiti)
+// tile0932 (graffiti)
+// tile0933 (pxnxd graffiti)
+// tile0934 (smp graffiti)
+// tile0935 (graffiti)
+// tile0936 (graffiti)
+// tile0937 (forbidden v & b sign)
+// tile0938 (san andreas fault sign)
+// tile0939 cactusbroke
+// tile0940 bouncemine
+// tile0941 (tile0940 bouncemine)
+// tile0942 (tile0940 bouncemine)
+// tile0943 (tile0940 bouncemine)
+// tile0944 (tile0940 bouncemine)
+// tile0945 (high voltage sign)
+// tile0949 (building condemned sign)
+// tile0950 brokefirehydrent
+// tile0951 box
+// tile0952 bullethole
+// tile0953 (plastering hole)
+// tile0954 bottle1 (cocktail glass)
+// tile0955 bottle2
+// tile0956 bottle3
+// tile0957 bottle4 (cocktail glass)
+// tile0958 (lights)
+// tile0959 (pole)
+// tile0960 (plastering hole)
+// tile0961 (exit sign)
+// tile0962 (fence)
+// tile0963 fempic5
+// tile0964 fempic6
+// tile0965 fempic7
+// tile0966 (duke nukem ii cover)
+// tile0967 (phone)
+// tile0969 hydroplant
+// tile0970 (byte nite sign)
+// tile0971 oceansprite1
+// tile0972 oceansprite2
+// tile0973 oceansprite3
+// tile0974 oceansprite4
+// tile0975 oceansprite5
+// tile0976 (ventshaft)
+// tile0977 genericpole
+// tile0978 cone
+// tile0979 hanglight
+// tile0980 (private property sign)
+// tile0981 hydrent
+// tile0983 (tow away sign)
+// tile0985 (detour sign)
+// tile0986 (no loitering sign)
+// tile0988 maskwall14
+// tile0989 (direction sign)
+// tile0990 tire
+// tile0991 (shower head)
+// tile0992 (power station sign)
+// tile0993 (broken pipe)
+// tile0994 pipe5
+// tile0995 pipe6
+// tile0996 pipe4
+// tile0997 pipe4b
+// tile0998 (parkometer)
+// tile0999 (tile0998 (parkometer))
+// tile1000 (hollywood road sign)
+// tile1001 (vine road sign)
+// tile1004 (stop sign)
+// tile1005 pipe5b
+// tile1006 (barstool)
+// tile1007 neon3
+// tile1008 neon4
+// tile1009 neon5
+// tile1010 (tile1009 neon5)
+// tile1011 (tile1009 neon5)
+// tile1012 bottle5 (wine glass)
+// tile1013 bottle6
+// tile1014 bottle8
+// tile1015 
+// tile1016 (drain)
+// tile1019 (one way sign)
+// tile1020 spotlite
+// tile1022 (hangooz)
+// tile1024 maskwall15
+// tile1025 bottle7 (plant)
+// tile1026 horseonside
+// tile1028 (tile1026 horseonside)
+// tile1029 (tile1026 horseonside)
+// tile1030 (tile1026 horseonside)
+// tile1031 glasspieces
+// tile1032 (tile1031 glasspieces)
+// tile1033 (tile1031 glasspieces)
+// tile1034 horselite
+// tile1035 (tile1034 horselite)
+// tile1036 (tile1034 horselite)
+// tile1037 (table)
+// tile1038 (pipe)
+// tile1040 (male pictogram)
+// tile1041 (female pictogram)
+// tile1042 (out of order sign)
+// tile1043 (sweeney & company sign)
+// tile1044 (check weapons sign)
+// tile1045 donuts
+// tile1046 neon6
+// tile1047 (cell block sign)
+// tile1048 (pipes)
+// tile1049 (fusebox2)
+// tile1050 (fusebox)
+// tile1051 (hand dryer)
+// tile1052 (towel dispenser)
+// tile1053 (toilet roll holder)
+// tile1054 (calendar)
+// tile1055 (film reel)
+// tile1056 (tile1055 (film reel))
+// tile1057 (danger explosives sign)
+// tile1058 (up sign)
+// tile1060 clock
+// tile1061 (streetlight)
+// tile1062 rubbercan
+// tile1063 (tile1062 rubbercan)
+// tile1064 (rtd north bound)
+// tile1065 (rtd west bound)
+// tile1066 (rtd east bound)
+// tile1067 brokenclock
+// tile1068 (broken phone)
+// tile1069 plug
+// tile1070 (handicapped sign)
+// tile1071 (arrow sign)
+// tile1072 (life guard not on duty sign)
+// tile1073 (ring buoy)
+// tile1074 (xxx vending machine)
+// tile1075 (painting)
+// tile1076 (painting)
+// tile1078 (streetlight broken)
+// tile1079 oozfilter
+// tile1080 (tile1079 oozfilter)
+// tile1081 (tile1079 oozfilter)
+// tile1088 reactor
+// tile1089 (tile1088 reactor)
+// tile1097 (alien surface)
+// tile1100 (alien surface)
+// tile1102 doortile15
+// tile1111 handswitch
+// tile1122 pullswitch
+// tile1124 maskwall8 (arms)
+// tile1142 alienswitch
+// tile1145 (alien status display)
+// tile1148 (alien status display)
+// tile1154 (pawprint)
+// tile1155 (handprintswitch)
+// tile1157 bottle10
+// tile1158 bottle11
+// tile1159 bottle12
+// tile1160 bottle13
+// tile1161 bottle14
+// tile1162 bottle15
+// tile1163 bottle16
+// tile1164 bottle17
+// tile1165 bottle18
+// tile1166 bottle19
+// tile1172 (secured area sign)
+// tile1174 maskwall7 (fence)
+// tile1176 (broken windowpane)
+// tile1177 (broken windowpane)
+// tile1181 
+// tile1188 
+// tile1189 (concrete)
+// tile1192 
+// tile1193 
+// tile1194 
+// tile1195 
+// tile1197 
+// tile1198 
+// tile1200 
+// tile1201 
+// tile1202 (no one under 18 sign)
+// tile1203 (cigarette cabinet)
+// tile1206 (7 segment zero)
+// tile1210 (guilty sign)
+// tile1211 (innocent sign)
+// tile1213 (tile1212 vendmachine side)
+// tile1215 colamachine
+// tile1220 (orb)
+// tile1221 cranepole
+// tile1222 crane
+// tile1223 (tile1222 crane)
+// tile1224 (tile1222 crane)
+// tile1225 barbroke
+// tile1226 bloodpool
+// tile1227 nukebarrel
+// tile1228 nukebarreldented
+// tile1229 nukebarrelleaked
+// tile1230 (1227 nukebarrel)
+// tile1231 (1227 nukebarrel)
+// tile1232 canwithsomething
+// tile1234 (tile1233 money)
+// tile1235 (tile1233 money)
+// tile1238 explodingbarrel
+// tile1239 explodingbarrel2
+// tile1240 firebarrel
+// tile1241 [rcbp2 barrel]
+// tile1247 seenine
+// tile1250 steam
+// tile1255 ceilingsteam
+// tile1260 pipe6b
+// tile1261 transporterbeam
+// tile1264 (tile1261 transporterbeam)
+// tile1266 (tile1261 transporterbeam)
+// tile1267 rat
+// tile1268 (tile1267 rat)
+// tile1269 (tile1267 rat)
+// tile1270 (tile1267 rat)
+// tile1275 (newspaper)
+// tile1276 (newspaper)
+// tile1277 (newspaper)
+// tile1280 fempic1
+// tile1288 (tile1280 (movie dancer))
+// tile1289 fempic2
+// tile1294 podfem1
+// tile1295 (tile1294 podfem1)
+// tile1298 fempic3
+// tile1306 fempic4
+// tile1312 fem1 stripper
+// tile1313 (tile1312 fem1 stripper)
+// tile1314 (tile1312 fem1 stripper)
+// tile1315 (tile1312 fem1 stripper)
+// tile1316 (tile1312 fem1 stripper)
+// tile1317 fem2 pole dancer
+// tile1318 (tile1317 fem2 poledancer)
+// tile1320 (tile1317 fem2 pole dancer)
+// tile1321 fem3 hooker
+// tile1322 (tile1321 fem3 hooker)
+// tile1323 fem5 polebabe
+// tile1324 bloodypole
+// tile1325 fem4 cavedancer
+// tile1326 (tile1325 fem4 cavedancer)
+// tile1327 (tile1325 fem4 cavedancer)
+// tile1328 (tile1325 fem4 cavedancer)
+// tile1329 (tile1325 fem4 cavedancer)
+// tile1330 (tile1325 fem4 cavedancer)
+// tile1331 (tile1312 fem1 stripper flash)
+// tile1332 (tile1312 fem1 stripper flash)
+// tile1333 (tile1312 fem1 stripper flash)
+// tile1334 fem6 padbabe
+// tile1335 fem6pad
+// tile1336 fem8 (impaled babe)
+// tile1337 (helicopter)
+// tile1338 (tile1337 (helicopter))
+// tile1340 (helicopter scrap)
+// tile1341 (helicopter scrap)
+// tile1342 (helicopter scrap)
+// tile1343 (helicopter scrap)
+// tile1344 (helicopter scrap)
+// tile1345 (tile1337 (helicopter))
+// tile1347 fetusjib
+// tile1348 holoduke
+// tile1349 (tile1348 holoduke)
+// tile1351 (tile1348 holoduke)
+// tile1352 monk
+// tile1353 spacemarine
+// tile1354 luke
+// tile1355 indy
+// tile1356 (terminator)
+// tile1357 (terminator arm)
+// tile1358 fetus
+// tile1359 fetusbroke
+// tile1361 (tile1360 (octabrain mindblast))
+// tile1362 [rcbp2 health]
+// tile1363 [rcbp2 shield]
+// tile1368 (tile1360 (octabrain mindblast))
+// tile1375 (tile1360 (octabrain mindblast))
+// tile1385 
+// tile1386 [rcbp2 duke -> accesscard blue]
+// tile1388 (tile1387)
+// tile1390 firevase
+// tile1392 (tile1390 firevase)
+// tile1394 (//)
+// tile1395 fem7 dancer
+// tile1396 (tile1395 fem7 dancer)
+// tile1397 (tile1395 fem7 dancer)
+// tile1398 (tile1395 fem7 dancer)
+// tile1406 (tile1405 duke)
+// tile1407 (tile1405 duke)
+// tile1408 (tile1405 duke)
+// tile1409 (tile1405 duke)
+// tile1420 playeronwater (tile1405 duke)
+// tile1421 (tile1405 duke)
+// tile1422 (tile1405 duke)
+// tile1423 (tile1405 duke)
+// tile1425 (tile1405 duke)
+// tile1426 (tile1405 duke)
+// tile1427 (tile1405 duke)
+// tile1428 (tile1405 duke)
+// tile1429 (tile1405 duke)
+// tile1430 (tile1405 duke)
+// tile1431 (tile1405 duke)
+// tile1433 (tile1405 duke)
+// tile1435 (tile1405 duke)
+// tile1436 (tile1405 duke)
+// tile1437 (tile1405 duke)
+// tile1438 (tile1405 duke)
+// tile1439 (tile1405 duke)
+// tile1440 (tile1405 duke)
+// tile1441 (tile1405 duke)
+// tile1442 (tile1405 duke)
+// tile1443 (tile1405 duke)
+// tile1445 (tile1405 duke)
+// tile1446 (tile1405 duke)
+// tile1447 (tile1405 duke)
+// tile1448 (tile1405 duke)
+// tile1450 (tile1405 duke)
+// tile1451 (tile1405 duke)
+// tile1452 (tile1405 duke)
+// tile1453 (tile1405 duke)
+// tile1455 (tile1405 duke)
+// tile1456 (tile1405 duke)
+// tile1457 (tile1405 duke)
+// tile1460 (tile1405 duke)
+// tile1461 (tile1405 duke)
+// tile1463 (tile1405 duke)
+// tile1465 (tile1405 duke)
+// tile1466 (tile1405 duke)
+// tile1467 (tile1405 duke)
+// tile1471 [iittc chaingunsprite]
+// tile1472 [iittc rpgsprite]
+// tile1473 [iittc flame cannon]
+// tile1474 [iittc grenade launcher]
+// tile1475 [iittc shotgunsprite]
+// tile1476 [iittc devistatorsprite]
+// tile1477 [iittc pistol black]
+// tile1478 [iittc hbombammo]
+// tile1479 [iittc shield]
+// tile1491 (tile1405 duke)
+// tile1492 (tile1491 (duke crouching))
+// tile1493 (tile1491 (duke crouching))
+// tile1495 (tile1491 (duke crouching))
+// tile1496 (tile1491 (duke crouching))
+// tile1497 (tile1491 (duke crouching))
+// tile1498 (tile1491 (duke crouching))
+// tile1501 (tile1491 (duke crouching))
+// tile1511 (tile1405 duke)
+// tile1512 (tile1405 duke)
+// tile1513 (tile1405 duke)
+// tile1514 (tile1405 duke (dying))
+// tile1515 (tile1405 duke)
+// tile1518 dukelyingdead
+// tile1519 [dukeplus dead bot]
+// tile1520 duketorso
+// tile1521 (tile1520 (duke torso))
+// tile1522 (tile1520 (duke torso))
+// tile1523 (tile1520 (duke torso))
+// tile1524 (tile1520 (duke torso))
+// tile1525 (tile1520 (duke torso))
+// tile1526 (tile1520 (duke torso))
+// tile1527 (tile1520 (duke torso))
+// tile1529 (tile1528 (duke gibs arm))
+// tile1532 (tile1528 (duke gibs arm))
+// tile1533 (tile1528 (duke gibs arm))
+// tile1534 (tile1528 (duke gibs arm))
+// tile1535 (tile1528 (duke gibs arm))
+// tile1536 dukeleg
+// tile1537 (tile1536 (duke gibs leg))
+// tile1538 (tile1536 (duke gibs leg))
+// tile1539 (tile1536 (duke gibs leg))
+// tile1540 (tile1536 (duke gibs leg))
+// tile1541 (tile1536 (duke gibs leg))
+// tile1542 (tile1536 (duke gibs leg))
+// tile1543 (tile1536 (duke gibs leg))
+// tile1550 shark
+// tile1551 (tile1550 shark)
+// tile1552 (tile1550 shark)
+// tile1553 (tile1550 shark)
+// tile1555 (tile1550 shark)
+// tile1556 (tile1550 shark)
+// tile1557 (tile1550 shark)
+// tile1562 (tile1550 shark)
+// tile1565 (tile1550 shark)
+// tile1567 (tile1550 shark)
+// tile1570 (tile1550 shark)
+// tile1571 (tile1550 shark)
+// tile1572 (tile1550 shark)
+// tile1574 (tile1550 shark)
+// tile1575 (tile1550 shark)
+// tile1577 (tile1550 shark)
+// tile1582 (tile1550 shark)
+// tile1585 (tile1550 shark)
+// tile1586 (tile1550 shark)
+// tile1587 (tile1550 shark)
+// tile1625 firelaser
+// tile1631 (tile1630 transporterstar)
+// tile1633 (tile1630 transporterstar)
+// tile1634 (glow)
+// tile1635 (tile1630 transporterstar)
+// tile1640 fist
+// tile1641 freezeblast
+// tile1646 shrinkspark
+// tile1648 (tile1646 shrinkspark)
+// tile1653 (tile1650 morter)
+// tile1666 (muzzleflash)
+// tile1667 (muzzleflash)
+// tile1674 (tile1671 forceripple)
+// tile1677 (tile1671 forceripple)
+// tile1680 liztroop
+// tile1682 liztroopstayput
+// tile1683 (tile1680 liztroop)
+// tile1684 (tile1680 liztroop)
+// tile1685 (tile1680 liztroop)
+// tile1686 (tile1680 liztroop)
+// tile1687 (tile1680 liztroop)
+// tile1689 (tile1680 liztroop)
+// tile1690 (tile1680 liztroop)
+// tile1691 (tile1680 liztroop)
+// tile1692 (tile1680 liztroop)
+// tile1693 (tile1680 liztroop)
+// tile1695 (tile1680 liztroop)
+// tile1696 (tile1680 liztroop)
+// tile1698 (tile1680 liztroop)
+// tile1700 (tile1680 liztroop)
+// tile1702 (tile1680 liztroop)
+// tile1705 liztop
+// tile1720 (tile1680 liztroop)
+// tile1721 (tile1680 liztroop)
+// tile1723 (tile1680 liztroop)
+// tile1726 (tile1725 liztroopjetpack)
+// tile1727 (tile1725 liztroopjetpack)
+// tile1730 (tile1680 liztroop)
+// tile1731 (tile1680 liztroop dying)
+// tile1732 (tile1680 liztroop dying)
+// tile1733 (tile1680 liztroop dying)
+// tile1734 liztroopdsprite
+// tile1738 (tile1680 liztroop)
+// tile1739 (tile1680 liztroop)
+// tile1740 (tile1680 liztroop)
+// tile1741 liztroopontoilet
+// tile1742 liztroopjustsit
+// tile1747 (tile1744 liztroopducking)
+// tile1748 (tile1744 liztroopducking)
+// tile1749 (tile1744 liztroopducking)
+// tile1750 (tile1744 liztroopducking)
+// tile1751 (tile1744 liztroopducking)
+// tile1754 (tile1680 liztroop)
+// tile1755 (tile1680 liztroop)
+// tile1768 headjib1
+// tile1769 (tile1768 headjib1)
+// tile1770 (tile1768 headjib1)
+// tile1771 (tile1768 headjib1)
+// tile1772 armjib1
+// tile1773 (tile1772 armjib1)
+// tile1774 (tile1772 armjib1)
+// tile1775 (tile1772 armjib1)
+// tile1776 legjib1
+// tile1777 (tile1776 legjib1)
+// tile1778 (tile1776 legjib1)
+// tile1779 (tile1776 legjib1)
+// tile1785 (tile1405 duke swimming)
+// tile1787 (tile1405 duke swimming)
+// tile1790 (tile1405 duke swimming)
+// tile1795 (tile1405 duke swimming)
+// tile1810 cannon
+// tile1811 (tile1810 cannon)
+// tile1812 (tile1810 cannon)
+// tile1813 (tile1810 cannon)
+// tile1816 (tile1810 cannon)
+// tile1818 cannonballs
+// tile1820 octabrain
+// tile1822 (tile1820 octabrain)
+// tile1825 (tile1820 octabrain)
+// tile1826 (tile1820 octabrain)
+// tile1830 (tile1820 octabrain)
+// tile1831 (tile1820 octabrain)
+// tile1835 (tile1820 octabrain)
+// tile1836 (tile1820 octabrain)
+// tile1840 (tile1820 octabrain)
+// tile1841 (tile1820 octabrain)
+// tile1842 (tile1820 octabrain)
+// tile1843 (tile1820 octabrain)
+// tile1845 octatop
+// tile1850 (tile1855 octadeadsprite)
+// tile1851 (tile1855 octadeadsprite)
+// tile1852 (tile1855 octadeadsprite)
+// tile1853 (tile1855 octadeadsprite)
+// tile1854 (tile1855 octadeadsprite)
+// tile1855 octadeadsprite
+// tile1870 (scorpion tank)
+// tile1871 (tile1870 (scorpion tank))
+// tile1872 (tile1870 (scorpion tank))
+// tile1873 (tile1870 (scorpion tank))
+// tile1875 (tile1870 (scorpion tank))
+// tile1876 (tile1870 (scorpion tank))
+// tile1881 (tile1880 drone)
+// tile1882 (tile1880 drone)
+// tile1883 (tile1880 drone)
+// tile1885 (tile1880 drone)
+// tile1900 (tile 1890 explosion2)
+// tile1905 (tile1890 explosion2)
+// tile1915 (tile1920 commander)
+// tile1916 (tile1920 commander)
+// tile1919 (tile1920 commander)
+// tile1922 (tile1920 commander)
+// tile1924 (tile1920 commander)
+// tile1925 (tile1920 commander)
+// tile1926 (tile1920 commander)
+// tile1930 (tile1920 commander)
+// tile1935 (tile1920 commander)
+// tile1936 (tile1920 commander)
+// tile1940 (tile1920 commander)
+// tile1941 (tile1920 commander)
+// tile1942 (tile1920 commander)
+// tile1943 (tile1920 commander)
+// tile1944 (tile1920 commander)
+// tile1950 (tile1920 commander) (dead)
+// tile1953 (tile1920 commander) (dead)
+// tile1954 (tile1920 commander) (dead)
+// tile1955 (tile1920 commander) (dead)
+// tile1956 (tile1920 commander) (dead)
+// tile1957 (tile1920 commander) (dead)
+// tile1961 (tile1960 recon)
+// tile1963 (tile1960 recon)
+// tile1967 (tile1960 recon)
+// tile1968 (tile1960 recon)
+// tile1969 (tile1960 recon)
+// tile1975 tank
+// tile1976 (tile1975 tank)
+// tile1978 (tile1975 tank)
+// tile1979 (tile1975 tank)
+// tile1980 (tile1975 tank)
+// tile1981 (tile1975 tank)
+// tile1982 (tile1975 tank)
+// tile1983 (tile1975 tank)
+// tile1985 (tile1975 tank)
+// tile1990 (tile1975 tank)
+// tile2002 (tile2000 pigcop)
+// tile2004 (tile2000 pigcop)
+// tile2005 (tile2000 pigcop)
+// tile2006 (tile2000 pigcop)
+// tile2007 (tile2000 pigcop)
+// tile2009 (tile2000 pigcop)
+// tile2010 (tile2000 pigcop)
+// tile2011 (tile2000 pigcop)
+// tile2012 (tile2000 pigcop)
+// tile2015 (tile2000 pigcop)
+// tile2016 (tile2000 pigcop)
+// tile2017 (tile2000 pigcop)
+// tile2018 (tile2000 pigcop)
+// tile2019 (tile2000 pigcop)
+// tile2025 (tile2000 pigcop)
+// tile2026 (tile2000 pigcop)
+// tile2031 (tile2000 pigcop)
+// tile2034 (tile2000 pigcop)
+// tile2035 (tile2000 pigcop)
+// tile2036 (tile2000 pigcop)
+// tile2040 (tile2045 pigcopdive)
+// tile2045 pigcopdive
+// tile2050 (tile2045 pigcopdive)
+// tile2051 (tile2045 pigcopdive)
+// tile2052 (tile2045 pigcopdive)
+// tile2055 (tile2000 pigcop)
+// tile2056 (tile2000 pigcop)
+// tile2057 (tile2000 pigcop)
+// tile2058 (tile2060 pigcopdeadsprite)
+// tile2059 (tile2060 pigcopdeadsprite)
+// tile2060 pigcopdeadsprite
+// tile2061 pigtop
+// tile2078 (tile2066 (fire #1))
+// tile2121 lizmanstayput
+// tile2122 (tile2120 lizman)
+// tile2125 (tile2120 lizman)
+// tile2126 (tile2120 lizman)
+// tile2127 (tile2120 lizman)
+// tile2129 (tile2120 lizman)
+// tile2130 (tile2120 lizman)
+// tile2131 (tile2120 lizman)
+// tile2132 (2120 lizman)
+// tile2133 (tile2120 lizman)
+// tile2138 (2120 lizman)
+// tile2140 (tile2120 lizman)
+// tile2142 (tile2120 lizman)
+// tile2143 (tile2120 lizman)
+// tile2145 (tile2120 lizman)
+// tile2155 (tile2160 lizmanfeeding)
+// tile2166 (tile2165 lizmanjump)
+// tile2167 (tile2165 lizmanjump)
+// tile2168 (tile2165 lizmanjump)
+// tile2169 (tile2165 lizmanjump)
+// tile2174 (tile2165 lizmanjump)
+// tile2175 (tile2165 lizmanjump)
+// tile2176 (tile2165 lizmanjump)
+// tile2180 (tile2185 lizmandeadsprite)
+// tile2181 (tile2185 lizmandeadsprite)
+// tile2182 (tile2185 lizmandeadsprite)
+// tile2183 (tile2185 lizmandeadsprite)
+// tile2184 (tile2185 lizmandeadsprite)
+// tile2185 lizmandeadsprite
+// tile2190 (lizman firing)
+// tile2191 (tile2190 (lizman firing))
+// tile2192 (tile2190 (lizman firing))
+// tile2195 (tile2190 (lizman firing))
+// tile2196 (tile2190 (lizman firing))
+// tile2197 (tile2190 (lizman firing))
+// tile2200 feces
+// tile2201 lizmanhead1
+// tile2202 (tile2201 lizmanhead1)
+// tile2203 (tile2201 lizmanhead1)
+// tile2204 (tile2201 lizmanhead1)
+// tile2205 lizmanarm1
+// tile2206 (tile2205 lizmanarm1)
+// tile2207 (tile2205 lizmanarm1)
+// tile2208 (tile2205 lizmanarm1)
+// tile2209 lizmanleg1
+// tile2210 (tile2209 lizmanleg1)
+// tile2211 (tile2209 lizmanleg1)
+// tile2212 (tile2209 lizmanleg1)
+// tile2245 jibs1
+// tile2246 (tile2245 jibs1)
+// tile2247 (tile2245 jibs1)
+// tile2248 (tile2245 jibs1)
+// tile2249 (tile2245 jibs1)
+// tile2250 jibs2 (eye)
+// tile2251 (tile2250 jibs2 (eye))
+// tile2252 (tile2250 jibs2 (eye))
+// tile2253 (tile2250 jibs2 (eye))
+// tile2254 (tile2250 jibs2 (eye))
+// tile2256 (tile2255 jibs3 (heart))
+// tile2257 (tile2255 jibs3 (heart))
+// tile2258 (tile2255 jibs3 (heart))
+// tile2259 (tile2255 jibs3 (heart))
+// tile2260 jibs4
+// tile2261 (tile2260 jibs4)
+// tile2262 (tile2260 jibs4)
+// tile2263 (tile2260 jibs4)
+// tile2264 (tile2260 jibs4)
+// tile2265 jibs5
+// tile2266 (tile2265 jibs5)
+// tile2267 (tile2265 jibs5)
+// tile2268 (tile2265 jibs5)
+// tile2269 (tile2265 jibs5)
+// tile2287 (tile2286 jibs6)
+// tile2289 (tile2286 jibs6)
+// tile2294 (handprint right)
+// tile2295 (handprint left)
+// tile2296 bloodsplat1
+// tile2297 bloodsplat3
+// tile2298 bloodsplat2
+// tile2300 ooz
+// tile2301 wallblood1
+// tile2302 wallblood2
+// tile2303 wallblood3
+// tile2304 wallblood4
+// tile2305 wallblood5
+// tile2306 wallblood6
+// tile2307 wallblood7
+// tile2308 wallblood8
+// tile2311 fire2
+// tile2324 crackknuckles
+// tile2327 (tile2324 (crackknuckles))
+// tile2332 
+// tile2350 (tile2360 (gunturret))
+// tile2352 (tile2360 (gunturret))
+// tile2353 (tile2360 (gunturret))
+// tile2355 (tile2360 (gunturret))
+// tile2356 (tile2360 (gunturret))
+// tile2357 (tile2360 (gunturret))
+// tile2360 (gunturret)
+// tile2361 (tile2360 (gunturret))
+// tile2362 (tile2360 (gunturret))
+// tile2364 (tile2360 (gunturret))
+// tile2371 (tile2370 (slimer))
+// tile2372 (tile2370 (slimer))
+// tile2373 (tile2370 (slimer))
+// tile2375 (tile2370 (slimer))
+// tile2390 scrap6
+// tile2391 (tile2390 scrap6)
+// tile2392 (tile2390 scrap6)
+// tile2393 (tile2390 scrap6)
+// tile2394 (tile2390 scrap6)
+// tile2395 (tile2390 scrap6)
+// tile2396 (tile2390 scrap6)
+// tile2397 (tile2390 scrap6)
+// tile2398 (tile2390 scrap6)
+// tile2400 scrap1
+// tile2401 (tile2400 scrap1)
+// tile2402 (tile2400 scrap1)
+// tile2403 (tile2400 scrap1)
+// tile2404 scrap2
+// tile2405 (tile2404 scrap2)
+// tile2406 (tile2404 scrap2)
+// tile2407 (tile2404 scrap2)
+// tile2408 scrap3
+// tile2409 (tile2408 scrap3)
+// tile2410 (tile2408 scrap3)
+// tile2411 (tile2408 scrap3)
+// tile2412 scrap4
+// tile2413 (tile2412 scrap4)
+// tile2414 (tile2412 scrap4)
+// tile2415 (tile2412 scrap4)
+// tile2416 scrap5
+// tile2417 (tile2416 scrap5)
+// tile2418 (tile2416 scrap5)
+// tile2422 (tile2420)
+// tile2425 (tile2420)
+// tile2427 (tile2420)
+// tile2428 (tile2420)
+// tile2440 betaversion (unregistered sh.)
+// tile2444 selectdir
+// tile2446 notchon
+// tile2449 (tile2448 (expander blast))
+// tile2452 dukeicon
+// tile2453 badguyicon
+// tile2454 foodicon (red cross)
+// tile2455 geticon
+// tile2456 menuscreen
+// tile2462 bottomstatusbar
+// tile2463 boot_icon
+// tile2464 
+// tile2467 jetpack_icon
+// tile2471 access_icon
+// tile2476 (digital 4)
+// tile2478 (digital 6)
+// tile2489 slidebar
+// tile2493 betascreen
+// tile2497 dukenukem
+// tile2499 ingamedukethreedee
+// tile2500 tenscreen
+// tile2510 devistator
+// tile2521 knee
+// tile2522 (tile2521 knee)
+// tile2524 firstgun
+// tile2525 (tile2524 firstgun)
+// tile2526 (tile2524 (first person pistol))
+// tile2527 (round crosshair)
+// tile2529 (tile2524 (first person pistol))
+// tile2530 fallingclip
+// tile2533 shell
+// tile2535 shotgunshell
+// tile2536 chaingun
+// tile2537 (tile2536 chaingun)
+// tile2541 (chaingun muzzleflash)
+// tile2542 (chaingun muzzleflash)
+// tile2543 (chaingun muzzleflash)
+// tile2544 rpggun
+// tile2554 (expander)
+// tile2555 (expander)
+// tile2558 (crystal)
+// tile2561 (tile2558 (crystal))
+// tile2563 handholdinglaser
+// tile2564 (tile2563 handholdinglaser)
+// tile2565 (tile2563 handholdinglaser)
+// tile2566 tripbomb
+// tile2568 handholdingaccess
+// tile2574 (tile2573 handthrow)
+// tile2575 (tile2573 handthrow)
+// tile2576 tip
+// tile2577 (tile2576 tip)
+// tile2606 (tile2605 rpg)
+// tile2607 (tile2605 rpg)
+// tile2608 (tile2605 rpg)
+// tile2609 (tile2605 rpg)
+// tile2610 (tile2605 rpg)
+// tile2611 (tile2605 rpg)
+// tile2613 shotgun
+// tile2615 (tile2613 shotgun)
+// tile2616 (tile2613 shotgun)
+// tile2617 (tile2613 shotgun)
+// tile2618 (tile2613 shotgun)
+// tile2631 (tile2630 boss1 (battlelord))
+// tile2632 (tile2630 boss1 (battlelord))
+// tile2640 (tile2630 boss1 (battlelord))
+// tile2641 (tile2630 boss1 (battlelord))
+// tile2642 (tile2630 boss1 (battlelord))
+// tile2643 (tile2630 boss1 (battlelord))
+// tile2645 (tile2630 boss1 (battlelord))
+// tile2647 (tile2630 boss1 (battlelord))
+// tile2648 (tile2630 boss1 (battlelord))
+// tile2652 (tile2630 boss1 (battlelord))
+// tile2655 (tile2630 boss1 (battlelord))
+// tile2656 (tile2630 boss1 (battlelord))
+// tile2660 boss1shoot
+// tile2661 (tile2660 boss1shoot)
+// tile2662 (tile2660 boss1shoot)
+// tile2665 (tile2660 boss1shoot)
+// tile2666 (tile2630 boss1 (battlelord))
+// tile2667 (tile2630 boss1 (battlelord))
+// tile2671 (tile2670 boss1lob (battlelord))
+// tile2675 (tile2670 boss1lob (battlelord))
+// tile2676 (tile2670 boss1lob (battlelord))
+// tile2683 (tile2630 boss1 (dead))
+// tile2684 (tile2630 boss1 (dead))
+// tile2685 (tile2630 boss1 (dead))
+// tile2686 (tile2630 boss1 (battlelord))
+// tile2710 boss2 (cycloid)
+// tile2711 (tile2710 boss2 (cycloid))
+// tile2712 (tile2710 boss2 (cycloid))
+// tile2713 (tile2710 boss2 (cycloid))
+// tile2715 (tile2710 boss2 (cycloid))
+// tile2716 (tile2710 boss2 (cycloid))
+// tile2717 (tile2710 boss2 (cycloid))
+// tile2720 (tile2710 boss2 (cycloid))
+// tile2721 (tile2710 boss2 (cycloid))
+// tile2725 (tile2710 boss2 (cycloid))
+// tile2726 (tile2710 boss2 (cycloid))
+// tile2730 (tile2710 boss2 (cycloid))
+// tile2731 (tile2710 boss2 (cycloid))
+// tile2735 (tile2710 boss2 (cycloid))
+// tile2736 (tile2710 boss2 (cycloid))
+// tile2737 (tile2710 boss2 (cycloid))
+// tile2740 (tile2710 boss2 (cycloid))
+// tile2741 (tile2710 boss2 (cycloid))
+// tile2745 (tile2710 boss2 (cycloid))
+// tile2746 (tile2710 boss2 (cycloid))
+// tile2747 (tile2710 boss2 (cycloid))
+// tile2755 (tile2710 boss2 (cycloid))
+// tile2758 (tile2710 boss2 (cycloid))
+// tile2762 (tile2760 boss3 (overlord))
+// tile2765 (tile2760 boss3 (overlord))
+// tile2766 (tile2760 boss3 (overlord))
+// tile2770 (tile2760 boss3 (overlord))
+// tile2771 (tile2760 boss3 (overlord))
+// tile2772 (tile2760 overlord)
+// tile2773 (tile2760 overlord)
+// tile2775 (tile2760 boss3 (overlord))
+// tile2785 (tile2760 boss3 (overlord))
+// tile2787 (tile2760 boss3 (overlord))
+// tile2790 (tile2760 boss3 (overlord))
+// tile2791 (tile2760 boss3 (overlord))
+// tile2795 (tile2760 boss3 (overlord))
+// tile2796 (tile2760 boss3 (overlord))
+// tile2800 (tile2760 boss3 (overlord dead))
+// tile2804 (tile2760 boss3 (overlord dead))
+// tile2805 (tile2760 boss3 (overlord dead))
+// tile2806 (tile2760 boss3 (overlord dead))
+// tile2807 (tile2760 boss3 (overlord dead))
+// tile2808 (tile2760 boss3 (overlord dead))
+// tile2809 (tile2760 boss3 (overlord dead))
+// tile2813 spinningnukeicon
+// tile2814 (tile2813 spinningnukeicon)
+// tile2817 (tile2813 spinningnukeicon)
+// tile2819 (tile2813 spinningnukeicon)
+// tile2822 startalphanum (bluefont !)
+// tile2825 (bluefont $)
+// tile2827 (bluefont &)
+// tile2828 (bluefont ')
+// tile2832 (bluefont +)
+// tile2833 (bluefont ,)
+// tile2834 (bluefont -)
+// tile2835 (bluefont .)
+// tile2836 (bluefont /)
+// tile2837 (bluefont 0)
+// tile2838 (bluefont 1)
+// tile2839 (bluefont 2)
+// tile2840 (bluefont 3)
+// tile2841 (bluefont 4)
+// tile2842 (bluefont 5)
+// tile2843 (bluefont 6)
+// tile2844 (bluefont 7)
+// tile2845 (bluefont 8)
+// tile2846 (bluefont 9)
+// tile2847 (bluefont :)
+// tile2852 (bluefont ?)
+// tile2854 (bluefont A)
+// tile2855 (bluefont B)
+// tile2856 (bluefont C)
+// tile2857 (bluefont D)
+// tile2858 (bluefont E)
+// tile2859 (bluefont F)
+// tile2860 (bluefont G)
+// tile2861 (bluefont H)
+// tile2862 (bluefont I)
+// tile2863 (bluefont J)
+// tile2864 (bluefont K)
+// tile2865 (bluefont L)
+// tile2866 (bluefont M)
+// tile2867 (bluefont N)
+// tile2868 (bluefont O)
+// tile2869 (bluefont P)
+// tile2870 (bluefont Q
+// tile2871 (bluefont R)
+// tile2872 (bluefont S)
+// tile2873 (bluefont T)
+// tile2874 (bluefont U)
+// tile2875 (bluefont V)
+// tile2876 (bluefont W)
+// tile2877 (bluefont X)
+// tile2878 (bluefont Y)
+// tile2881 (bluefont )
+// tile2884 (bluefont _)
+// tile2885 (tile2835 (bluefont .))
+// tile2886 (tile2854 (bluefont A))
+// tile2887 (tile2855 (bluefont B))
+// tile2888 (tile2856 (bluefont C))
+// tile2889 (tile2857 (bluefont D))
+// tile2890 (tile2858 (bluefont E))
+// tile2891 (tile2855 (bluefont F))
+// tile2892 (tile2860 (bluefont G))
+// tile2893 (tile2861 (bluefont H))
+// tile2894 (tile2862 (bluefont I))
+// tile2895 (tile2863 (bluefont J))
+// tile2896 (tile2864 (bluefont K))
+// tile2897 (tile2865 (bluefont L))
+// tile2898 (tile2866 (bluefont M))
+// tile2899 (tile2867 (bluefont N))
+// tile2900 (tile2868 (bluefont O))
+// tile2901 (tile2870 (bluefont P))
+// tile2902 (tile2870 (bluefont Q))
+// tile2903 (tile2872 (bluefont R))
+// tile2904 (tile2872 (bluefont S))
+// tile2905 (tile2873 (bluefont T))
+// tile2906 (tile2874 (bluefont U))
+// tile2907 (tile2875 (bluefont V))
+// tile2908 (tile2876 (bluefont W))
+// tile2909 (tile2877 (bluefont X))
+// tile2910 (tile2878 (bluefont Y))
+// tile2911 (tile2879 (bluefont Z))
+// tile2929 (redfont -)
+// tile2931 (redfont 1)
+// tile2932 (redfont 2)
+// tile2933 (redfont 3)
+// tile2934 (redfont 4)
+// tile2936 (redfont 6)
+// tile2939 (redfont 9)
+// tile2940 bigalphanum (redfont A)
+// tile2941 (redfont B)
+// tile2942 (redfont C)
+// tile2943 (redfont D)
+// tile2944 (redfont E)
+// tile2945 (redfont F)
+// tile2946 (redfont G)
+// tile2947 (redfont H)
+// tile2948 (redfont I)
+// tile2949 (redfont J)
+// tile2950 (redfont K)
+// tile2951 (redfont L)
+// tile2952 (redfont M)
+// tile2953 (redfont N)
+// tile2954 (redfont O)
+// tile2955 (redfont P)
+// tile2956 (redfont Q)
+// tile2957 (redfont R)
+// tile2958 (redfont S)
+// tile2959 (redfont T)
+// tile2960 (redfont U)
+// tile2962 (redfont W)
+// tile2964 (redfont Y)
+// tile2965 (redfont Z)
+// tile2966 (greyfont A)
+// tile2967 (greyfont B)
+// tile2968 (greyfont C)
+// tile2969 (greyfont D)
+// tile2970 (greyfont E)
+// tile2971 (greyfont F)
+// tile2972 (greyfont G)
+// tile2973 (greyfont H)
+// tile2974 (greyfont I)
+// tile2975 (greyfont J)
+// tile2976 (greyfont K)
+// tile2977 (greyfont L)
+// tile2978 (greyfont M)
+// tile2979 (greyfont N)
+// tile2980 (greyfont O)
+// tile2981 (greyfont P)
+// tile2983 (greyfont R)
+// tile2984 (greyfont S)
+// tile2985 (greyfont T)
+// tile2986 (greyfont U)
+// tile2987 (greyfont V)
+// tile2988 (greyfont W)
+// tile2989 (greyfont X)
+// tile2990 (greyfont Y)
+// tile2991 (greyfont Z)
+// tile2992 (greyfont 0)
+// tile2993 (greyfont 1)
+// tile2994 (greyfont 2)
+// tile2995 (greyfont 3)
+// tile2996 (greyfont 4)
+// tile2997 (greyfont 5)
+// tile2998 (greyfont 6)
+// tile2999 (greyfont 7)
+// tile3000 (greyfont 8)
+// tile3001 (greyfont 9)
+// tile3002 bigperiod (redfont .)
+// tile3003 bigcomma (redfont ,)
+// tile3004 bigx (redfont !)
+// tile3005 bigq (redfont ?)
+// tile3007 bigcolin (redfont :)
+// tile3008 (redfont /)
+// tile3009 (redfont  3011 (smallfont 1)
+// tile3012 (smallfont 2)
+// tile3013 (smallfont 3)
+// tile3014 (smallfont 4)
+// tile3018 (smallfont 8)
+// tile3022 bigappos (redfont ')
+// tile3081 (smallfont *)
+// tile3084 (smallfont _)
+// tile3086 (smallfont /)
+// tile3087 (smallfont 0)
+// tile3088 (smallfont 1)
+// tile3089 (smallfont 2)
+// tile3090 (smallfont 3)
+// tile3092 (smallfont 5)
+// tile3093 (smallfont 6)
+// tile3094 (smallfont 7)
+// tile3095 (smallfont 8)
+// tile3096 (smallfont 9)
+// tile3097 (smallfont :)
+// tile3103 (smallfont)
+// tile3104 (smallfont A)
+// tile3105 (smallfont B)
+// tile3106 (smallfont C)
+// tile3107 (smallfont D)
+// tile3108 (smallfont E)
+// tile3109 (smallfont F)
+// tile3110 (smallfont G)
+// tile3111 (smallfont H)
+// tile3112 (smallfont I)
+// tile3114 (smallfont K)
+// tile3115 (smallfont L)
+// tile3116 (smallfont M)
+// tile3117 (smallfont N)
+// tile3118 (smallfont O)
+// tile3119 (smallfont P)
+// tile3121 (smallfont R)
+// tile3122 (smallfont S)
+// tile3123 (smallfont T)
+// tile3124 (smallfont U)
+// tile3125 (smallfont V)
+// tile3126 (smallfont W)
+// tile3127 (smallfont X)
+// tile3128 (smallfont Y)
+// tile3191 (tile3190 respawnmarkerred)
+// tile3201 (tile3200 respawnmarkeryellow)
+// tile3210 respawnmarkergreen
+// tile3211 (tile3210 respawnmarkergreen)
+// tile3240 bonusscreen
+// tile3245 (bonusscreen episode 2)
+// tile3280 textstory
+// tile3281 loadscreen
+// tile3290 (shareware quit screen 1)
+// tile3291 (shareware quit screen 2)
+// tile3292 (episode 1 ending screen)
+// tile3293 (episode 2 ending screen)
+// tile3330 
+// tile3341 (tile3330)
+// tile3350 (duke head holo)
+// tile3351 (tile3350 duke head)
+// tile3352 (tile3350 duke head)
+// tile3370 borntobewildscreen
+// tile3373 (quiet on the set sign)
+// tile3380 (3d realms studios sign)
+// tile3382 (stage 17a sign)
+// tile3383 (stage 17b sign)
+// tile3386 (marble wall)
+// tile3391 (lunar apocalypse movie poster)
+// tile3394 
+// tile3397 (dark glass pane)
+// tile3400 blimp
+// tile3407 (brickwork)
+// tile3409 (ktit sign)
+// tile3419 (candy bar)
+// tile3421 (alley cat lounge sign)
+// tile3426 (pirate flag)
+// tile3427 (tile3426 (pirate flag))
+// tile3428 (tile3426 (pirate flag))
+// tile3429 (root)
+// tile3450 fem9 cheerleader
+// tile3451 (tile3450 fem9 cheerleader)
+// tile3452 (tile3450 fem9 cheerleader)
+// tile3453 (tile3450 fem9 cheerleader)
+// tile3454 (tile3450 fem9 cheerleader)
+// tile3455 (tile3450 fem9 cheerleader)
+// tile3550 (amc tc2)
+// tile3583 [decay chair1]
+// tile3587 [vaca tile3585 (rubber dragon)]
+// tile3591 [vaca tile3585 (rubber dragon)]
+// tile3593 [dukedc test-tubes]
+// tile3594 [dukedc flask]
+// tile3598 [nwinter mario]
+// tile3624 [dukedc tube]
+// tile3625 [dukedc test-tubes]
+// tile3627 [nwinter tile1312 fem1 stripper]
+// tile3632 [nwinter (tile1255 ceilingsteam)]
+// tile3640 [dukedc wallphone]
+// tile3647 [vaca (tile3646 seagull)]
+// tile3649 [dukedc deskphone]
+// tile3650 [vaca plus beachbather1]
+// tile3651 [dukedc tree]
+// tile3656 [dukedc conifer]
+// tile3660 [nwinter santa claws]
+// tile3662 [dukedc chair]
+// tile3664 [dukedc us flag]
+// tile3665 [dukedc potus flag]
+// tile3668 (daikarin pipes (tile1048))
+// tile3670 [iittc bottle]
+// tile3671 [nwinter sign]
+// tile3675 [nwinter door]
+// tile3679 (daikarin battlelord (tile2630))
+// tile3685 (st duke nurse)
+// tile3700 [vaca plus tikigod]
+// tile3726 [dukedc remote]
+// tile3748 [dukedc tv antenna]
+// tile3753 [nwinter (tile0908 tree1)]
+// tile3769 [dukedc streetlight]
+// tile3771 [nwinter window]
+// tile3782 [nwinter present]
+// tile3783 [nwinter rocking horse]
+// tile3786 [nwinter present]
+// tile3795 (playing cards)
+// tile3802 [nwinter tile3800 fem grunt]
+// tile3804 [c9 next time on nikki]
+// tile3807 [decay broom]
+// tile3808 [decay chair2]
+// tile3812 [decay toolkit]
+// tile3814 [decay barrel]
+// tile3816 [decay keyboard]
+// tile3817 [decay monitor]
+// tile3823 [nwinter femalegeek]
+// tile3840 (user art)
+// tile3846 [nwinter tile3841 snowman]
+// tile3878 [decay parkometer]
+// tile3902 [nwinter tile3900 santa claws]
+// tile3944 [pyramid red key]
+// tile4027 [nwinter tile4000 fem groan]
+// tile4093 [decay metal grate]
+// tile4096 (mail)
+// tile4098 (panel)
+// tile4102 (panel)
+// tile4105 (panel)
+// tile4125 screenbreak19 (wanted dead)
+// tile4128 (screenbreak17)
+// tile4129 (screenbreak18)
+// tile4130 w_techwall11
+// tile4146 (w_techwall)
+// tile4160 
+// tile4171 
+// tile4186 (potatoes)
+// tile4191 (melons)
+// tile4193 (shelves)
+// tile4194 (cardboard)
+// tile4200 (wood with ironwork)
+// tile4206 (ventilation grid)
+// tile4228 
+// tile4229 
+// tile4230 (burgers)
+// tile4231 (taps)
+// tile4237 (wooden plate)
+// tile4238 (duke burger sign)
+// tile4241 
+// tile4247 (burger menu)
+// tile4248 (burger menu)
+// tile4255 (slab)
+// tile4259 
+// tile4264 [decay dumpster]
+// tile4288 
+// tile4290 (techwall)
+// tile4291 (techwall)
+// tile4292 (console)
+// tile4293 (techwall)
+// tile4294 (techwall)
+// tile4295 (fuse panel)
+// tile4301 (steel door)
+// tile4303 (wooden door)
+// tile4305 
+// tile4310 (lockbox door)
+// tile4318 (mail bags)
+// tile4335 
+// tile4338 (down sign)
+// tile4360 gunpowderbarrel
+// tile4362 (shield triangle)
+// tile4363 (combat knife)
+// tile4366 (steel girder)
+// tile4367 hatrack
+// tile4369 (emergency light)
+// tile4370 desklamp
+// tile4371 (certificate sign)
+// tile4372 coffeemachine
+// tile4373 cups
+// tile4374 gavals (hammer)
+// tile4375 gavals2 (hammer)
+// tile4376 (just say no to drugs sign)
+// tile4377 policelightpole
+// tile4378 (award sign)
+// tile4379 (mugshot)
+// tile4381 (mugshot)
+// tile4382 (mugshot)
+// tile4383 (mugshot)
+// tile4384 (mugshot)
+// tile4385 (mugshot)
+// tile4386 (power line)
+// tile4387 (tabletop)
+// tile4388 floorbasket
+// tile4389 puke
+// tile4395 (list)
+// tile4396 topsecret
+// tile4397 speaker
+// tile4398 (broken speaker)
+// tile4399 (mugshot)
+// tile4400 teddybear
+// tile4401 (mugshot unabomber)
+// tile4402 robotdog
+// tile4403 (tile4402 robotdog)
+// tile4404 robotpirate
+// tile4405 (tile4404 robotpirate)
+// tile4406 (steering wheel)
+// tile4407 robotmouse
+// tile4408 (tile4407 robotmouse)
+// tile4409 (mugshot)
+// tile4410 mail
+// tile4411 (tile4410 mail)
+// tile4412 (tile4410 mail)
+// tile4413 mailbag
+// tile4415 (car mirror)
+// tile4419 (openbomb)
+// tile4420 (shooting gallery sign)
+// tile4423 (figurehead)
+// tile4424 
+// tile4427 hotmeat
+// tile4428 (rail track)
+// tile4429 (tile0913 maskwall2 (fence))
+// tile4430 (broken switch)
+// tile4433 (broken fusebox)
+// tile4438 coffeemug
+// tile4439 (pen & paper)
+// tile4440 donuts2
+// tile4441 (J.McClain)
+// tile4442 (H.Callahan)
+// tile4443 (flag)
+// tile4444 tripodcamera
+// tile4445 (skidmark)
+// tile4446 (ball and chain)
+// tile4448 (handcuffs)
+// tile4449 (roger moore)
+// tile4452 (shoulder bag)
+// tile4453 meter
+// tile4454 deskphone
+// tile4455 (catonine)
+// tile4457 (rope)
+// tile4458 gumballmachine
+// tile4459 gumballmachinebroke
+// tile4461 (tile4460 paper)
+// tile4462 (tile4460 paper)
+// tile4464 mace
+// tile4466 (washington)
+// tile4467 (lincoln)
+// tile4468 (jefferson)
+// tile4469 (jackson)
+// tile4470 xxxstacy
+// tile4473 (J.Dredd)
+// tile4474 (subway parts sign)
+// tile4476 (briefing room sign)
+// tile4477 (command center sign)
+// tile4479 (improbable mission fac. sign)
+// tile4480 (broken cable)
+// tile4483 (tile0164 dipswitch2 broken)
+// tile4484 (duke nukem chart)
+// tile4485 (map)
+// tile4486 (map)
+// tile4487 (map)
+// tile4488 (map)
+// tile4489 (trooper chart)
+// tile4490 (octabrain chart)
+// tile4491 (slimer chart)
+// tile4492 (newbeast chart)
+// tile4493 (imf sign)
+// tile4495 wetfloor
+// tile4496 broom
+// tile4497 mop
+// tile4498 (fempic)
+// tile4499 (U.N.C.L.E. phone)
+// tile4500 (stamp-machine)
+// tile4503 (letter)
+// tile4504 (dog sign)
+// tile4505 (your enemy sign)
+// tile4506 (big gun magazine)
+// tile4507 (ammo monthly)
+// tile4508 (prime cuts sign)
+// tile4509 (whiteboard)
+// tile4510 pirate1a
+// tile4511 pirate4a
+// tile4512 pirate2a
+// tile4514 pirate3a
+// tile4515 pirate6a
+// tile4516 pirate half
+// tile4517 (tile4516 pirate half)
+// tile4518 (i luv et sign)
+// tile4519 (postal rifle ass. sign)
+// tile4520 chestofgold
+// tile4521 (first class mail sign)
+// tile4522 (2-day mail sign)
+// tile4524 (steed's gear)
+// tile4530 foodobject1
+// tile4531 foodobject2
+// tile4532 foodobject3
+// tile4533 foodobject4
+// tile4536 foodobject7
+// tile4537 foodobject8
+// tile4538 foodobject9
+// tile4539 foodobject10
+// tile4540 foodobject11 (burger)
+// tile4541 foodobject12
+// tile4542 foodobject13
+// tile4543 foodobject14
+// tile4544 foodobject15
+// tile4545 foodobject16
+// tile4546 foodobject17
+// tile4547 foodobject18
+// tile4548 foodobject19
+// tile4549 foodobject20
+// tile4550 headlamp
+// tile4552 (worms)
+// tile4553 (grand opening sign)
+// tile4554 skinnedchicken
+// tile4555 featheredchicken
+// tile4556 (no guns sign)
+// tile4558 (duke cartoon hand)
+// tile4559 (duke cartoon face)
+// tile4560 robotdog2
+// tile4561 (tile4560 robotdog2)
+// tile4562 (tile4560 robotdog2)
+// tile4564 (meat disposal sign)
+// tile4567 (frost)
+// tile4568 (wash hands sign)
+// tile4569 jollymeal
+// tile4570 dukeburger
+// tile4572 (tile4570 dukeburger)
+// tile4576 shoppingcart
+// tile4578 (radioactive lettuce sign)
+// tile4579 (return carts sign)
+// tile4580 canwithsomething2
+// tile4581 canwithsomething3
+// tile4582 canwithsomething4
+// tile4583 (pipe)
+// tile4584 
+// tile4585 (valve)
+// tile4586 (pipe)
+// tile4587 (pipe)
+// tile4590 snakep
+// tile4591 dolphin1
+// tile4592 dolphin2
+// tile4593 (catch of the net sign)
+// tile4594 (telemetric graph)
+// tile4600 (banner1)
+// tile4601 (tile4600 (banner1))
+// tile4602 (tile4600 (banner1))
+// tile4603 (banner2)
+// tile4604 (tile4603 (banner2))
+// tile4605 (tile4603 (banner2))
+// tile4607 (emplyees only sign)
+// tile4610 newbeast
+// tile4612 (tile4610 newbeast)
+// tile4620 (tile4610 newbeast)
+// tile4621 (tile4610 newbeast)
+// tile4622 (tile4610 newbeast)
+// tile4623 (tile4610 newbeast)
+// tile4624 (tile4610 newbeast)
+// tile4625 (tile4610 newbeast)
+// tile4630 (tile4610 newbeast)
+// tile4631 (tile4610 newbeast)
+// tile4635 (tile4610 newbeast)
+// tile4640 (tile4610 newbeast)
+// tile4645 (tile4610 newbeast)
+// tile4650 (tile4610 newbeast)
+// tile4651 (tile4610 newbeast)
+// tile4660 (tile4610 newbeast)
+// tile4665 (tile4610 newbeast)
+// tile4666 (tile4610 newbeast)
+// tile4670 newbeasthang
+// tile4671 newbeasthangdead
+// tile4672 (tile4670 newbeasthang)
+// tile4673 (tile4670 newbeasthang)
+// tile4681 (tile4610 newbeast)
+// tile4682 (tile4610 newbeast)
+// tile4683 (tile4610 newbeast)
+// tile4688 (tile4610 newbeast)
+// tile4689 (tile4610 newbeast)
+// tile4700 (tile4610 newbeast)
+// tile4702 (tile4690 newbeastjump)
+// tile4742 (tile4740 (queen))
+// tile4745 (tile4740 (queen))
+// tile4746 (tile4740 (queen))
+// tile4748 (tile4740 (queen))
+// tile4750 (tile4740 (queen))
+// tile4751 (tile4740 (queen))
+// tile4760 (tile4740 (queen))
+// tile4761 (tile4740 (queen))
+// tile4765 (tile4740 (queen))
+// tile4770 (tile4740 (queen))
+// tile4775 (tile4740 (queen))
+// tile4783 (tile4740 (queen))
+// tile4790 (tile4740 (queen))
+// tile4791 (tile4740 (queen))
+// tile4793 (tile4740 (queen))
+// tile4797 (tile4740 (queen))
+// tile4839 [decay box]
+// tile4840 [decay box open]
+// tile4841 [decay box flat]
+// tile4864 fem10 sitting babes
+// tile4865 (tile4864 fem10 sitting babes)
+// tile4866 toughgal
+// tile4867 (tile4866 toughgal)
+// tile4869 (tile4866 toughgal)
+// tile4870 (tile4866 toughgal)
+// tile4871 man
+// tile4872 man2
+// tile4874 woman
+// tile4875 (tile4874 woman)
+// tile4876 (tile4874 woman)
+// tile4877 (glove)
+// tile4879 (dog picture)
+// tile4881 (manager's office sign)
+// tile4884 (broken light)
+// tile4886 (sector 7-g sign))
+// tile4887 pleasewait
+// tile4888 (grate)
+// tile4889 (mugshot)
+// tile4891 (we stor your crap sign)
+// tile4892 (highest quality meats sign)
+// tile4924 (radar screen)
+// tile4930 (e pluribus nukem sign)
+// tile4931 (reactor monitor nominal)
+// tile4932 (reactor monitor red)
+// tile4935 (Unit 3263827 sign)
+// tile4936 (pressure maintenance sign)
+// tile4937 (emergency override sign)
+// tile4938 (express checkout sign)
+// tile4939 (checkout sign)
+// tile4943 (juryguy)
+// tile4945 (sister act 4)
+// tile4946 (baseball bat)
+// tile4947 (farm raised sesos sign)
+// tile4948 (valdeez-2 sign)
+// tile4950 (in case of emergency sign)
+// tile4952 (fire jack sign)
+// tile4953 (prop# 45 sign)
+// tile4955 (babes of the caribbean sign)
+// tile4957 (babe land sign)
+// tile5088 
+// tile5093 
+// tile5099 (brown alien wall texture)
+// tile5102 (green alien wall texture)
+// tile5119 
+// tile5133 [nsd accesscard green]
+// tile5134 (multiplayer)
+// tile5135 [nsd mp5ksprite]
+// tile5136 [nsd m60sprite]
+// tile5137 [nsd leadgunsprite]
+// tile5138 [nsd dynamitesprite]
+// tile5146 [nsd backpacksprite]
+// tile5176 (tile5136 (dotp pigcop))
+// tile5191 (tile5136 (dotp pigcop))
+// tile5192 (tile5136 (dotp pigcop))
+// tile5193 [nsd deagleammo]
+// tile5194 [nsd deaglesprite]
+// tile5209 (prison train tiles020.art)
+// tile5214 (tile5136 (dotp pigcop))
+// tile5221 (tile5136 (dotp pigcop))
+// tile5232 [nsd diving suit]
+// tile5233 [nsd jumpboots]
+// tile5253 [dukeplus cashregister]
+// tile5255 [dukeplus industrial light glow]
+// tile5260 [nsd nukebutton]
+// tile5262 (attrition)
+// tile5269 [dukeplus steel keg]
+// tile5276 [dukeplus floor light]
+// tile5285 (eternity fence)
+// tile5307 [dukeplus shelving]
+// tile5308 [dukeplus shelving1]
+// tile5309 [dukeplus box1]
+// tile5310 [dukeplus box2]
+// tile5312 [dukeplus computer mouse]
+// tile5313 [dukeplus keyboard]
+// tile5318 [dukeplus industrial light]
+// tile5327 [dukeplus dumpster]
+// tile5336 [dukeplus toolbox]
+// tile5339 [dukeplus lumber1]
+// tile5341 [dukeplus lumber4]
+// tile5349 (tile5334
+// tile5356 [dukeplus crate3]
+// tile5358 [dukeplus crate5]
+// tile5369 [nsd plasmagunammo]
+// tile5372 [nsd plasmagunsprite]
+// tile5380 [tile5378 (nsd oldoctabrain)]
+// tile5406 [worldtour hangooz]
+// tile5407 [worldtour hangooz]
+// tile5435 [worldtour royal mail post box]
+// tile5438 [tile5436 (nsd lizmanflame)]
+// tile5458 [worldtour screenbreak kremlin]
+// tile5459 [worldtour screenbreak st.basils]
+// tile5460 [worldtour soviet red star]
+// tile5463 [worldtour soviet golden star]
+// tile5477 [decay lamp]
+// tile5530 [tile5528 (nsd pigcopvacation)]
+// tile5544 [decay pallet]
+// tile5579 [worldtour wig]
+// tile5620 [nsd toolboxsprite]
+// tile5663 [worldtour tussock]
+// tile5705 [worldtour overgrown rocks]
+// tile5706 [worldtour overgrown rocks]
+// tile5711 [worldtour fort point sign]
+// tile5731 [worldtour supraporte]
+// tile5732 [worldtour lgm coffee shop sign]
+// tile5733 [worldtour coffee shop writing]
+// tile5734 [worldtour smoking alien]
+// tile5736 [worldtour alien bong]
+// tile5737 [worldtour bong]
+// tile5739 [worldtour alien crouching]
+// tile5740 [worldtour alien face]
+// tile5741 [worldtour alien grin]
+// tile5752 [worldtour biere delicieux sign]
+// tile5755 [worldtour dessee brasser sign]
+// tile5756 [worldtour biere perruque sign]
+// tile5757 [worldtour b sign]
+// tile5758 [worldtour graffiti filles]
+// tile5759 [worldtour jean luc]
+// tile5760 [worldtour graffiti la fin]
+// tile5761 [worldtour graffiti]
+// tile5764 [worldtour graffiti]
+// tile5767 [worldtour freedom fries sign]
+// tile5769 [worldtour chien bizzarre sign]
+// tile5770 [worldtour la grenouille sign]
+// tile5771 [worldtour hieroglyph earth]
+// tile5772 [worldtour hieroglyph water]
+// tile5773 [worldtour hieroglyph air]
+// tile5774 [worldtour hieroglyph fire]
+// tile5783 [nsd slotdoor]
+// tile5785 [nsd switch]
+// tile5836 [worldtour mike]
+// tile5843 [worldtour union jack]
+// tile5846 [worldtour serious sam]
+// tile5890 [tile5888 (nsd pigcop sp.forces)]
+// tile5948 [nsd pigcopdeadsprite]
+// tile5968 [nsd flying newbeast]
+// tile5982 [nsd drone]
+// tile6139 [dukeplus fuse]
+// tile6145 [dukeplus laserpistol]
+// tile6189 [decay planks]
+// tile6207 [dukeplus minigunsprite]
+// tile6216 [dukeplus impgunpart1 (imperial cannon)]
+// tile6237 [decay wooden panel]
+// tile6244 [dukeplus tree1]
+// tile6256 (decay)
+// tile6278 [decay notes]
+// tile6286 [dukeplus blood splash3]
+// tile6287 [dukeplus blood splash4]
+// tile6324 [dukeplus dbsprite (shotgun)]
+// tile6331 [decay wirefence]
+// tile6343 [decay mailbox]
+// tile6344 [decay dead security guard]
+// tile6361 [decay deskphone]
+// tile6614 (tile6612)
+// tile6615 (tile6612)
+// tile6616 (tile6612)
+// tile6617 [dukeplus civilian4]
+// tile6618 (tile6617)
+// tile6619 [dukeplus civilian 5]
+// tile6865 [dukeplus blackhawk]
+// tile6983 [decay radiator]
+// tile6995 [decay firetruck]
+// tile7178 (tile7120)
+// tile8640 (amc tc2)
+// tile10089 (amc tc2)
+// tile10436 (amc tc2)
+// tile10495 (amc tc2)
+// tile10727 (amc tc2)
+// tile12122 (amc tc2)
+// tile15930 (amc tc2)
+// tile15931 (amc tc2)
+// tile15932 (amc tc2)
+// tile20089 (amc tc2)
+// tile20158 (amc tc2 cola)
+// tile20159 (amc tc2 sixpack)
+// tile20328 (amc tc2)
+
+
+/*
+Setting the default player start position is simple. In 3D mode, move to the 
+exact position which you want to start at, then switch to 2D mode and press 
+Scroll Lock. 
+Your coordinates, height, and angle will be saved. 
+After setting the start position, move the white arrow over, and you'll see a 
+brown arrow (Note: This arrow has changed colour in Mapster32). 
+This arrow represents the default player start position within both the game 
+and the map editor.
+*/
