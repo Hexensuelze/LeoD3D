@@ -1,16 +1,16 @@
-
+# make -f makefile-cross-64
 
 APPBASENAME := art2tga
 
-ifneq ($(findstring Windows,$(OS)),Windows)
-  EXESUFFIX :=
-else
+
+
+
   EXESUFFIX := .exe
-endif
+
 APPDBGNAME := $(APPBASENAME)_debug$(EXESUFFIX)
 APPNAME    := $(APPBASENAME)$(EXESUFFIX)
 
-CC       := gcc$(EXESUFFIX)
+CC       := x86_64-w64-mingw32-gcc
 CC_OPT   := -Wall -Wextra -Ofast -flto
 CC_DEBUG := -Wall -Wextra -Og
 
