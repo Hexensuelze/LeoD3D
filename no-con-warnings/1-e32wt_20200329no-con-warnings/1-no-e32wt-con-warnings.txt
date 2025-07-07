@@ -14,7 +14,7 @@ This pack contains:
  - a patched World Tour FLAMETHROWER.CON, fixing one
    "empty `ifcount' branch" warning
  - a patched World Tour USER.CON with one redundant sound definition commented
-   out and all OGG file definitions with upper case basename
+   out and all OGG file definitions with upper case basename, UNIX path names
  - a patched World Tour GAME.CON, fixing two "`else' with no `if'" warnings
                          and loading the patched CONs above
  - a patched E32WT_CODE.CON, loading the patched GAME.CON
