@@ -8,7 +8,7 @@
 ;; dukecon-mode by Philipp Kutin, based on a tutorial by Scott Andrew Borton
 ;; Created: 2021-09-01
 ;; Keywords: Duke3D EDuke32 grpinfo major-mode
-;; Last updated: 2025-06-27 (EDuke32 r10185 - r10604 -> r10619)
+;; Last updated: 2025-07-07 (EDuke32 r10185 - r10604 -> r10623)
 ;; -> .../source/duke3d/src/grpscan.cpp : grpinfotokens[]
 
 
@@ -119,6 +119,7 @@
      0x5F0266E4 ;; fury_1.1_crc
      0x960B3686 ;; fury_2.0_crc
      0xF3A52423 ;; fury_hotfix_20211009_crc
+     0xE175FB41 ;; fury_3.0.09_aftershock_crc
      PAINTB_CRC   GAMEFLAG_PAINTB
    ))
 

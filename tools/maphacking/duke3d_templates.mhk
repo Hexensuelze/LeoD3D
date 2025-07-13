@@ -59,14 +59,14 @@ sprite     ? notmd                 // tile4386 (power line)
 
 sprite     ? angoff     ?          // tile0753 statue (geisha)
 sprite     ? angoff     ?          // tile1294 podfem1
-sprite     ? angoff     ?          // tile1312 fem1 stripper
-sprite     ? angoff     ?          // tile1317 fem2 pole dancer
-sprite     ? angoff     ?          // tile1321 fem3 hooker
-sprite     ? angoff     ?          // tile1325 fem4 cavedancer
-sprite     ? angoff     ?          // tile1323 fem5 polebabe
-sprite     ? angoff     ?          // tile1334 fem6 padbabe
-sprite     ? angoff     ?          // tile1395 fem7 dancer
-sprite     ? angoff     ?          // tile3450 fem9 cheerleader
+sprite     ? angoff     ?          // tile1312 fem1 (stripper)
+sprite     ? angoff     ?          // tile1317 fem2 (pole dancer)
+sprite     ? angoff     ?          // tile1321 fem3 (hooker)
+sprite     ? angoff     ?          // tile1325 fem4 (cavedancer)
+sprite     ? angoff     ?          // tile1323 fem5 (polebabe)
+sprite     ? angoff     ?          // tile1334 fem6 (padbabe)
+sprite     ? angoff     ?          // tile1395 fem7 (dancer)
+sprite     ? angoff     ?          // tile3450 fem9 (cheerleader)
 sprite     ? angoff     ?          // tile1353 spacemarine
 
 sprite     ? notmd                 // tile0132 slotdoor
@@ -81,12 +81,20 @@ sprite     ? notmd                 // tile0168 dipswitch3
 
 // Maphacks by LeoD for use with the Duke Nukem 3D High Resolution Pack (HRP)
 
-// Title    : FooBar
-// Author   : Bar Foo
-// Filename : foobar.map
-// mapmd4   : 01234567890123456789012345678901 // 2025-06-22
+// Title    : 
+// Author   : 
+// Filename : .map
+// mapmd4   : 01234567890123456789012345678901 // 2025-07-12
 
-// Curr. HRP: r5.4.729
+// Curr. HRP: r5.4.739
+
+mapinfo {
+  maptitle ""
+  //author ""
+  mapfile  ".map"
+  mapmd4    // 20
+  mhkfile  "maphacks/usermaps/.mhk"
+}
 
 //    sect     x       y       z    range   r   g   b  rad fade  ang  horiz mins maxs prio tile
 light 0000 -000000 -000000 -000000 -00000  000 000 000   0   0  0000 -00000   0    0    0    -0
@@ -118,7 +126,7 @@ grep " mapmd4   "   `find ./maphacks -name \*.mhk` | wc -l
 /*/better mutli line comment ending//
 
 
-// tile0009 respawn
+// tile0009 respawn []
 // tile0021 firstgunsprite
 // tile0022 chaingunsprite
 // tile0023 rpgsprite
@@ -605,6 +613,7 @@ grep " mapmd4   "   `find ./maphacks -name \*.mhk` | wc -l
 // tile0999 (tile0998 (parkometer))
 // tile1000 (hollywood road sign)
 // tile1001 (vine road sign)
+// tile1002 (speed limit 25 sign)
 // tile1004 (stop sign)
 // tile1005 pipe5b
 // tile1006 (barstool)
@@ -760,28 +769,28 @@ grep " mapmd4   "   `find ./maphacks -name \*.mhk` | wc -l
 // tile1295 (tile1294 podfem1)
 // tile1298 fempic3
 // tile1306 fempic4
-// tile1312 fem1 stripper
-// tile1313 (tile1312 fem1 stripper)
-// tile1314 (tile1312 fem1 stripper)
-// tile1315 (tile1312 fem1 stripper)
-// tile1316 (tile1312 fem1 stripper)
-// tile1317 fem2 pole dancer
-// tile1318 (tile1317 fem2 poledancer)
-// tile1320 (tile1317 fem2 pole dancer)
-// tile1321 fem3 hooker
-// tile1322 (tile1321 fem3 hooker)
-// tile1323 fem5 polebabe
+// tile1312 fem1 (stripper)
+// tile1313 (tile1312 fem1 (stripper))
+// tile1314 (tile1312 fem1 (stripper))
+// tile1315 (tile1312 fem1 (stripper))
+// tile1316 (tile1312 fem1 (stripper))
+// tile1317 fem2 (pole dancer)
+// tile1318 (tile1317 fem2 (pole dancer))
+// tile1320 (tile1317 fem2 (pole dancer))
+// tile1321 fem3 (hooker)
+// tile1322 (tile1321 fem3 (hooker))
+// tile1323 fem5 (polebabe)
 // tile1324 bloodypole
-// tile1325 fem4 cavedancer
-// tile1326 (tile1325 fem4 cavedancer)
-// tile1327 (tile1325 fem4 cavedancer)
-// tile1328 (tile1325 fem4 cavedancer)
-// tile1329 (tile1325 fem4 cavedancer)
-// tile1330 (tile1325 fem4 cavedancer)
-// tile1331 (tile1312 fem1 stripper flash)
-// tile1332 (tile1312 fem1 stripper flash)
-// tile1333 (tile1312 fem1 stripper flash)
-// tile1334 fem6 padbabe
+// tile1325 fem4 (cavedancer)
+// tile1326 (tile1325 fem4 (cavedancer))
+// tile1327 (tile1325 fem4 (cavedancer))
+// tile1328 (tile1325 fem4 (cavedancer))
+// tile1329 (tile1325 fem4 (cavedancer))
+// tile1330 (tile1325 fem4 (cavedancer))
+// tile1331 (tile1312 fem1 (stripper))
+// tile1332 (tile1312 fem1 (stripper))
+// tile1333 (tile1312 fem1 (stripper))
+// tile1334 fem6 (padbabe)
 // tile1335 fem6pad
 // tile1336 fem8 (impaled babe)
 // tile1337 (helicopter)
@@ -815,10 +824,10 @@ grep " mapmd4   "   `find ./maphacks -name \*.mhk` | wc -l
 // tile1390 firevase
 // tile1392 (tile1390 firevase)
 // tile1394 (//)
-// tile1395 fem7 dancer
-// tile1396 (tile1395 fem7 dancer)
-// tile1397 (tile1395 fem7 dancer)
-// tile1398 (tile1395 fem7 dancer)
+// tile1395 fem7 (dancer)
+// tile1396 (tile1395 fem7 (dancer))
+// tile1397 (tile1395 fem7 (dancer))
+// tile1398 (tile1395 fem7 (dancer))
 // tile1406 (tile1405 duke)
 // tile1407 (tile1405 duke)
 // tile1408 (tile1405 duke)
@@ -1600,12 +1609,12 @@ grep " mapmd4   "   `find ./maphacks -name \*.mhk` | wc -l
 // tile3427 (tile3426 (pirate flag))
 // tile3428 (tile3426 (pirate flag))
 // tile3429 (root)
-// tile3450 fem9 cheerleader
-// tile3451 (tile3450 fem9 cheerleader)
-// tile3452 (tile3450 fem9 cheerleader)
-// tile3453 (tile3450 fem9 cheerleader)
-// tile3454 (tile3450 fem9 cheerleader)
-// tile3455 (tile3450 fem9 cheerleader)
+// tile3450 fem9 (cheerleader)
+// tile3451 (tile3450 fem9 (cheerleader))
+// tile3452 (tile3450 fem9 (cheerleader))
+// tile3453 (tile3450 fem9 (cheerleader))
+// tile3454 (tile3450 fem9 (cheerleader))
+// tile3455 (tile3450 fem9 (cheerleader))
 // tile3550 (amc tc2)
 // tile3583 [decay chair1]
 // tile3587 [vaca tile3585 (rubber dragon)]
@@ -1615,7 +1624,7 @@ grep " mapmd4   "   `find ./maphacks -name \*.mhk` | wc -l
 // tile3598 [nwinter mario]
 // tile3624 [dukedc tube]
 // tile3625 [dukedc test-tubes]
-// tile3627 [nwinter tile1312 fem1 stripper]
+// tile3627 [nwinter tile1312 fem1 (stripper)]
 // tile3632 [nwinter (tile1255 ceilingsteam)]
 // tile3640 [dukedc wallphone]
 // tile3647 [vaca (tile3646 seagull)]
@@ -1931,8 +1940,8 @@ grep " mapmd4   "   `find ./maphacks -name \*.mhk` | wc -l
 // tile4839 [decay box]
 // tile4840 [decay box open]
 // tile4841 [decay box flat]
-// tile4864 fem10 sitting babes
-// tile4865 (tile4864 fem10 sitting babes)
+// tile4864 fem10 (sitting babes)
+// tile4865 (tile4864 fem10 (sitting babes))
 // tile4866 toughgal
 // tile4867 (tile4866 toughgal)
 // tile4869 (tile4866 toughgal)
@@ -1946,7 +1955,7 @@ grep " mapmd4   "   `find ./maphacks -name \*.mhk` | wc -l
 // tile4879 (dog picture)
 // tile4881 (manager's office sign)
 // tile4884 (broken light)
-// tile4886 (sector 7-g sign))
+// tile4886 (sector 7-g sign)
 // tile4887 pleasewait
 // tile4888 (grate)
 // tile4889 (mugshot)
@@ -2119,3 +2128,20 @@ brown arrow (Note: This arrow has changed colour in Mapster32).
 This arrow represents the default player start position within both the game 
 and the map editor.
 */
+
+/****** Notes *****
+
+mirrored sprites need mirrored angoff?
+respawn inherit 0 -> 2048
+
+Hold Mouse R : 2D move
+KPadEnter    : 2D/3D mode switch
+Backspace    : 2D show floor textures/animated
+Rollen       : 2D set starting postition
+G            : 2D grid size off,0-9(auto)
+^            : console
+F3           : 2.5D mode
+
+******/
+
+shaky1, maadm2 maa2 x3?

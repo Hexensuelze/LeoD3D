@@ -8,7 +8,7 @@
 ;;  dukecon-mode by Philipp Kutin, based on a tutorial by Scott Andrew Borton
 ;; Created: 2019-05-07
 ;; Keywords: Duke3D EDuke32 Fury log major-mode
-;; Last updated: 2025-06-01 (EDuke32/Mapster32 r10609 -> r10619)
+;; Last updated: 2025-07-07 (EDuke32/Mapster32 r10609 -> r10623)
 
 
 
@@ -61,7 +61,6 @@
      no\ updates\ available
      Show\ map\ ON  show\ map\ on
      very\ happy\ ammo\ added
-     ;;
      ;; mimalloc
      pointer\ might\ not\ point\ to\ a\ valid\ heap\ region
    ))
@@ -70,10 +69,10 @@
   '(
      ;; Highlight doesn't work with quotes, "(" , ")" , "|" , "," , "!" ,
      ;; leading "\ " or trailing ":"
-     ;;
+
      ;; Mapster32 Ion Fury 2.0:
      ;Warning:\ Truncating\ name\ \"A_NUKEMUTANT_GDF_DEADHEAD\"
-     ;;
+
      ;; Duke3D Voxel Pack tank warnings
      ;; old style
      7630:\ warning:\ duplicate\ action\ \`ATANKSPIN\'\ ignored
@@ -92,7 +91,7 @@
      GAME.CON:7632:\ duplicate\ action\ \'ATANKWAIT\'\ ignored
      GAME.CON:7633:\ duplicate\ action\ \'ATANKDESTRUCT\'\ ignored
      GAME.CON:7634:\ duplicate\ action\ \'ATANKDEAD\'\ ignored
-     ;;
+
      ;; LeoD's Ion Fury Mod warnings
      ;; old style
      z_mod/scripts/foobar.con:25:\ warning:\ sound\ 190\ already\ defined
@@ -119,11 +118,11 @@
      z_mod/scripts/deacon_sounds.con:37:\ overwriting\ existing\ definition\ for\ sound
      z_mod/scripts/deacon_sounds.con:38:\ overwriting\ existing\ definition\ for\ sound
      ; overwriting\ existing\ definition\ for\ sound
-     ;;
+
      ;; LeoD's Linux machine
      ERROR\|\ Windows\ MME\ MIDI\ output\ not\ supported
      ;; not\ supported
-     ;;
+
      0\ warning 0\ warnings
      0\ error   0\ errors
      0-bpp\ windowed 8-bpp\ windowed   32-bpp\ windowed
@@ -146,7 +145,7 @@
      High\ Resolution\ Pack
      Jonathon\ Fowler
      Ken\ Silverman
-     DukePlus -xDukePlus
+     DukePlus Duke\ Plus -jDukePlus -xDukePlus
      Incompatible\ savegame.\ Expected Incompatible\ savegame Incompatible\ Save
      keyboard\ layout
      Map\ dumped\ to\ debug\.map
@@ -165,12 +164,12 @@
      151190\ bytes ; Atomic GAME.CON
       35992\ bytes ; Atomic DEFS.CON
       45482\ bytes ; Atomic USER.CON
-     ;;
+     WARN|\ VPX:\ assuming\ 30\ fps
      LeoD LeoD\ Iron\ Fury fury_leod z_mod
      Debug debug Info info Note note
      Polymer Polymost
      sv_saveandmakesnapshot snapshot workaround
-     Z-Pack Voxels\ for\ Maphacks 
+     Z-Pack Voxels\ for\ Maphacks _Maps
      ; ASS| CON| GFX| GL| INPT| INFO| PR| VM|
      ; INFO
    ))
@@ -199,6 +198,7 @@
      texturecache texturecache\.index textures textures\.cache
      V5\ map V6\ map V7\ map V8\ map
      ;  V9\ map
+     ;dukegdx\.dat
 
      ;; KenBuild:
      EKenBuild EKenBuild\ Editor ekenbuild\.cfg ekenbuild\.log
@@ -247,12 +247,18 @@
      ext
 
      ;; BuildGDX:
-     BUILD BuildGdx
-     BloodGDX DukeGDX LSPGDX PowerslaveGDX
-     RedneckGDX TekWarGDX WangGDX WitchavenGDX Witchaven2GDX
-     bloodgdx\.dat lspgdx\.dat psgdx\.dat rrgdx\.dat twgdx\.dat whgdx\.dat
+     BUILD         BuildGdx      Polygdx
+     BloodGDX      bloodgdx\.dat
+     DukeGDX       dukegdx\.dat
+     LSPGDX        lspgdx\.dat
+     PowerslaveGDX psgdx\.dat
+     RedneckGDX    rrgdx\.dat 
+     TekWarGDX     twgdx\.dat
+     WangGDX
+     WitchavenGDX  whgdx\.dat
+     Witchaven2GDX
 
-     ;; Duke3dw
+     ;; Duke3dw:
      Buildw\.cfg Buildw\.log Duke3dw\.cfg Duke3dw\.grp Duke3dw\.log
      Buildw Duke3dw LICENSE\.DOC
 
@@ -381,7 +387,7 @@
      Unknown unknown Unrecognized unrecognized Unsupported unsupported
      Usage
      WARNING WARN| Warning warning warnings Wrong wrong
-     ;;  ERR WARN INFO GFX CON ASS GL VM 7
+     ;  ERR WARN INFO GFX CON ASS GL VM 7
      ERR WARN
      ;; MISC:
      en-US V9 VX V10
@@ -398,7 +404,7 @@
      Relocating Removing Resizing resizing Restarting restarting Running
      Saving Scanning Searching Setting Stopping stopping Switching Syncing
      Trying trying Uninitialising Uninitializing Using using
-;; including initialising initializing Initialisation Initialization overwriting
+; including initialising initializing Initialisation Initialization overwriting
      ;; 2nd Level:
      ;Allocating Creating Getting Freeing Releasing Unloading Waiting
      ;; Blood:

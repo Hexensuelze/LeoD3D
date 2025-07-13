@@ -219,14 +219,22 @@ sprite     ? angoff     0          // tile19000 a_shoppintrolley
 sprite     ? angoff     0          // tile19009 a_stufftrolley
 
 
-// Ion Fury Maphacks by LeoD
+// Ion Fury Voxel Pack Maphacks by LeoD
 
-// Title    : Foo Bar
-// Author   : Bar Foo
-// Filename : foobar.map
-// mapmd4   : 01234567890123456789012345678901 // 2025-06-17
+// Title    : 
+// Author   : 
+// Filename : .map
+// mapmd4   : 01234567890123456789012345678901 // 2025-07-12
 
-// Curr.IFVP: r0.0.159
+// Curr.IFVP: r0.0.161
+
+mapinfo {
+  maptitle ""
+  //author ""
+  mapfile  "z1a1.map"
+  mapmd4    // 202
+  mhkfile  "maphacks/voidpoint/z1a1.mhk"
+}
 
 
 /*/better mutli line comment ending//
@@ -258,3 +266,16 @@ GitHub:
  5   https://github.com/Hexensuelze : Contribute->Open Pull Request->Create PR
 */
 snowb, SPY2, z2a2, z3a1
+
+/****** Notes ******
+mirrored sprites need mirrored angoff?
+respawn inherit 0 -> 2048
+
+Hold Mouse R : 2D move
+KPadEnter    : 2D/3D mode switch
+Backspace    : 2D show floor textures/animated
+Rollen       : 2D set starting postition
+G            : 2D grid size off,0-9(auto)
+^            : console
+F3           : 2.5D mode
+******/
