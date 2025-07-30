@@ -515,520 +515,520 @@ The sound fx section follows this explanation.
 // BIT 4 (16) Glob. Heard (sndist = 0)
 
 // Predator Trooper
-definesound PRED_ROAM     sound\ROAM06.ogg          0   0   3  0   0
-definesound PRED_ROAM2    sound\ROAM58.ogg          0   0   3  0   0
-definesound PRED_RECOG    sound\PREDRG.ogg          0   0   3  0   0
-definesound PRED_ATTACK   sound\GBLASR01.ogg      256  256  3  0   7680
-definesound PRED_PAIN     sound\PREDPN.ogg          200 500 3  0   0
-definesound PRED_DYING    sound\PREDDY.ogg          0   400 3  0   0
+definesound PRED_ROAM     sound/ROAM06.ogg          0   0   3  0   0
+definesound PRED_ROAM2    sound/ROAM58.ogg          0   0   3  0   0
+definesound PRED_RECOG    sound/PREDRG.ogg          0   0   3  0   0
+definesound PRED_ATTACK   sound/GBLASR01.ogg      256  256  3  0   7680
+definesound PRED_PAIN     sound/PREDPN.ogg          200 500 3  0   0
+definesound PRED_DYING    sound/PREDDY.ogg          0   400 3  0   0
                                              
 // Lizard Captain                                                                       
-definesound CAPT_ROAM     sound\PREDRM.ogg          0  200  3   0   0
-definesound CAPT_RECOG    sound\PREDRG.ogg        -400  0   3   0   0
-definesound CAPT_ATTACK   sound\CHAINGUN.ogg      0     0    3   0   -200
-definesound CAPT_PAIN     sound\PREDPN.ogg        -200  100 3   0   0
-definesound CAPT_DYING    sound\PREDDY.ogg        -200  100 3   0   0
-definesound LIZARD_SPIT   sound\LIZSPIT.ogg         0   0   0   0   0
-definesound LIZARD_BEG    sound\CHOKN12.ogg         0   0   3  0   0
+definesound CAPT_ROAM     sound/PREDRM.ogg          0  200  3   0   0
+definesound CAPT_RECOG    sound/PREDRG.ogg        -400  0   3   0   0
+definesound CAPT_ATTACK   sound/CHAINGUN.ogg      0     0    3   0   -200
+definesound CAPT_PAIN     sound/PREDPN.ogg        -200  100 3   0   0
+definesound CAPT_DYING    sound/PREDDY.ogg        -200  100 3   0   0
+definesound LIZARD_SPIT   sound/LIZSPIT.ogg         0   0   0   0   0
+definesound LIZARD_BEG    sound/CHOKN12.ogg         0   0   3  0   0
 
 // Newbeast
-definesound NEWBEAST_ROAM     sound\BLROAM2A.ogg     -128 128    3   0   0
-definesound NEWBEAST_RECOG    sound\BLREC4B.ogg      1400   0    3   0   0
-definesound NEWBEAST_ATTACK   sound\BLRIP1A.ogg     -150  150    3   0   0
-definesound NEWBEAST_ATTACKMISS sound\BLRIP1B.ogg     -256  256  3   0   0
-definesound NEWBEAST_PAIN     sound\BLPAIN1B.ogg      -256  256  3   0   0
-definesound NEWBEAST_DYING    sound\BLDIE3A.ogg        1200  100 3   0   0
-definesound NEWBEAST_SPIT     sound\BLSPIT1A.ogg      -128 128   0   0   0
+definesound NEWBEAST_ROAM     sound/BLROAM2A.ogg     -128 128    3   0   0
+definesound NEWBEAST_RECOG    sound/BLREC4B.ogg      1400   0    3   0   0
+definesound NEWBEAST_ATTACK   sound/BLRIP1A.ogg     -150  150    3   0   0
+definesound NEWBEAST_ATTACKMISS sound/BLRIP1B.ogg     -256  256  3   0   0
+definesound NEWBEAST_PAIN     sound/BLPAIN1B.ogg      -256  256  3   0   0
+definesound NEWBEAST_DYING    sound/BLDIE3A.ogg        1200  100 3   0   0
+definesound NEWBEAST_SPIT     sound/BLSPIT1A.ogg      -128 128   0   0   0
 
 // Pig Cop
-definesound PIG_ROAM      sound\ROAM29.ogg           -200 400   3   0   0
-definesound PIG_ROAM2     sound\ROAM67.ogg           -200 400   3   0   0
-definesound PIG_ROAM3     sound\PIGRM.ogg            -200 400   3   0   0
-definesound PIG_RECOG     sound\PIGRG.ogg           -200 400   3   0   0
-definesound PIG_ATTACK    sound\SHOTGUN7.ogg        -256  256  4   0   0
-definesound PIG_PAIN      sound\PIGPN.ogg            100 800   3   0   0
-definesound PIG_DYING     sound\PIGDY.ogg           -800 100   3   0   0
-definesound PIG_CAPTURE_DUKE sound\!PIG.ogg           0   0   255 8   0
+definesound PIG_ROAM      sound/ROAM29.ogg           -200 400   3   0   0
+definesound PIG_ROAM2     sound/ROAM67.ogg           -200 400   3   0   0
+definesound PIG_ROAM3     sound/PIGRM.ogg            -200 400   3   0   0
+definesound PIG_RECOG     sound/PIGRG.ogg           -200 400   3   0   0
+definesound PIG_ATTACK    sound/SHOTGUN7.ogg        -256  256  4   0   0
+definesound PIG_PAIN      sound/PIGPN.ogg            100 800   3   0   0
+definesound PIG_DYING     sound/PIGDY.ogg           -800 100   3   0   0
+definesound PIG_CAPTURE_DUKE sound/!PIG.ogg           0   0   255 8   0
 
 // Recon car
-definesound RECO_ROAM     sound\JETPAKI.ogg            0   0   3   0   0
-definesound RECO_RECOG    sound\PIGRG.ogg              0   0   3   0   0
-definesound RECO_ATTACK   sound\GBLASR01.ogg         256  256  3  0   7680
-definesound RECO_PAIN     sound\PIGPN.ogg              0   0   3   0   0
-definesound RECO_DYING    sound\PIGDY.ogg              0   0   3   0   0
+definesound RECO_ROAM     sound/JETPAKI.ogg            0   0   3   0   0
+definesound RECO_RECOG    sound/PIGRG.ogg              0   0   3   0   0
+definesound RECO_ATTACK   sound/GBLASR01.ogg         256  256  3  0   7680
+definesound RECO_PAIN     sound/PIGPN.ogg              0   0   3   0   0
+definesound RECO_DYING    sound/PIGDY.ogg              0   0   3   0   0
 
 // Drone drone
-definesound DRON_ROAM     sound\SNAKRM.ogg             0   0   3   0   0
-definesound DRON_RECOG    sound\SNAKRG.ogg             0   0   3   0   0
-definesound DRON_ATTACK1  sound\SNAKATA.ogg            0   0   3   0   0
-definesound DRON_ATTACK2  sound\SNAKATB.ogg            0   0   3   0   0
-definesound DRON_PAIN     sound\SNAKPN.ogg             0   0   3   0   0
-definesound DRON_DYING    sound\SNAKDY.ogg             0   0   3   0   0
-definesound DRON_JETSND   sound\ENGHUM.ogg             1300 1300 0   0   0
+definesound DRON_ROAM     sound/SNAKRM.ogg             0   0   3   0   0
+definesound DRON_RECOG    sound/SNAKRG.ogg             0   0   3   0   0
+definesound DRON_ATTACK1  sound/SNAKATA.ogg            0   0   3   0   0
+definesound DRON_ATTACK2  sound/SNAKATB.ogg            0   0   3   0   0
+definesound DRON_PAIN     sound/SNAKPN.ogg             0   0   3   0   0
+definesound DRON_DYING    sound/SNAKDY.ogg             0   0   3   0   0
+definesound DRON_JETSND   sound/ENGHUM.ogg             1300 1300 0   0   0
 
 
 // Fat Commander
-definesound COMM_ROAM     sound\COMMRM.ogg             0   0   3   0   0
-definesound COMM_RECOG    sound\COMMRG.ogg             0   0   3   0   0
-definesound COMM_ATTACK   sound\COMMAT.ogg             0   0   3   0   0
-definesound COMM_PAIN     sound\COMMPN.ogg             0   0   3   0   0
-definesound COMM_DYING    sound\COMMDY.ogg             0   0   3   0   0
-definesound COMM_SPIN     sound\COMMSP.ogg             0   0   3   0   0
+definesound COMM_ROAM     sound/COMMRM.ogg             0   0   3   0   0
+definesound COMM_RECOG    sound/COMMRG.ogg             0   0   3   0   0
+definesound COMM_ATTACK   sound/COMMAT.ogg             0   0   3   0   0
+definesound COMM_PAIN     sound/COMMPN.ogg             0   0   3   0   0
+definesound COMM_DYING    sound/COMMDY.ogg             0   0   3   0   0
+definesound COMM_SPIN     sound/COMMSP.ogg             0   0   3   0   0
 
 // Octabrain
-definesound OCTA_ROAM     sound\OCTARM.ogg          -200   0    3   0   0
-definesound OCTA_RECOG    sound\OCTARG.ogg             0   0    3   0   0
-definesound OCTA_ATTACK1  sound\OCTAAT1.ogg            0   0    3   0   0
-definesound OCTA_ATTACK2  sound\OCTAAT2.ogg            0   600  3   0   0
-definesound OCTA_PAIN     sound\OCTAPN.ogg          -400   0    3   0   0
-definesound OCTA_DYING    sound\OCTADY.ogg          -400   -100 3   0   0
-definesound WIERDSHOT_FLY sound\OCTAAT1.ogg            0   0    3   0   0
+definesound OCTA_ROAM     sound/OCTARM.ogg          -200   0    3   0   0
+definesound OCTA_RECOG    sound/OCTARG.ogg             0   0    3   0   0
+definesound OCTA_ATTACK1  sound/OCTAAT1.ogg            0   0    3   0   0
+definesound OCTA_ATTACK2  sound/OCTAAT2.ogg            0   600  3   0   0
+definesound OCTA_PAIN     sound/OCTAPN.ogg          -400   0    3   0   0
+definesound OCTA_DYING    sound/OCTADY.ogg          -400   -100 3   0   0
+definesound WIERDSHOT_FLY sound/OCTAAT1.ogg            0   0    3   0   0
 
 // Organic turret
-definesound TURR_ROAM     sound\TURRRM.ogg             0   0   3   0   0
-definesound TURR_RECOG    sound\TURRRG.ogg             0   0   3   0   0
-definesound TURR_ATTACK   sound\TURRAT.ogg             0   0   3   0   0
-definesound TURR_PAIN     sound\TURRPN.ogg             0   0   3   0   0
-definesound TURR_DYING    sound\TURRDY.ogg             0   0   3   0   0
+definesound TURR_ROAM     sound/TURRRM.ogg             0   0   3   0   0
+definesound TURR_RECOG    sound/TURRRG.ogg             0   0   3   0   0
+definesound TURR_ATTACK   sound/TURRAT.ogg             0   0   3   0   0
+definesound TURR_PAIN     sound/TURRPN.ogg             0   0   3   0   0
+definesound TURR_DYING    sound/TURRDY.ogg             0   0   3   0   0
 
 // Green slimer
-definesound SLIM_HATCH    sound\SLHTCH01.ogg          -256 256   3   0   0
-definesound SLIM_ROAM     sound\SLIROA02.ogg          -256 256   3   0   0
-definesound SLIM_RECOG    sound\SLIREC06.ogg          -256 256   3   0   0
-definesound SLIM_ATTACK   sound\SLIMAT.ogg            -256 256   3   0   0
-// definesound SLIM_PAIN     sound\SLIMPN.ogg         -256 256   3   0   0
-definesound SLIM_DYING    sound\SLIDIE03.ogg          -256 256   3   0   0
+definesound SLIM_HATCH    sound/SLHTCH01.ogg          -256 256   3   0   0
+definesound SLIM_ROAM     sound/SLIROA02.ogg          -256 256   3   0   0
+definesound SLIM_RECOG    sound/SLIREC06.ogg          -256 256   3   0   0
+definesound SLIM_ATTACK   sound/SLIMAT.ogg            -256 256   3   0   0
+// definesound SLIM_PAIN     sound/SLIMPN.ogg         -256 256   3   0   0
+definesound SLIM_DYING    sound/SLIDIE03.ogg          -256 256   3   0   0
 
 // BOSS2
-definesound BOS2_ROAM     sound\B2ATK01.ogg             0   0   3   0   0
-definesound BOS2_RECOG    sound\B2REC03.ogg             0   0   3   0   0
-definesound BOS2_ATTACK   sound\B2ATK02.ogg             0   0   3   0   0
-definesound BOS2_PAIN     sound\B2PAIN03.ogg             0   0   3   0   0
-definesound BOS2_DYING    sound\B2DIE03.ogg             0   0   3   0   0
+definesound BOS2_ROAM     sound/B2ATK01.ogg             0   0   3   0   0
+definesound BOS2_RECOG    sound/B2REC03.ogg             0   0   3   0   0
+definesound BOS2_ATTACK   sound/B2ATK02.ogg             0   0   3   0   0
+definesound BOS2_PAIN     sound/B2PAIN03.ogg             0   0   3   0   0
+definesound BOS2_DYING    sound/B2DIE03.ogg             0   0   3   0   0
 
 // BOSS3                                                                                
-definesound BOS3_ROAM     sound\B3ROAM01.ogg             0   0   3   0   0
-definesound BOS3_RECOG    sound\B3PAIN04.ogg             0   0   3   0   0
-definesound BOS3_ATTACK1  sound\B3ATK01.ogg              0   0   3   0   0
-definesound BOS3_ATTACK2  sound\B3ATK01.ogg              0   0   3   0   0
-definesound BOS3_PAIN     sound\B3REC03G.ogg             0   0   3   0   0
-definesound BOS3_DYING    sound\B3DIE03G.ogg             0   0   3   0   0
+definesound BOS3_ROAM     sound/B3ROAM01.ogg             0   0   3   0   0
+definesound BOS3_RECOG    sound/B3PAIN04.ogg             0   0   3   0   0
+definesound BOS3_ATTACK1  sound/B3ATK01.ogg              0   0   3   0   0
+definesound BOS3_ATTACK2  sound/B3ATK01.ogg              0   0   3   0   0
+definesound BOS3_PAIN     sound/B3REC03G.ogg             0   0   3   0   0
+definesound BOS3_DYING    sound/B3DIE03G.ogg             0   0   3   0   0
 
 // BOSS4
-definesound BOS4_ROAM     sound\BQROAM2A.ogg          1024 1024  255 0  0
-definesound BOS4_RECOG    sound\BQREC2A.ogg           1024 1024  255 0  3084
-definesound BOS4_ATTACK   sound\BQSHOCK3.ogg          1024 1024  255 0  0
-definesound BOS4_PAIN     sound\BQPAIN2A.ogg          1024 1024  255 0  0
-definesound BOS4_DYING    sound\BQDIE1A.ogg           1024 1024  255 0  0
-definesound BOS4_LAY      sound\BQEGG1A.ogg           1024 1024  255 0  0
+definesound BOS4_ROAM     sound/BQROAM2A.ogg          1024 1024  255 0  0
+definesound BOS4_RECOG    sound/BQREC2A.ogg           1024 1024  255 0  3084
+definesound BOS4_ATTACK   sound/BQSHOCK3.ogg          1024 1024  255 0  0
+definesound BOS4_PAIN     sound/BQPAIN2A.ogg          1024 1024  255 0  0
+definesound BOS4_DYING    sound/BQDIE1A.ogg           1024 1024  255 0  0
+definesound BOS4_LAY      sound/BQEGG1A.ogg           1024 1024  255 0  0
 
 // BOSS1                                                                                
-definesound BOS1_ROAM     sound\BOS1RM.ogg             0   0   3   0   0
-definesound BOS1_RECOG    sound\BOS1RG.ogg             0   0   5   0   0
-definesound BOS1_ATTACK1  sound\CHAINGUN.ogg           0   0   3   0   0
-definesound BOS1_ATTACK2  sound\RPGFIRE.ogg            0   0   3   0   0
-definesound BOS1_PAIN     sound\BOS1PN.ogg             0   0   3   0   0
-definesound BOS1_DYING    sound\BOS1DY.ogg             0   0   3   0   0
-definesound BOS1_WALK     sound\THUD.ogg               0   0   3   0   0
+definesound BOS1_ROAM     sound/BOS1RM.ogg             0   0   3   0   0
+definesound BOS1_RECOG    sound/BOS1RG.ogg             0   0   5   0   0
+definesound BOS1_ATTACK1  sound/CHAINGUN.ogg           0   0   3   0   0
+definesound BOS1_ATTACK2  sound/RPGFIRE.ogg            0   0   3   0   0
+definesound BOS1_PAIN     sound/BOS1PN.ogg             0   0   3   0   0
+definesound BOS1_DYING    sound/BOS1DY.ogg             0   0   3   0   0
+definesound BOS1_WALK     sound/THUD.ogg               0   0   3   0   0
 
 
 // *************
 // WEAPON SOUNDS                                                                        
 // *************
-definesound KICK_HIT            sound\KICKHIT.ogg       0     0     4   0   0
-definesound PISTOL_RICOCHET     sound\RICOCHET.ogg      0     0     0   0 4096
-definesound PISTOL_BODYHIT      sound\BULITHIT.ogg      0     0     0   0   0
-definesound PISTOL_FIRE         sound\PISTOL.ogg      -64     0   254   0   0
-definesound EJECT_CLIP          sound\CLIPOUT.ogg       0     0     3   0   0
-definesound INSERT_CLIP         sound\CLIPIN.ogg        512   512   3   0   0
-definesound CHAINGUN_FIRE       sound\CHAINGUN.ogg     -204 -204  254   0   512
-definesound SHOTGUN_FIRE        sound\SHOTGUN7.ogg      0    512    254 0   0
-definesound SHOTGUN_COCK        sound\SHOTGNCK.ogg      96    192   3   0   0
-definesound RPG_SHOOT           sound\RPGFIRE.ogg       -32   0     4   0   0
-definesound FLY_BY              sound\FLYBY.ogg         -256  256   3   0   0
-definesound RPG_EXPLODE         sound\BOMBEXPL.ogg      -1024 1024  128 0   0
-definesound CAT_FIRE            sound\CATFIRE.ogg       512   768   4   0   0
-definesound SHRINKER_FIRE       sound\SHRINKER.ogg      -512  0     5   0   0
-definesound ACTOR_SHRINKING     sound\SHRINK.ogg        0     0     2   0   0
-definesound ACTOR_GROWING       sound\ENLARGE.ogg    1024     0     2   0   0
+definesound KICK_HIT            sound/KICKHIT.ogg       0     0     4   0   0
+definesound PISTOL_RICOCHET     sound/RICOCHET.ogg      0     0     0   0 4096
+definesound PISTOL_BODYHIT      sound/BULITHIT.ogg      0     0     0   0   0
+definesound PISTOL_FIRE         sound/PISTOL.ogg      -64     0   254   0   0
+definesound EJECT_CLIP          sound/CLIPOUT.ogg       0     0     3   0   0
+definesound INSERT_CLIP         sound/CLIPIN.ogg        512   512   3   0   0
+definesound CHAINGUN_FIRE       sound/CHAINGUN.ogg     -204 -204  254   0   512
+definesound SHOTGUN_FIRE        sound/SHOTGUN7.ogg      0    512    254 0   0
+definesound SHOTGUN_COCK        sound/SHOTGNCK.ogg      96    192   3   0   0
+definesound RPG_SHOOT           sound/RPGFIRE.ogg       -32   0     4   0   0
+definesound FLY_BY              sound/FLYBY.ogg         -256  256   3   0   0
+definesound RPG_EXPLODE         sound/BOMBEXPL.ogg      -1024 1024  128 0   0
+definesound CAT_FIRE            sound/CATFIRE.ogg       512   768   4   0   0
+definesound SHRINKER_FIRE       sound/SHRINKER.ogg      -512  0     5   0   0
+definesound ACTOR_SHRINKING     sound/SHRINK.ogg        0     0     2   0   0
+definesound ACTOR_GROWING       sound/ENLARGE.ogg    1024     0     2   0   0
 
-definesound PIPEBOMB_BOUNCE     sound\PBOMBBNC.ogg      0     0     2   0 6144
-definesound PIPEBOMB_EXPLODE    sound\BOMBEXPL.ogg  -512      0     128 0   0
-definesound LASERTRIP_ONWALL    sound\LSRBMBPT.ogg      0     0     3   0   0
-definesound LASERTRIP_ARMING    sound\LSRBMBWN.ogg      0     0     3   0   0
-definesound LASERTRIP_EXPLODE   sound\BOMBEXPL.ogg  -512      0     4   0   0
-definesound NITEVISION_ONOFF    sound\GOGGLE12.ogg      0     0     0   0   0
-definesound SELECT_WEAPON       sound\WPNSEL21.ogg      128   128   3   0   0
+definesound PIPEBOMB_BOUNCE     sound/PBOMBBNC.ogg      0     0     2   0 6144
+definesound PIPEBOMB_EXPLODE    sound/BOMBEXPL.ogg  -512      0     128 0   0
+definesound LASERTRIP_ONWALL    sound/LSRBMBPT.ogg      0     0     3   0   0
+definesound LASERTRIP_ARMING    sound/LSRBMBWN.ogg      0     0     3   0   0
+definesound LASERTRIP_EXPLODE   sound/BOMBEXPL.ogg  -512      0     4   0   0
+definesound NITEVISION_ONOFF    sound/GOGGLE12.ogg      0     0     0   0   0
+definesound SELECT_WEAPON       sound/WPNSEL21.ogg      128   128   3   0   0
 
 // Affect Environment Sounds                                                            
-definesound VENT_BUST           sound\VENTBUST.ogg      -32   32 2  0  0
-definesound GLASS_BREAKING      sound\GLASS.ogg         -412  0  3  0  8192
-definesound GLASS_HEAVYBREAK    sound\GLASHEVY.ogg      -412  0  3  0  8192
-definesound SHORT_CIRCUIT       sound\SHORTED.ogg       0 0 0 0 6500
-definesound ITEM_SPLASH         sound\SPLASH.ogg        0 0 2 0 0
-definesound BONUSMUSIC          sound\BONUS.ogg         0 0 255 1 0
+definesound VENT_BUST           sound/VENTBUST.ogg      -32   32 2  0  0
+definesound GLASS_BREAKING      sound/GLASS.ogg         -412  0  3  0  8192
+definesound GLASS_HEAVYBREAK    sound/GLASHEVY.ogg      -412  0  3  0  8192
+definesound SHORT_CIRCUIT       sound/SHORTED.ogg       0 0 0 0 6500
+definesound ITEM_SPLASH         sound/SPLASH.ogg        0 0 2 0 0
+definesound BONUSMUSIC          sound/BONUS.ogg         0 0 255 1 0
 
 // Duke's Body Sounds                                                                   
-definesound DUKE_BREATHING      sound\HLMINHAL.ogg       0   0   255 4   0
-definesound DUKE_EXHALING       sound\HLMEXHAL.ogg       0   0   255 4   0
-definesound DUKE_GASP           sound\GASP.ogg           0   0   255 4   0
-definesound DUKE_URINATE        sound\PISSING.ogg        0   0   4   0   0
-definesound DUKE_CRACK2         sound\COMEON02.ogg       0   0   255 4   0
-definesound DUKE_CRACK          sound\WAITIN03.ogg       0   0   255 4   0
-definesound DUKE_TALKTOBOSSFALL sound\DIESOB03.ogg       0   0   255 12  0
-definesound DUKE_CRACK_FIRST    sound\KNUCKLE.ogg        0   0   3   0   0
-definesound DUKE_GET            sound\GETITM19.ogg     -64  64   255 0   0
-definesound DUKE_GETWEAPON1     sound\COOL01.ogg         0   0   255 4   0
-definesound DUKE_GETWEAPON2     sound\GETSOM1A.ogg       0   0   255 4   0
-definesound DUKE_GETWEAPON3     sound\GROOVY02.ogg       0   0   255 4   0
-definesound DUKE_GETWEAPON4     sound\WANSOM4A.ogg       0   0   255 4   0
-definesound DUKE_GETWEAPON6     sound\HAIL01.ogg         0   0   255 4   0
-definesound DUKE_GOTHEALTHATLOW sound\NEEDED03.ogg       0   0   255 4   0
+definesound DUKE_BREATHING      sound/HLMINHAL.ogg       0   0   255 4   0
+definesound DUKE_EXHALING       sound/HLMEXHAL.ogg       0   0   255 4   0
+definesound DUKE_GASP           sound/GASP.ogg           0   0   255 4   0
+definesound DUKE_URINATE        sound/PISSING.ogg        0   0   4   0   0
+definesound DUKE_CRACK2         sound/COMEON02.ogg       0   0   255 4   0
+definesound DUKE_CRACK          sound/WAITIN03.ogg       0   0   255 4   0
+definesound DUKE_TALKTOBOSSFALL sound/DIESOB03.ogg       0   0   255 12  0
+definesound DUKE_CRACK_FIRST    sound/KNUCKLE.ogg        0   0   3   0   0
+definesound DUKE_GET            sound/GETITM19.ogg     -64  64   255 0   0
+definesound DUKE_GETWEAPON1     sound/COOL01.ogg         0   0   255 4   0
+definesound DUKE_GETWEAPON2     sound/GETSOM1A.ogg       0   0   255 4   0
+definesound DUKE_GETWEAPON3     sound/GROOVY02.ogg       0   0   255 4   0
+definesound DUKE_GETWEAPON4     sound/WANSOM4A.ogg       0   0   255 4   0
+definesound DUKE_GETWEAPON6     sound/HAIL01.ogg         0   0   255 4   0
+definesound DUKE_GOTHEALTHATLOW sound/NEEDED03.ogg       0   0   255 4   0
 
-definesound DUKE_SEARCH         sound\PAIN87.ogg       0   0   2   4     0
-definesound DUKE_SEARCH2        sound\WHRSIT05.ogg       0   0   255 4   0
-definesound DUKE_LONGTERM_PAIN  sound\GASPS07.ogg     -192   0   255 4   0
-definesound DUKE_LONGTERM_PAIN2 sound\DSCREM15.ogg      0   0   255 4   0
-definesound DUKE_LONGTERM_PAIN3 sound\DSCREM16.ogg      0   0   255 4   0
-definesound DUKE_LONGTERM_PAIN4 sound\DSCREM17.ogg      0   0   255 4   0
-definesound DUKE_LONGTERM_PAIN5 sound\PAIN54.ogg        0   0   255 4   0
-definesound DUKE_LONGTERM_PAIN6 sound\PAIN75.ogg        0   0   255 4   0
-definesound DUKE_LONGTERM_PAIN7 sound\PAIN93.ogg        0   0   255 4   0
-definesound DUKE_LONGTERM_PAIN8 sound\PAIN68.ogg        0   0   255 4   0
+definesound DUKE_SEARCH         sound/PAIN87.ogg       0   0   2   4     0
+definesound DUKE_SEARCH2        sound/WHRSIT05.ogg       0   0   255 4   0
+definesound DUKE_LONGTERM_PAIN  sound/GASPS07.ogg     -192   0   255 4   0
+definesound DUKE_LONGTERM_PAIN2 sound/DSCREM15.ogg      0   0   255 4   0
+definesound DUKE_LONGTERM_PAIN3 sound/DSCREM16.ogg      0   0   255 4   0
+definesound DUKE_LONGTERM_PAIN4 sound/DSCREM17.ogg      0   0   255 4   0
+definesound DUKE_LONGTERM_PAIN5 sound/PAIN54.ogg        0   0   255 4   0
+definesound DUKE_LONGTERM_PAIN6 sound/PAIN75.ogg        0   0   255 4   0
+definesound DUKE_LONGTERM_PAIN7 sound/PAIN93.ogg        0   0   255 4   0
+definesound DUKE_LONGTERM_PAIN8 sound/PAIN68.ogg        0   0   255 4   0
 
-definesound DUKE_PISSRELIEF     sound\AHMUCH03.ogg       0   0   255 4   0
+definesound DUKE_PISSRELIEF     sound/AHMUCH03.ogg       0   0   255 4   0
 
 // Duke Health Sounds
-definesound SOMETHINGHITFORCE   sound\TELEPORT.ogg       0   0    2   0   8192
-definesound DUKE_DRINKING       sound\DRINK18.ogg     -128 128   2   4   0
-definesound DUKE_KILLED1        sound\DAMN03.ogg         0   0   255 12  0
-definesound DUKE_KILLED2        sound\DAMNIT04.ogg       0   0   255 12  0
-definesound DUKE_KILLED3        sound\THSUK13A.ogg       0   0   255 12  0
-definesound DUKE_KILLED4        sound\DSCREM18.ogg       0   0   255 4   0
-definesound DUKE_KILLED5        sound\PISSES01.ogg       0   0   255 12  0
-definesound DUKE_GRUNT          sound\EXERT.ogg          0   0   2   4   0
-definesound DUKE_DEAD           sound\DMDEATH.ogg      -64  64   255 4  0
-definesound DUKE_HARTBEAT       sound\HARTBEAT.ogg       0   0   0   0   0
-definesound DUKE_STEPONFECES    sound\HAPPEN01.ogg       0   0   0   12  0
+definesound SOMETHINGHITFORCE   sound/TELEPORT.ogg       0   0    2   0   8192
+definesound DUKE_DRINKING       sound/DRINK18.ogg     -128 128   2   4   0
+definesound DUKE_KILLED1        sound/DAMN03.ogg         0   0   255 12  0
+definesound DUKE_KILLED2        sound/DAMNIT04.ogg       0   0   255 12  0
+definesound DUKE_KILLED3        sound/THSUK13A.ogg       0   0   255 12  0
+definesound DUKE_KILLED4        sound/DSCREM18.ogg       0   0   255 4   0
+definesound DUKE_KILLED5        sound/PISSES01.ogg       0   0   255 12  0
+definesound DUKE_GRUNT          sound/EXERT.ogg          0   0   2   4   0
+definesound DUKE_DEAD           sound/DMDEATH.ogg      -64  64   255 4  0
+definesound DUKE_HARTBEAT       sound/HARTBEAT.ogg       0   0   0   0   0
+definesound DUKE_STEPONFECES    sound/HAPPEN01.ogg       0   0   0   12  0
 
 // Duke Movement Sounds                                                                 
-definesound DUKE_ONWATER        sound\WETFEET.ogg        0   0    4   0   0
-definesound DUKE_LAND           sound\LAND02.ogg         0   0    2   0   0
-definesound DUKE_LAND_HURT      sound\PAIN39.ogg         0   0    255 4   0
-definesound DUKE_WALKINDUCTS    sound\DUCTWLK.ogg      -64   128  2   0   0
-definesound DUKE_LOOKINTOMIRROR   sound\LOOKIN01.ogg     0   0    255 4   0
+definesound DUKE_ONWATER        sound/WETFEET.ogg        0   0    4   0   0
+definesound DUKE_LAND           sound/LAND02.ogg         0   0    2   0   0
+definesound DUKE_LAND_HURT      sound/PAIN39.ogg         0   0    255 4   0
+definesound DUKE_WALKINDUCTS    sound/DUCTWLK.ogg      -64   128  2   0   0
+definesound DUKE_LOOKINTOMIRROR   sound/LOOKIN01.ogg     0   0    255 4   0
 
-definesound DUKE_TIP1           sound\DANCE01.ogg        0   0   255  4   0
-definesound DUKE_TIP2           sound\SHAKE2A.ogg        0   0   255  4   0
-definesound DUKE_BOOBY          sound\BOOBY04.ogg        0   0   255  4   0
-definesound DUKE_HIT_STRIPPER1  sound\DAMNIT04.ogg       0   0   255  12  0
-definesound DUKE_HIT_STRIPPER2  sound\DAMN03.ogg         0   0   255  12  0
-definesound ALIEN_TALK1         sound\MUSTDIE.ogg        0   0   255  12  0
-definesound ALIEN_TALK2         sound\DEFEATED.ogg       0   0   255  12  0
-definesound BONUS_SPEECH1       sound\LETSRK03.ogg       0   0   255  4   0
-definesound BONUS_SPEECH2       sound\READY2A.ogg        0   0   255  4   0
-definesound BONUS_SPEECH3       sound\RIPEM08.ogg        0   0   255  4   0
-definesound BONUS_SPEECH4       sound\ROCKIN02.ogg       0   0   255  4   0
-definesound DUKE_YES            sound\YES.ogg            0   0   255  4   0
-definesound DUKE_USEMEDKIT      sound\AHH04.ogg          0   0   255  4   0
-definesound DUKE_TAKEPILLS      sound\GULP01.ogg         0   0   255  4   0
-definesound DUKETALKTOBOSS      sound\DUKNUK14.ogg       0   0   255  12  0
-definesound BOSSTALKTODUKE      sound\!BOSS.ogg          0   0   255  0   0
-definesound SHRINKER_HIT        sound\THUD.ogg           0   0   3    0   0
-definesound SOMETHINGFROZE      sound\FREEZE.ogg         0   0   3    0   0
+definesound DUKE_TIP1           sound/DANCE01.ogg        0   0   255  4   0
+definesound DUKE_TIP2           sound/SHAKE2A.ogg        0   0   255  4   0
+definesound DUKE_BOOBY          sound/BOOBY04.ogg        0   0   255  4   0
+definesound DUKE_HIT_STRIPPER1  sound/DAMNIT04.ogg       0   0   255  12  0
+definesound DUKE_HIT_STRIPPER2  sound/DAMN03.ogg         0   0   255  12  0
+definesound ALIEN_TALK1         sound/MUSTDIE.ogg        0   0   255  12  0
+definesound ALIEN_TALK2         sound/DEFEATED.ogg       0   0   255  12  0
+definesound BONUS_SPEECH1       sound/LETSRK03.ogg       0   0   255  4   0
+definesound BONUS_SPEECH2       sound/READY2A.ogg        0   0   255  4   0
+definesound BONUS_SPEECH3       sound/RIPEM08.ogg        0   0   255  4   0
+definesound BONUS_SPEECH4       sound/ROCKIN02.ogg       0   0   255  4   0
+definesound DUKE_YES            sound/YES.ogg            0   0   255  4   0
+definesound DUKE_USEMEDKIT      sound/AHH04.ogg          0   0   255  4   0
+definesound DUKE_TAKEPILLS      sound/GULP01.ogg         0   0   255  4   0
+definesound DUKETALKTOBOSS      sound/DUKNUK14.ogg       0   0   255  12  0
+definesound BOSSTALKTODUKE      sound/!BOSS.ogg          0   0   255  0   0
+definesound SHRINKER_HIT        sound/THUD.ogg           0   0   3    0   0
+definesound SOMETHINGFROZE      sound/FREEZE.ogg         0   0   3    0   0
 
 // Duke Equipment Sounds
-definesound DUKE_UNDERWATER     sound\SCUBA.ogg          0   0   2   0   0
-definesound DUKE_JETPACK_ON     sound\JETPAKON.ogg       0   0   4   0   0
-definesound DUKE_JETPACK_IDLE   sound\JETPAKI.ogg        0   0   1   0   0
-definesound DUKE_JETPACK_OFF    sound\JETPAKOF.ogg       0   0   2   0   0
+definesound DUKE_UNDERWATER     sound/SCUBA.ogg          0   0   2   0   0
+definesound DUKE_JETPACK_ON     sound/JETPAKON.ogg       0   0   4   0   0
+definesound DUKE_JETPACK_IDLE   sound/JETPAKI.ogg        0   0   1   0   0
+definesound DUKE_JETPACK_OFF    sound/JETPAKOF.ogg       0   0   2   0   0
 
 // Common Death Sounds
-definesound FLESH_BURNING       sound\FIRE09.ogg      -256   0   0   0   6100
-definesound THUD                sound\THUD.ogg           0   0   0   0   0
-definesound SQUISHED            sound\SQUISH.ogg      -128   0   3   0   0
+definesound FLESH_BURNING       sound/FIRE09.ogg      -256   0   0   0   6100
+definesound THUD                sound/THUD.ogg           0   0   0   0   0
+definesound SQUISHED            sound/SQUISH.ogg      -128   0   3   0   0
 
 // Equipment Sounds                                                                     
-definesound TELEPORTER          sound\TELEPORT.ogg       0   0   0   0   0
-definesound ELEVATOR_ON         sound\GBELEV01.ogg       0   0   0   0   0
-definesound ELEVATOR_OFF        sound\GBELEV02.ogg       0   0   0   0   0
-definesound ALIEN_ELEVATOR1     sound\HYDRO43.ogg        0   0   0   0   0
-definesound SUBWAY              sound\SUBWAY.ogg         0   0   0   0   0
-definesound SWITCH_ON           sound\SWITCH.ogg         0   0   0   0   0
+definesound TELEPORTER          sound/TELEPORT.ogg       0   0   0   0   0
+definesound ELEVATOR_ON         sound/GBELEV01.ogg       0   0   0   0   0
+definesound ELEVATOR_OFF        sound/GBELEV02.ogg       0   0   0   0   0
+definesound ALIEN_ELEVATOR1     sound/HYDRO43.ogg        0   0   0   0   0
+definesound SUBWAY              sound/SUBWAY.ogg         0   0   0   0   0
+definesound SWITCH_ON           sound/SWITCH.ogg         0   0   0   0   0
 
-definesound FAN                 sound\FAN.ogg            0   0   0   0   0
-definesound FLUSH_TOILET        sound\FLUSH.ogg          0   0   3   2   0
-definesound HOVER_CRAFT         sound\HOVER.ogg          0   0   0   0   0
-definesound EARTHQUAKE          sound\QUAKE.ogg          0   0   0   0   0
+definesound FAN                 sound/FAN.ogg            0   0   0   0   0
+definesound FLUSH_TOILET        sound/FLUSH.ogg          0   0   3   2   0
+definesound HOVER_CRAFT         sound/HOVER.ogg          0   0   0   0   0
+definesound EARTHQUAKE          sound/QUAKE.ogg          0   0   0   0   0
                                                                                         
 // Warning Sounds                                                                       
-definesound INTRUDER_ALERT      sound\ALERT.ogg          0   0   0   0   0
-definesound END_OF_LEVEL_WARN   sound\MONITOR.ogg        0   0   0   0   0
-definesound POOLBALLHIT         sound\POOLBAL1.ogg       0   0   0   0   0
+definesound INTRUDER_ALERT      sound/ALERT.ogg          0   0   0   0   0
+definesound END_OF_LEVEL_WARN   sound/MONITOR.ogg        0   0   0   0   0
+definesound POOLBALLHIT         sound/POOLBAL1.ogg       0   0   0   0   0
 
 // Ambience Sounds
 
-definesound ENGINE_OPERATING    sound\ONBOARD.ogg        0   0   0   2   0
-definesound REACTOR_ON          sound\REACTOR.ogg        0   0   0   2   0
-definesound COMPUTER_AMBIENCE   sound\COMPAMB.ogg        0   0   0   2   0
-definesound GEARS_GRINDING      sound\GEARGRND.ogg       0   0   0   2   0
-definesound BUBBLE_AMBIENCE     sound\BUBBLAMB.ogg    -256   0   0   2   0
-definesound MACHINE_AMBIENCE    sound\MACHAMB.ogg        0   0   0   2   0
-definesound SEWER_AMBIENCE      sound\DRIP3.ogg          0   0   0   0   0
-definesound WIND_AMBIENCE       sound\WIND54.ogg         0   0   0   2   0
-definesound WIND_REPEAT         sound\WIND54.ogg         0   0   0   2   0
+definesound ENGINE_OPERATING    sound/ONBOARD.ogg        0   0   0   2   0
+definesound REACTOR_ON          sound/REACTOR.ogg        0   0   0   2   0
+definesound COMPUTER_AMBIENCE   sound/COMPAMB.ogg        0   0   0   2   0
+definesound GEARS_GRINDING      sound/GEARGRND.ogg       0   0   0   2   0
+definesound BUBBLE_AMBIENCE     sound/BUBBLAMB.ogg    -256   0   0   2   0
+definesound MACHINE_AMBIENCE    sound/MACHAMB.ogg        0   0   0   2   0
+definesound SEWER_AMBIENCE      sound/DRIP3.ogg          0   0   0   0   0
+definesound WIND_AMBIENCE       sound/WIND54.ogg         0   0   0   2   0
+definesound WIND_REPEAT         sound/WIND54.ogg         0   0   0   2   0
 
-definesound SOMETHING_DRIPPING  sound\DRIP3.ogg       0   0   0   0    9000
-definesound STEAM_HISSING       sound\STEAMHIS.ogg       0   0   0   0 10240
-definesound BAR_MUSIC           sound\BARMUSIC.ogg       0   0 254   2   0
-definesound STORE_MUSIC         sound\MUZAK028.ogg       0   0 254   0 6144
-definesound STORE_MUSIC_BROKE   sound\MUZAKDIE.ogg       0   0   0   0 6144
-definesound DUKE_SCREAM         sound\DSCREM04.ogg       0   0   0   0   0
-definesound KILLME              sound\KILLME.ogg      -128   0   0   0   0
+definesound SOMETHING_DRIPPING  sound/DRIP3.ogg       0   0   0   0    9000
+definesound STEAM_HISSING       sound/STEAMHIS.ogg       0   0   0   0 10240
+definesound BAR_MUSIC           sound/BARMUSIC.ogg       0   0 254   2   0
+definesound STORE_MUSIC         sound/MUZAK028.ogg       0   0 254   0 6144
+definesound STORE_MUSIC_BROKE   sound/MUZAKDIE.ogg       0   0   0   0 6144
+definesound DUKE_SCREAM         sound/DSCREM04.ogg       0   0   0   0   0
+definesound KILLME              sound/KILLME.ogg      -128   0   0   0   0
 
 // Miscellaneous Sounds
 
-definesound GETATOMICHEALTH     sound\TELEPORT.ogg   2048 2048   255 0   0
-definesound DOOR_OPERATE1       sound\SLIDOOR.ogg     -256   0   0   0   0
-definesound DOOR_OPERATE2       sound\OPENDOOR.ogg    -256   0   0   0   0
-definesound DOOR_OPERATE3       sound\EDOOR10.ogg     -256   0   0   0   0
-definesound DOOR_OPERATE4       sound\EDOOR11.ogg     -256   0   0   0   0
-definesound BORNTOBEWILDSND     sound\2BWILD.ogg         0   0 254   2   0
-definesound KTIT                sound\KTITX.ogg         0   0 254   2   0
-definesound LADY_SCREAM         sound\FSCRM10.ogg     -256   0 254   8   0
-definesound MONITOR_ACTIVE      sound\MONITOR.ogg        0   0   0   0   0
-definesound WATER_GURGLE        sound\H2OGRGL2.ogg       0   0   1   2   9000
-definesound EXITMENUSOUND       sound\ITEM15.ogg         0   0   0   0   0
-definesound RATTY               sound\MICE3.ogg          0   0   0   0   0
-definesound INTO_MENU           sound\BULITHIT.ogg    1024 1024  0   0   0
+definesound GETATOMICHEALTH     sound/TELEPORT.ogg   2048 2048   255 0   0
+definesound DOOR_OPERATE1       sound/SLIDOOR.ogg     -256   0   0   0   0
+definesound DOOR_OPERATE2       sound/OPENDOOR.ogg    -256   0   0   0   0
+definesound DOOR_OPERATE3       sound/EDOOR10.ogg     -256   0   0   0   0
+definesound DOOR_OPERATE4       sound/EDOOR11.ogg     -256   0   0   0   0
+definesound BORNTOBEWILDSND     sound/2BWILD.ogg         0   0 254   2   0
+definesound KTIT                sound/KTITX.ogg         0   0 254   2   0
+definesound LADY_SCREAM         sound/FSCRM10.ogg     -256   0 254   8   0
+definesound MONITOR_ACTIVE      sound/MONITOR.ogg        0   0   0   0   0
+definesound WATER_GURGLE        sound/H2OGRGL2.ogg       0   0   1   2   9000
+definesound EXITMENUSOUND       sound/ITEM15.ogg         0   0   0   0   0
+definesound RATTY               sound/MICE3.ogg          0   0   0   0   0
+definesound INTO_MENU           sound/BULITHIT.ogg    1024 1024  0   0   0
 
 // Six misc ambience city sounds
 
-definesound GENERIC_AMBIENCE1      sound\GRIND.ogg       0   0   0   1   0
-definesound GENERIC_AMBIENCE2      sound\ENGHUM.ogg      0   0   0   2   0
-definesound GENERIC_AMBIENCE3      sound\LAVA06.ogg      0   0   0   2   0
-definesound GENERIC_AMBIENCE4      sound\BUBBLAMB.ogg -256   0   0   2   0
-definesound GENERIC_AMBIENCE5      sound\PHONBUSY.ogg    0   0   0   0   0
-definesound GENERIC_AMBIENCE6      sound\ROAM22.ogg      0   0   0   2   0
-definesound SECRETLEVELSND         sound\SECRET.ogg      0   0   255 0   0
-definesound GENERIC_AMBIENCE8      sound\AMB81B.ogg      0   0   0   2   0
-definesound GENERIC_AMBIENCE9      sound\ROAM98B.ogg     0   0   0   2   0
-definesound GENERIC_AMBIENCE10     sound\H2ORUSH2.ogg    0   0   0   3   0
-definesound GENERIC_AMBIENCE11     sound\PROJRUN.ogg     0   0   0   3   0
-definesound GENERIC_AMBIENCE12     sound\DRIP3.ogg       0   0   0   0   0
-definesound GENERIC_AMBIENCE13     sound\PAY02.ogg       0   0   255 12  0
-definesound GENERIC_AMBIENCE14     sound\ONLYON03.ogg    0   0   255 4   0
-definesound GENERIC_AMBIENCE15     sound\RIDES09.ogg     0   0   255 4   0
-definesound GENERIC_AMBIENCE16     sound\DOOMED16.ogg    0   0   255 4   0
-definesound GENERIC_AMBIENCE17     sound\MYSELF3A.ogg    0   0   255 4   0
-definesound GENERIC_AMBIENCE18     sound\MONOLITH.ogg    0   0   0   2   0
-definesound GENERIC_AMBIENCE19     sound\HYDRO50.ogg     0   0   0   2   0
-definesound GENERIC_AMBIENCE20     sound\CON03.ogg       0   0   0   4   0
-definesound GENERIC_AMBIENCE21     sound\!PRISON.ogg     0   0   255 4   0
-definesound GENERIC_AMBIENCE22     sound\VPISS2.ogg      0   0   255 4   0
-definesound GENERIC_AMBIENCE23     sound\2RIDE06.ogg     0   0   255 4   0
+definesound GENERIC_AMBIENCE1      sound/GRIND.ogg       0   0   0   1   0
+definesound GENERIC_AMBIENCE2      sound/ENGHUM.ogg      0   0   0   2   0
+definesound GENERIC_AMBIENCE3      sound/LAVA06.ogg      0   0   0   2   0
+definesound GENERIC_AMBIENCE4      sound/BUBBLAMB.ogg -256   0   0   2   0
+definesound GENERIC_AMBIENCE5      sound/PHONBUSY.ogg    0   0   0   0   0
+definesound GENERIC_AMBIENCE6      sound/ROAM22.ogg      0   0   0   2   0
+definesound SECRETLEVELSND         sound/SECRET.ogg      0   0   255 0   0
+definesound GENERIC_AMBIENCE8      sound/AMB81B.ogg      0   0   0   2   0
+definesound GENERIC_AMBIENCE9      sound/ROAM98B.ogg     0   0   0   2   0
+definesound GENERIC_AMBIENCE10     sound/H2ORUSH2.ogg    0   0   0   3   0
+definesound GENERIC_AMBIENCE11     sound/PROJRUN.ogg     0   0   0   3   0
+definesound GENERIC_AMBIENCE12     sound/DRIP3.ogg       0   0   0   0   0
+definesound GENERIC_AMBIENCE13     sound/PAY02.ogg       0   0   255 12  0
+definesound GENERIC_AMBIENCE14     sound/ONLYON03.ogg    0   0   255 4   0
+definesound GENERIC_AMBIENCE15     sound/RIDES09.ogg     0   0   255 4   0
+definesound GENERIC_AMBIENCE16     sound/DOOMED16.ogg    0   0   255 4   0
+definesound GENERIC_AMBIENCE17     sound/MYSELF3A.ogg    0   0   255 4   0
+definesound GENERIC_AMBIENCE18     sound/MONOLITH.ogg    0   0   0   2   0
+definesound GENERIC_AMBIENCE19     sound/HYDRO50.ogg     0   0   0   2   0
+definesound GENERIC_AMBIENCE20     sound/CON03.ogg       0   0   0   4   0
+definesound GENERIC_AMBIENCE21     sound/!PRISON.ogg     0   0   255 4   0
+definesound GENERIC_AMBIENCE22     sound/VPISS2.ogg      0   0   255 4   0
+definesound GENERIC_AMBIENCE23     sound/2RIDE06.ogg     0   0   255 4   0
 
-definesound FIRE_CRACKLE           sound\FIRE09.ogg       0   0   254 2   0
-definesound DUMPSTER_MOVE          sound\GRIND.ogg       0   0   0   0   0
+definesound FIRE_CRACKLE           sound/FIRE09.ogg       0   0   254 2   0
+definesound DUMPSTER_MOVE          sound/GRIND.ogg       0   0   0   0   0
 
-definesound JIBBED_ACTOR1       sound\AMESS06_1.ogg       0   0   255 4   0
-definesound JIBBED_ACTOR2       sound\BITCHN04.ogg      0   0   255 12  0
-definesound JIBBED_ACTOR3       sound\HOLYCW01.ogg      0   0   255 4   0
-definesound JIBBED_ACTOR4       sound\HOLYSH02.ogg      0   0   255 12  0
-definesound JIBBED_ACTOR5       sound\IMGOOD12.ogg      0   0   255 12  0
-definesound JIBBED_ACTOR6       sound\PIECE02.ogg       0   0   255 4   0
-definesound JIBBED_ACTOR7       sound\GOTHRT01.ogg      0   0   255 4   0
-definesound JIBBED_ACTOR8       sound\BLOWIT01.ogg      0   0   255 12  0
-definesound JIBBED_ACTOR9       sound\EATSHT01.ogg      0   0   255 12  0
-definesound JIBBED_ACTOR10      sound\FACE01.ogg        0   0   255 12  0
-definesound JIBBED_ACTOR11      sound\INHELL01.ogg      0   0   255 12  0
-definesound WHIPYOURASS         sound\WHIPYU01.ogg      0   0   255 4   0
-definesound JIBBED_ACTOR12      sound\SUKIT01.ogg       0   0   255 4   0
-definesound JIBBED_ACTOR13      sound\LETGOD01.ogg      0   0   255 12  0
-definesound JIBBED_ACTOR14      sound\GETCRAP1.ogg      0   0    0  12   0
-definesound JIBBED_ACTOR15      sound\GUYSUK01.ogg    0   0    0  12   0
+definesound JIBBED_ACTOR1       sound/AMESS06_1.ogg       0   0   255 4   0
+definesound JIBBED_ACTOR2       sound/BITCHN04.ogg      0   0   255 12  0
+definesound JIBBED_ACTOR3       sound/HOLYCW01.ogg      0   0   255 4   0
+definesound JIBBED_ACTOR4       sound/HOLYSH02.ogg      0   0   255 12  0
+definesound JIBBED_ACTOR5       sound/IMGOOD12.ogg      0   0   255 12  0
+definesound JIBBED_ACTOR6       sound/PIECE02.ogg       0   0   255 4   0
+definesound JIBBED_ACTOR7       sound/GOTHRT01.ogg      0   0   255 4   0
+definesound JIBBED_ACTOR8       sound/BLOWIT01.ogg      0   0   255 12  0
+definesound JIBBED_ACTOR9       sound/EATSHT01.ogg      0   0   255 12  0
+definesound JIBBED_ACTOR10      sound/FACE01.ogg        0   0   255 12  0
+definesound JIBBED_ACTOR11      sound/INHELL01.ogg      0   0   255 12  0
+definesound WHIPYOURASS         sound/WHIPYU01.ogg      0   0   255 4   0
+definesound JIBBED_ACTOR12      sound/SUKIT01.ogg       0   0   255 4   0
+definesound JIBBED_ACTOR13      sound/LETGOD01.ogg      0   0   255 12  0
+definesound JIBBED_ACTOR14      sound/GETCRAP1.ogg      0   0    0  12   0
+definesound JIBBED_ACTOR15      sound/GUYSUK01.ogg    0   0    0  12   0
 
-definesound WAR_AMBIENCE1    sound\WARAMB13.ogg -512  0   255  16  0
-definesound WAR_AMBIENCE2    sound\WARAMB21.ogg -512  0   254  16  0
-definesound WAR_AMBIENCE3    sound\WARAMB23.ogg -512  0   254  16  0
-definesound WAR_AMBIENCE4    sound\WARAMB29.ogg -512  0   254  16  0
-definesound WAR_AMBIENCE5    sound\FORCE01.ogg    0   0   0    4   0
-definesound WAR_AMBIENCE6    sound\QUAKE06.ogg    0   0   0    4   0
-definesound WAR_AMBIENCE7    sound\TERMIN01.ogg   0   0   0    4   0
-definesound WAR_AMBIENCE8    sound\BORN01.ogg     0   0   254  20  0
-definesound WAR_AMBIENCE9    sound\NOBODY01.ogg   0   0   0    4   0
-definesound WAR_AMBIENCE10   sound\CHEW05.ogg     0   0   0    12  0
+definesound WAR_AMBIENCE1    sound/WARAMB13.ogg -512  0   255  16  0
+definesound WAR_AMBIENCE2    sound/WARAMB21.ogg -512  0   254  16  0
+definesound WAR_AMBIENCE3    sound/WARAMB23.ogg -512  0   254  16  0
+definesound WAR_AMBIENCE4    sound/WARAMB29.ogg -512  0   254  16  0
+definesound WAR_AMBIENCE5    sound/FORCE01.ogg    0   0   0    4   0
+definesound WAR_AMBIENCE6    sound/QUAKE06.ogg    0   0   0    4   0
+definesound WAR_AMBIENCE7    sound/TERMIN01.ogg   0   0   0    4   0
+definesound WAR_AMBIENCE8    sound/BORN01.ogg     0   0   254  20  0
+definesound WAR_AMBIENCE9    sound/NOBODY01.ogg   0   0   0    4   0
+definesound WAR_AMBIENCE10   sound/CHEW05.ogg     0   0   0    12  0
 
-definesound SPACE_DOOR1      sound\HYDRO22.ogg      0   0   0    0   8192
-definesound SPACE_DOOR2      sound\HYDRO24.ogg      0   0   0    0   0
-definesound SPACE_DOOR3      sound\HYDRO27.ogg      0   0   0    0   8192
-definesound SPACE_DOOR4      sound\HYDRO34.ogg      0   0   0    0   0
-definesound SPACE_DOOR5      sound\HYDRO40.ogg      0   0   0    0   0
+definesound SPACE_DOOR1      sound/HYDRO22.ogg      0   0   0    0   8192
+definesound SPACE_DOOR2      sound/HYDRO24.ogg      0   0   0    0   0
+definesound SPACE_DOOR3      sound/HYDRO27.ogg      0   0   0    0   8192
+definesound SPACE_DOOR4      sound/HYDRO34.ogg      0   0   0    0   0
+definesound SPACE_DOOR5      sound/HYDRO40.ogg      0   0   0    0   0
 
- definesound SPACE_AMBIENCE1   sound\MONOLITH.ogg      0   0   0  16  0
- definesound SPACE_AMBIENCE2   sound\HYDRO50.ogg       0   0   0  16  0
- definesound VAULT_DOOR        sound\VAULT04.ogg      0   0   0   0   0
+ definesound SPACE_AMBIENCE1   sound/MONOLITH.ogg      0   0   0  16  0
+ definesound SPACE_AMBIENCE2   sound/HYDRO50.ogg       0   0   0  16  0
+ definesound VAULT_DOOR        sound/VAULT04.ogg      0   0   0   0   0
 
-//definesound ALIEN_ELEVATOR1 sound\HYDRO43.ogg       0   0   0  0   0
-definesound ALIEN_DOOR1       sound\ADOOR1.ogg        0   0   0  0   0
-definesound ALIEN_DOOR2       sound\ADOOR2.ogg        0   0   0  0   0
+//definesound ALIEN_ELEVATOR1 sound/HYDRO43.ogg       0   0   0  0   0
+definesound ALIEN_DOOR1       sound/ADOOR1.ogg        0   0   0  0   0
+definesound ALIEN_DOOR2       sound/ADOOR2.ogg        0   0   0  0   0
 
-definesound ALIEN_SWITCH1     sound\ASWTCH23.ogg      0   0   0  0   0
-definesound COMPANB2          sound\CTRLRM25.ogg  0  0  0  2   0
-definesound HELICOP_IDLE      sound\HLIDLE03.ogg  0  0  255  3   0
-definesound FOUNDJONES        sound\JONES04.ogg   0  0  0  4  0
-definesound STEPNIT           sound\LIZSHIT3.ogg  0  0  254  12  0
-definesound RIPHEADNECK       sound\RIP01.ogg     0  0  254  12 0
+definesound ALIEN_SWITCH1     sound/ASWTCH23.ogg      0   0   0  0   0
+definesound COMPANB2          sound/CTRLRM25.ogg  0  0  0  2   0
+definesound HELICOP_IDLE      sound/HLIDLE03.ogg  0  0  255  3   0
+definesound FOUNDJONES        sound/JONES04.ogg   0  0  0  4  0
+definesound STEPNIT           sound/LIZSHIT3.ogg  0  0  254  12  0
+definesound RIPHEADNECK       sound/RIP01.ogg     0  0  254  12 0
 
-definesound ENDSEQVOL2SND1    sound\GUNHIT2.ogg     0   0   249 0   0
-definesound ENDSEQVOL2SND2    sound\HEADRIP3.ogg    0   0   250 0   0
-definesound ENDSEQVOL2SND3    sound\BUCKLE.ogg      0   0   251 0   0
-definesound ENDSEQVOL2SND4    sound\JETP2.ogg       0   0   252 0   0
-definesound ENDSEQVOL2SND5    sound\ZIPPER2.ogg     0   0   253 0   0
-definesound ENDSEQVOL2SND6    sound\NEWS.ogg        0   0   254 0   0
-definesound ENDSEQVOL2SND7    sound\WHISTLE.ogg     0   0   255 0   0
+definesound ENDSEQVOL2SND1    sound/GUNHIT2.ogg     0   0   249 0   0
+definesound ENDSEQVOL2SND2    sound/HEADRIP3.ogg    0   0   250 0   0
+definesound ENDSEQVOL2SND3    sound/BUCKLE.ogg      0   0   251 0   0
+definesound ENDSEQVOL2SND4    sound/JETP2.ogg       0   0   252 0   0
+definesound ENDSEQVOL2SND5    sound/ZIPPER2.ogg     0   0   253 0   0
+definesound ENDSEQVOL2SND6    sound/NEWS.ogg        0   0   254 0   0
+definesound ENDSEQVOL2SND7    sound/WHISTLE.ogg     0   0   255 0   0
 
-// definesound ENDSEQVOL3SND1    sound\KICKHEAD.ogg    0   0   254 0   0
-definesound ENDSEQVOL3SND2    sound\GMEOVR05.ogg    0   0   254 0   0
-definesound ENDSEQVOL3SND3    sound\CHEER.ogg       0   0   254 0   0
-definesound ENDSEQVOL3SND4    sound\GRABBAG.ogg     0   0   254 1   0
-definesound ENDSEQVOL3SND5    sound\NAME01.ogg      0   0   250 0   0
-definesound ENDSEQVOL3SND6    sound\R&R01.ogg       0   0   251 0   0
-definesound ENDSEQVOL3SND7    sound\LANI05.ogg      0   0   252 0   0
-definesound ENDSEQVOL3SND8    sound\LANI08.ogg      0   0   253 0   0
-definesound ENDSEQVOL3SND9    sound\LANIDUK2.ogg    0   0   254 0   0
+// definesound ENDSEQVOL3SND1    sound/KICKHEAD.ogg    0   0   254 0   0
+definesound ENDSEQVOL3SND2    sound/GMEOVR05.ogg    0   0   254 0   0
+definesound ENDSEQVOL3SND3    sound/CHEER.ogg       0   0   254 0   0
+definesound ENDSEQVOL3SND4    sound/GRABBAG.ogg     0   0   254 1   0
+definesound ENDSEQVOL3SND5    sound/NAME01.ogg      0   0   250 0   0
+definesound ENDSEQVOL3SND6    sound/R&R01.ogg       0   0   251 0   0
+definesound ENDSEQVOL3SND7    sound/LANI05.ogg      0   0   252 0   0
+definesound ENDSEQVOL3SND8    sound/LANI08.ogg      0   0   253 0   0
+definesound ENDSEQVOL3SND9    sound/LANIDUK2.ogg    0   0   254 0   0
 
-definesound SUPERMARKET            sound\AISLE402.ogg    0   0   0   4   0
-definesound MOUSEANNOY             sound\ANNOY03.ogg     0   0   0   4   0
-definesound BOOKEM                 sound\BOOKEM03.ogg    0   0   0   4   0
-definesound SUPERMARKETCRY         sound\CRY01.ogg       0   0   0   4   0
-definesound DESTRUCT               sound\DETRUCT2.ogg    0   0 255   0   0
-definesound EATFOOD                sound\EAT08.ogg       0   0   0  12   0
-definesound MAKEMYDAY              sound\MAKEDAY1.ogg    0   0   0   4   0
-definesound WITNESSSTAND           sound\SOHELP02.ogg    0   0   0   4   0
-definesound VACATIONSPEECH         sound\VACATN01.ogg    0   0   0  12   0
-definesound YIPPEE1                sound\YIPPIE01.ogg    0   0 255  12   0
-definesound YOHOO1                 sound\YOHOHO01.ogg    0   0 128   4   0
-definesound YOHOO2                 sound\YOHOHO09.ogg    0   0 128   4   0
-definesound DOLPHINSND             sound\DOLPHIN.ogg  -512 512   0   0   0
-definesound TOUGHGALSND1           sound\DOM03.ogg       0   0   0   0   0
-definesound TOUGHGALSND2           sound\DOM09.ogg       0   0   0   0   0
-definesound TOUGHGALSND3           sound\DOM11.ogg       0   0   0   0   0
-definesound TOUGHGALSND4           sound\DOM12.ogg       0   0   0   0   0
-definesound TANK_ROAM              sound\TANK3A.ogg      0   0   255 0 6000
+definesound SUPERMARKET            sound/AISLE402.ogg    0   0   0   4   0
+definesound MOUSEANNOY             sound/ANNOY03.ogg     0   0   0   4   0
+definesound BOOKEM                 sound/BOOKEM03.ogg    0   0   0   4   0
+definesound SUPERMARKETCRY         sound/CRY01.ogg       0   0   0   4   0
+definesound DESTRUCT               sound/DETRUCT2.ogg    0   0 255   0   0
+definesound EATFOOD                sound/EAT08.ogg       0   0   0  12   0
+definesound MAKEMYDAY              sound/MAKEDAY1.ogg    0   0   0   4   0
+definesound WITNESSSTAND           sound/SOHELP02.ogg    0   0   0   4   0
+definesound VACATIONSPEECH         sound/VACATN01.ogg    0   0   0  12   0
+definesound YIPPEE1                sound/YIPPIE01.ogg    0   0 255  12   0
+definesound YOHOO1                 sound/YOHOHO01.ogg    0   0 128   4   0
+definesound YOHOO2                 sound/YOHOHO09.ogg    0   0 128   4   0
+definesound DOLPHINSND             sound/DOLPHIN.ogg  -512 512   0   0   0
+definesound TOUGHGALSND1           sound/DOM03.ogg       0   0   0   0   0
+definesound TOUGHGALSND2           sound/DOM09.ogg       0   0   0   0   0
+definesound TOUGHGALSND3           sound/DOM11.ogg       0   0   0   0   0
+definesound TOUGHGALSND4           sound/DOM12.ogg       0   0   0   0   0
+definesound TANK_ROAM              sound/TANK3A.ogg      0   0   255 0 6000
 
-definesound VOL4_1                 sound\JACUZZI2.ogg    0   0   0   1   0
-definesound VOL4_2                 sound\TYPING.ogg      0   0   0   1   0
-definesound COOKINGDEEPFRIER       sound\DEEPFRY1.ogg    0   0   0   0   0
-definesound WHINING_DOG            sound\DOGWHINE.ogg    0   0   0   0   0
-definesound DEAD_DOG               sound\DOGYELP.ogg     0   0   0   0   0
-definesound LIGHTNING_SLAP         sound\TCLAP2A.ogg  -256 256   0   0   0
-definesound THUNDER                sound\TRUMBLE.ogg  -512 256   0   0   0
-definesound HAPPYMOUSESND1         sound\SWEET03.ogg     0   0   0   0   0
-definesound HAPPYMOUSESND2         sound\SWEET04.ogg     0   0   0   0   0
-definesound HAPPYMOUSESND3         sound\SWEET05.ogg     0   0   0   0   0
-definesound HAPPYMOUSESND4         sound\SWEET16.ogg     0   0   0   0   0
-definesound ALARM                  sound\ALARM1A.ogg  -128 128 255   2   0
-definesound RAIN                   sound\RAIN3A.ogg     -128 128 0   2   0
-definesound DTAG_GREENRUN          sound\GRUN.ogg       -128 128 255 128 0
-definesound DTAG_BROWNRUN          sound\BRUN.ogg       -128 128 255 128 0
-definesound DTAG_GREENSCORE        sound\GSCORE.ogg     -128 128 255 128 0
-definesound DTAG_BROWNSCORE        sound\BSCORE.ogg     -128 128 255 128 0
-definesound SCREECH                sound\SKIDCR1.ogg    -128 128   4 0   0
+definesound VOL4_1                 sound/JACUZZI2.ogg    0   0   0   1   0
+definesound VOL4_2                 sound/TYPING.ogg      0   0   0   1   0
+definesound COOKINGDEEPFRIER       sound/DEEPFRY1.ogg    0   0   0   0   0
+definesound WHINING_DOG            sound/DOGWHINE.ogg    0   0   0   0   0
+definesound DEAD_DOG               sound/DOGYELP.ogg     0   0   0   0   0
+definesound LIGHTNING_SLAP         sound/TCLAP2A.ogg  -256 256   0   0   0
+definesound THUNDER                sound/TRUMBLE.ogg  -512 256   0   0   0
+definesound HAPPYMOUSESND1         sound/SWEET03.ogg     0   0   0   0   0
+definesound HAPPYMOUSESND2         sound/SWEET04.ogg     0   0   0   0   0
+definesound HAPPYMOUSESND3         sound/SWEET05.ogg     0   0   0   0   0
+definesound HAPPYMOUSESND4         sound/SWEET16.ogg     0   0   0   0   0
+definesound ALARM                  sound/ALARM1A.ogg  -128 128 255   2   0
+definesound RAIN                   sound/RAIN3A.ogg     -128 128 0   2   0
+definesound DTAG_GREENRUN          sound/GRUN.ogg       -128 128 255 128 0
+definesound DTAG_BROWNRUN          sound/BRUN.ogg       -128 128 255 128 0
+definesound DTAG_GREENSCORE        sound/GSCORE.ogg     -128 128 255 128 0
+definesound DTAG_BROWNSCORE        sound/BSCORE.ogg     -128 128 255 128 0
+definesound SCREECH                sound/SKIDCR1.ogg    -128 128   4 0   0
 
 
-definesound INTRO4_1               sound\INTRO4H1.ogg    0   0   255 0   0
-definesound INTRO4_B               sound\INTRO4H2.ogg    0   0   255 0   0
-definesound INTRO4_2               sound\TYPING.ogg      0   0   255 0   0
-definesound INTRO4_3               sound\INTROA.ogg      0   0   255 0   0
-definesound INTRO4_4               sound\INTROB.ogg      0   0   255 0   0
-definesound INTRO4_5               sound\CLANG1.ogg      0   0   255 0   0
-definesound INTRO4_6               sound\INTROC.ogg      0   0   255 0   0
+definesound INTRO4_1               sound/INTRO4H1.ogg    0   0   255 0   0
+definesound INTRO4_B               sound/INTRO4H2.ogg    0   0   255 0   0
+definesound INTRO4_2               sound/TYPING.ogg      0   0   255 0   0
+definesound INTRO4_3               sound/INTROA.ogg      0   0   255 0   0
+definesound INTRO4_4               sound/INTROB.ogg      0   0   255 0   0
+definesound INTRO4_5               sound/CLANG1.ogg      0   0   255 0   0
+definesound INTRO4_6               sound/INTROC.ogg      0   0   255 0   0
 
-definesound BOSS4_DEADSPEECH       sound\ABORT01.ogg     0   0   255  4   0
-definesound BOSS4_FIRSTSEE         sound\KICK01-I.ogg    0   0   255 12   0
-definesound PARTY_SPEECH           sound\PARTY03.ogg     0   0   255 12   0
-definesound POSTAL_SPEECH          sound\POSTAL01.ogg    0   0   255  4   0
-definesound TGSPEECH               sound\VOCAL02.ogg     0   0   254  8   0
-definesound DOGROOMSPEECH          sound\MEAT04-N.ogg    0   0   255  4   0
-definesound SMACKED                sound\SMACK02.ogg     0   0   255 12   0
-definesound MDEVSPEECH             sound\MDEVL01.ogg     0   0   255 12   0
-definesound AREA51SPEECH           sound\INDPNC01.ogg    0   0   255  4   0
-definesound JEEPSOUND              sound\JEEP2A.ogg      0   0   0    2   0
-definesound BIGDOORSLAM            sound\CDOOR1B.ogg     0   0   129  0   0
-definesound WAVESOUND              sound\WAVE1A.ogg      0   0   129  3   0
-definesound ILLBEBACK              sound\BEBACK01.ogg    0   0   255  4   0
+definesound BOSS4_DEADSPEECH       sound/ABORT01.ogg     0   0   255  4   0
+definesound BOSS4_FIRSTSEE         sound/KICK01-I.ogg    0   0   255 12   0
+definesound PARTY_SPEECH           sound/PARTY03.ogg     0   0   255 12   0
+definesound POSTAL_SPEECH          sound/POSTAL01.ogg    0   0   255  4   0
+definesound TGSPEECH               sound/VOCAL02.ogg     0   0   254  8   0
+definesound DOGROOMSPEECH          sound/MEAT04-N.ogg    0   0   255  4   0
+definesound SMACKED                sound/SMACK02.ogg     0   0   255 12   0
+definesound MDEVSPEECH             sound/MDEVL01.ogg     0   0   255 12   0
+definesound AREA51SPEECH           sound/INDPNC01.ogg    0   0   255  4   0
+definesound JEEPSOUND              sound/JEEP2A.ogg      0   0   0    2   0
+definesound BIGDOORSLAM            sound/CDOOR1B.ogg     0   0   129  0   0
+definesound WAVESOUND              sound/WAVE1A.ogg      0   0   129  3   0
+definesound ILLBEBACK              sound/BEBACK01.ogg    0   0   255  4   0
 
-definesound VOL4ENDSND1            sound\SBR1C.ogg       0   0   255  0    0
-definesound VOL4ENDSND2            sound\SQUISH1A.ogg    0   0   254  0    0
-definesound EXPANDERSHOOT          sound\EXSHOT3B.ogg   -32 80   128  0    0
-definesound EXPANDERHIT            sound\DEEPFRY1.ogg    0   0   128  0    0
-definesound SNAKESPEECH            sound\ESCAPE01.ogg    0   0   255  4    0
-definesound GETBACKTOWORK          sound\SLACKER1.ogg    0   0   255  0    0
-definesound BIGBANG                sound\BANG1.ogg       0   0   255  0    0
-definesound HORNSND                sound\SHORN1.ogg      0   0   255  2    0
-definesound BELLSND                sound\SBELL1A.ogg     0   0   255  2    0
-definesound GOAWAY                 sound\GOAWAY.ogg      0   0    4   0    0
-definesound JOKE                   sound\JOKE.ogg        0   0   128  0    0
+definesound VOL4ENDSND1            sound/SBR1C.ogg       0   0   255  0    0
+definesound VOL4ENDSND2            sound/SQUISH1A.ogg    0   0   254  0    0
+definesound EXPANDERSHOOT          sound/EXSHOT3B.ogg   -32 80   128  0    0
+definesound EXPANDERHIT            sound/DEEPFRY1.ogg    0   0   128  0    0
+definesound SNAKESPEECH            sound/ESCAPE01.ogg    0   0   255  4    0
+definesound GETBACKTOWORK          sound/SLACKER1.ogg    0   0   255  0    0
+definesound BIGBANG                sound/BANG1.ogg       0   0   255  0    0
+definesound HORNSND                sound/SHORN1.ogg      0   0   255  2    0
+definesound BELLSND                sound/SBELL1A.ogg     0   0   255  2    0
+definesound GOAWAY                 sound/GOAWAY.ogg      0   0    4   0    0
+definesound JOKE                   sound/JOKE.ogg        0   0   128  0    0
 
-definesound FLAMETHROWER_INTRO     sound\Wep_Flamethrower_OneShot.ogg	0   0   255   0   0 
-definesound FLAMETHROWER_LOOP      sound\Wep_Flamethrower_Lp.ogg		0   0   255   1   0
-definesound FLAMETHROWER_END       sound\Wep_Flamethrower_Stop.ogg		0   0   255   0   0
-definesound FLAMETHROWER_ENEMY     sound\Wep_Flamethrower_Lp.ogg		0   0   255   0   0
+definesound FLAMETHROWER_INTRO     sound/Wep_Flamethrower_OneShot.ogg	0   0   255   0   0 
+definesound FLAMETHROWER_LOOP      sound/Wep_Flamethrower_Lp.ogg		0   0   255   1   0
+definesound FLAMETHROWER_END       sound/Wep_Flamethrower_Stop.ogg		0   0   255   0   0
+definesound FLAMETHROWER_ENEMY     sound/Wep_Flamethrower_Lp.ogg		0   0   255   0   0
 
-definesound E5L7_DUKE_QUIT_YOU    sound\VO_E5L7_Duke_QuitYou.ogg         0   0   255   4   0
-definesound E5L4_DUKE_WHY_SERIOUS sound\VO_E5L4_Duke_SeriousSam.ogg      0   0   255   4   0
-definesound E5L1_DUKE_CREAMANDSUGAR sound\VO_E5L1_Duke_CreamAndSugar.ogg 0   0   255   4   0
-definesound E5L1_DUKE_CURIOUSER   sound\VO_E5L1_Duke_Curiouser.ogg       0   0   255   4   0
-definesound E5L1_DUKE_DEJAVU      sound\VO_E5L1_Duke_DejaVu.ogg          0   0   255   4   0
-definesound E5L1_DUKE_GETTINGOLD  sound\VO_E5L1_Duke_GettingOld.ogg      0   0   255   4   0
-definesound E5L1_DUKE_GOODCOFFEE  sound\VO_E5L1_Duke_GoodCoffee.ogg      0   0   255   4   0
-definesound E5L1_DUKE_NOTPOSSIBLE sound\VO_E5L1_Duke_NotPossible.ogg     0   0   255   4   0
-definesound E5L2_DUKE_BEHERE      sound\VO_E5L2_Duke_BeHere.ogg          0   0   255   4   0
-definesound E5L2_DUKE_MEATCANDY   sound\VO_E5L2_Duke_MeatCandy.ogg       0   0   255   4   0
-definesound E5L2_DUKE_SISKOVA     sound\VO_E5L2_Duke_Siskova.ogg         0   0   255   4   0
-definesound E5L2_DUKE_USSR        sound\VO_E5L2_Duke_USSR.ogg            0   0   255   4   0
-definesound E5L4_DUKE_CRYINGMUMMY sound\VO_E5L4_Duke_CryingMummy.ogg     0   0   255   4   0
-definesound E5L4_DUKE_CRYSTALSKULL sound\VO_E5L4_Duke_CrystalSkull.ogg   0   0   255   4   0
-definesound E5L4_DUKE_FIFTHELEMENT sound\VO_E5L4_Duke_FifthElement.ogg   0   0   255   4   0
-definesound E5L4_DUKE_HASSANCHOP  sound\VO_E5L4_Duke_HassanChop.ogg      0   0   255   4   0
-definesound E5L4_DUKE_HELLOMUMMY  sound\VO_E5L4_Duke_HelloMummy.ogg      0   0   255   4   0
-definesound E5L5_DUKE_FROMAGE     sound\VO_E5L5_Duke_Fromage.ogg         0   0   255   4   0
-definesound E5L5_DUKE_ICU         sound\VO_E5L5_Duke_ICU.ogg             0   0   255   4   0
-definesound E5L5_DUKE_SOUFFLE     sound\VO_E5L5_Duke_Souffle.ogg         0   0   255   4   0
-definesound E5L6_DUKE_ALCATRAZ    sound\VO_E5L6_Duke_Alcatraz.ogg        0   0   255   4   0
-definesound E5L6_DUKE_ILLEGALALIENS sound\VO_E5L6_Duke_IllegalAliens.ogg 0   0   255   4   0
-definesound E5L7_DUKE_DREAMS      sound\VO_E5L7_Duke_Dreams.ogg          0   0   255   4   0
-definesound E5L7_DUKE_FLAMINGALIENBITCH sound\VO_E5L7_Duke_FlamingAlienBitch.ogg 0   0   255   4   0
-definesound E5L7_DUKE_ROSEBUD     sound\VO_E5L7_Duke_Rosebud.ogg         0   0   255   4   0
-definesound E5L8_DUKE_ETERNITY    sound\VO_E5L8_Duke_Eternity.ogg        0   0   255   4   0
-definesound MQ_DUKE_BIGBANG       sound\VO_MQ_Duke_BigBang.ogg           0   0   255   4   0
-definesound MQ_DUKE_COBRA         sound\VO_MQ_Duke_Cobra.ogg             0   0   255   4   0
-definesound MQ_DUKE_GRANTORINO    sound\VO_MQ_Duke_GranTorino.ogg        0   0   255   4   0
-definesound MQ_DUKE_JOSEYWALES    sound\VO_MQ_Duke_JoseyWales.ogg        0   0   255   4   0
-definesound MQ_DUKE_LITTLECHINA   sound\VO_MQ_Duke_LittleChina.ogg       0   0   255   4   0
-definesound MQ_DUKE_ONDEADLYGROUND sound\VO_MQ_Duke_OnDeadlyGround.ogg   0   0   255   4   0
-definesound MQ_DUKE_PREDATOR      sound\VO_MQ_Duke_Predator.ogg          0   0   255   4   0
-definesound MQ_DUKE_RAMBO         sound\VO_MQ_Duke_Rambo.ogg             0   0   255   4   0
-definesound MQ_DUKE_REDHEAT       sound\VO_MQ_Duke_RedHeat.ogg           0   0   255   4   0
-definesound MQ_DUKE_RIDDICK       sound\VO_MQ_Duke_Riddick.ogg           0   0   255   4   0
-definesound MQ_DUKE_THEGOODTHEBAD sound\VO_MQ_Duke_TheGoodTheBad.ogg     0   0   255   4   0
-definesound MQ_DUKE_TOMBSTONE     sound\VO_MQ_Duke_Tombstone.ogg         0   0   255   4   0
-definesound MQ_DUKE_TRUEGRIT      sound\VO_MQ_Duke_TrueGrit.ogg          0   0   255   4   0
-definesound MQ_DUKE_WALKINGDEAD   sound\VO_MQ_Duke_WalkingDead.ogg       0   0   255   4   0
-definesound MQ_DUKE_YOUNGGUNS     sound\VO_MQ_Duke_YoungGuns.ogg         0   0   255   4   0
-definesound CHESHIREALIEN_01      sound\Pagoda_CheshireAlien_01.ogg      -128   128   3   0   0
-definesound CHESHIREALIEN_02      sound\Pagoda_CheshireAlien_02.ogg      -128   128   3   0   0
-definesound CHESHIREALIEN_03      sound\Pagoda_CheshireAlien_03.ogg      -128   128   3   0   0
-definesound CHESHIREALIEN_04      sound\Pagoda_CheshireAlien_04.ogg      -128   128   3   0   0
+definesound E5L7_DUKE_QUIT_YOU    sound/VO_E5L7_Duke_QuitYou.ogg         0   0   255   4   0
+definesound E5L4_DUKE_WHY_SERIOUS sound/VO_E5L4_Duke_SeriousSam.ogg      0   0   255   4   0
+definesound E5L1_DUKE_CREAMANDSUGAR sound/VO_E5L1_Duke_CreamAndSugar.ogg 0   0   255   4   0
+definesound E5L1_DUKE_CURIOUSER   sound/VO_E5L1_Duke_Curiouser.ogg       0   0   255   4   0
+definesound E5L1_DUKE_DEJAVU      sound/VO_E5L1_Duke_DejaVu.ogg          0   0   255   4   0
+definesound E5L1_DUKE_GETTINGOLD  sound/VO_E5L1_Duke_GettingOld.ogg      0   0   255   4   0
+definesound E5L1_DUKE_GOODCOFFEE  sound/VO_E5L1_Duke_GoodCoffee.ogg      0   0   255   4   0
+definesound E5L1_DUKE_NOTPOSSIBLE sound/VO_E5L1_Duke_NotPossible.ogg     0   0   255   4   0
+definesound E5L2_DUKE_BEHERE      sound/VO_E5L2_Duke_BeHere.ogg          0   0   255   4   0
+definesound E5L2_DUKE_MEATCANDY   sound/VO_E5L2_Duke_MeatCandy.ogg       0   0   255   4   0
+definesound E5L2_DUKE_SISKOVA     sound/VO_E5L2_Duke_Siskova.ogg         0   0   255   4   0
+definesound E5L2_DUKE_USSR        sound/VO_E5L2_Duke_USSR.ogg            0   0   255   4   0
+definesound E5L4_DUKE_CRYINGMUMMY sound/VO_E5L4_Duke_CryingMummy.ogg     0   0   255   4   0
+definesound E5L4_DUKE_CRYSTALSKULL sound/VO_E5L4_Duke_CrystalSkull.ogg   0   0   255   4   0
+definesound E5L4_DUKE_FIFTHELEMENT sound/VO_E5L4_Duke_FifthElement.ogg   0   0   255   4   0
+definesound E5L4_DUKE_HASSANCHOP  sound/VO_E5L4_Duke_HassanChop.ogg      0   0   255   4   0
+definesound E5L4_DUKE_HELLOMUMMY  sound/VO_E5L4_Duke_HelloMummy.ogg      0   0   255   4   0
+definesound E5L5_DUKE_FROMAGE     sound/VO_E5L5_Duke_Fromage.ogg         0   0   255   4   0
+definesound E5L5_DUKE_ICU         sound/VO_E5L5_Duke_ICU.ogg             0   0   255   4   0
+definesound E5L5_DUKE_SOUFFLE     sound/VO_E5L5_Duke_Souffle.ogg         0   0   255   4   0
+definesound E5L6_DUKE_ALCATRAZ    sound/VO_E5L6_Duke_Alcatraz.ogg        0   0   255   4   0
+definesound E5L6_DUKE_ILLEGALALIENS sound/VO_E5L6_Duke_IllegalAliens.ogg 0   0   255   4   0
+definesound E5L7_DUKE_DREAMS      sound/VO_E5L7_Duke_Dreams.ogg          0   0   255   4   0
+definesound E5L7_DUKE_FLAMINGALIENBITCH sound/VO_E5L7_Duke_FlamingAlienBitch.ogg 0   0   255   4   0
+definesound E5L7_DUKE_ROSEBUD     sound/VO_E5L7_Duke_Rosebud.ogg         0   0   255   4   0
+definesound E5L8_DUKE_ETERNITY    sound/VO_E5L8_Duke_Eternity.ogg        0   0   255   4   0
+definesound MQ_DUKE_BIGBANG       sound/VO_MQ_Duke_BigBang.ogg           0   0   255   4   0
+definesound MQ_DUKE_COBRA         sound/VO_MQ_Duke_Cobra.ogg             0   0   255   4   0
+definesound MQ_DUKE_GRANTORINO    sound/VO_MQ_Duke_GranTorino.ogg        0   0   255   4   0
+definesound MQ_DUKE_JOSEYWALES    sound/VO_MQ_Duke_JoseyWales.ogg        0   0   255   4   0
+definesound MQ_DUKE_LITTLECHINA   sound/VO_MQ_Duke_LittleChina.ogg       0   0   255   4   0
+definesound MQ_DUKE_ONDEADLYGROUND sound/VO_MQ_Duke_OnDeadlyGround.ogg   0   0   255   4   0
+definesound MQ_DUKE_PREDATOR      sound/VO_MQ_Duke_Predator.ogg          0   0   255   4   0
+definesound MQ_DUKE_RAMBO         sound/VO_MQ_Duke_Rambo.ogg             0   0   255   4   0
+definesound MQ_DUKE_REDHEAT       sound/VO_MQ_Duke_RedHeat.ogg           0   0   255   4   0
+definesound MQ_DUKE_RIDDICK       sound/VO_MQ_Duke_Riddick.ogg           0   0   255   4   0
+definesound MQ_DUKE_THEGOODTHEBAD sound/VO_MQ_Duke_TheGoodTheBad.ogg     0   0   255   4   0
+definesound MQ_DUKE_TOMBSTONE     sound/VO_MQ_Duke_Tombstone.ogg         0   0   255   4   0
+definesound MQ_DUKE_TRUEGRIT      sound/VO_MQ_Duke_TrueGrit.ogg          0   0   255   4   0
+definesound MQ_DUKE_WALKINGDEAD   sound/VO_MQ_Duke_WalkingDead.ogg       0   0   255   4   0
+definesound MQ_DUKE_YOUNGGUNS     sound/VO_MQ_Duke_YoungGuns.ogg         0   0   255   4   0
+definesound CHESHIREALIEN_01      sound/Pagoda_CheshireAlien_01.ogg      -128   128   3   0   0
+definesound CHESHIREALIEN_02      sound/Pagoda_CheshireAlien_02.ogg      -128   128   3   0   0
+definesound CHESHIREALIEN_03      sound/Pagoda_CheshireAlien_03.ogg      -128   128   3   0   0
+definesound CHESHIREALIEN_04      sound/Pagoda_CheshireAlien_04.ogg      -128   128   3   0   0
 
-definesound REMOTERIDICULE_0      sound\BIRTHCONTROL.ogg				 0   0   255   4   0
-definesound REMOTERIDICULE_1      sound\GONNADIE.ogg			         0   0   255   4   0
-definesound REMOTERIDICULE_2      sound\HURTSTOBEYOU.ogg	             0   0   255   4   0
-definesound REMOTERIDICULE_3      sound\SONOFABITCH.ogg		             0   0   255   4   0
-definesound REMOTERIDICULE_4      sound\PAYBACKTIME.ogg			         0   0   255   4   0
-definesound REMOTERIDICULE_5      sound\ALGAEEATER.ogg				     0   0   255   4   0
-definesound REMOTERIDICULE_6      sound\YOURUGLY.ogg			         0   0   255   4   0
-definesound REMOTERIDICULE_7      sound\WASTED.ogg					     0   0   255   4   0
-definesound REMOTERIDICULE_8      sound\YOUSUCK.ogg				         0   0   255   4   0
-definesound REMOTERIDICULE_9      sound\AAAHHH.ogg			             0   0   255   4   0
+definesound REMOTERIDICULE_0      sound/BIRTHCONTROL.ogg				 0   0   255   4   0
+definesound REMOTERIDICULE_1      sound/GONNADIE.ogg			         0   0   255   4   0
+definesound REMOTERIDICULE_2      sound/HURTSTOBEYOU.ogg	             0   0   255   4   0
+definesound REMOTERIDICULE_3      sound/SONOFABITCH.ogg		             0   0   255   4   0
+definesound REMOTERIDICULE_4      sound/PAYBACKTIME.ogg			         0   0   255   4   0
+definesound REMOTERIDICULE_5      sound/ALGAEEATER.ogg				     0   0   255   4   0
+definesound REMOTERIDICULE_6      sound/YOURUGLY.ogg			         0   0   255   4   0
+definesound REMOTERIDICULE_7      sound/WASTED.ogg					     0   0   255   4   0
+definesound REMOTERIDICULE_8      sound/YOUSUCK.ogg				         0   0   255   4   0
+definesound REMOTERIDICULE_9      sound/AAAHHH.ogg			             0   0   255   4   0

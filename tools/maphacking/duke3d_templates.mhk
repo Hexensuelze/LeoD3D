@@ -175,7 +175,7 @@ grep " mapmd4   "   `find ./maphacks -name \*.mhk` | wc -l
 // tile0121 techlightbust2
 // tile0122 techlight4
 // tile0123 techlightbust4
-// tile0124 (walllight4)
+// tile0124 walllight4
 // tile0125 walllightbust4
 // tile0126 (walllight)
 // tile0127 (walllight)
@@ -597,7 +597,8 @@ grep " mapmd4   "   `find ./maphacks -name \*.mhk` | wc -l
 // tile0980 (private property sign)
 // tile0981 hydrent
 // tile0983 (tow away sign)
-// tile0985 (detour sign)
+// tile0984 (detour sign left)
+// tile0985 (detour sign right)
 // tile0986 (no loitering sign)
 // tile0988 maskwall14
 // tile0989 (direction sign)
@@ -749,6 +750,7 @@ grep " mapmd4   "   `find ./maphacks -name \*.mhk` | wc -l
 // tile1240 firebarrel
 // tile1241 [rcbp2 barrel]
 // tile1247 seenine
+// tile1249 (tile1247 seenine)
 // tile1250 steam
 // tile1255 ceilingsteam
 // tile1260 pipe6b
@@ -930,6 +932,7 @@ grep " mapmd4   "   `find ./maphacks -name \*.mhk` | wc -l
 // tile1572 (tile1550 shark)
 // tile1574 (tile1550 shark)
 // tile1575 (tile1550 shark)
+// tile1576 (tile1550 shark)
 // tile1577 (tile1550 shark)
 // tile1582 (tile1550 shark)
 // tile1585 (tile1550 shark)
@@ -1283,6 +1286,9 @@ grep " mapmd4   "   `find ./maphacks -name \*.mhk` | wc -l
 // tile2535 shotgunshell
 // tile2536 chaingun
 // tile2537 (tile2536 chaingun)
+// tile2538 (tile2536 chaingun)
+// tile2539 (tile2536 chaingun)
+// tile2540 (tile2536 chaingun)
 // tile2541 (chaingun muzzleflash)
 // tile2542 (chaingun muzzleflash)
 // tile2543 (chaingun muzzleflash)
@@ -1459,6 +1465,7 @@ grep " mapmd4   "   `find ./maphacks -name \*.mhk` | wc -l
 // tile2909 (tile2877 (bluefont X))
 // tile2910 (tile2878 (bluefont Y))
 // tile2911 (tile2879 (bluefont Z))
+// tile2922 (concrete wall)
 // tile2929 (redfont -)
 // tile2931 (redfont 1)
 // tile2932 (redfont 2)
@@ -2144,4 +2151,8 @@ F3           : 2.5D mode
 
 ******/
 
-shaky1, maadm2 maa2 x3?
+ScreenHeight = 1200
+ScreenHeight = 1080
+ScreenWidth = 1920
+WindowPosX = 320
+WindowPosY = 120

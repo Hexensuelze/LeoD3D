@@ -357,6 +357,7 @@
      Unrecognized\ token
      unsupported\ format
      very\ sad\ sector
+     wasn\'t\ playing
      You\ need\ SDL or\ newer\ to\ run
      ;;
      Bad bad bisect bounds
